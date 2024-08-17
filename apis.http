@@ -1,0 +1,52 @@
+#user APIs
+
+## api to get all users
+GET http://localhost:4000/users HTTP/1.1
+Content-Type: application/json
+###
+
+## api to add new user
+POST http://localhost:4000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "john_doe",
+  "email": "john.doe@example.com",
+  "password": "hashed_password",
+  "role": 0
+}
+###
+
+## api to add new user
+DELETE http://localhost:4000/users/f03c HTTP/1.1
+Content-Type: application/json
+###
+
+#Categories APIs
+
+## get all categories
+GET  http://localhost:4000/categories HTTP/1.1
+Content-Type: application/json
+###
+
+## add new category
+POST   http://localhost:4000/categories HTTP/1.1
+Content-Type: application/json
+
+{
+      "id": 2,
+      "name": "Phones",
+      "description": "Devices and Acssesories"
+    }
+###
+
+##delete category
+DELETE http://localhost:4000/categories/2 HTTP/1.1
+Content-Type: application/json
+###
+
+
+
+
+

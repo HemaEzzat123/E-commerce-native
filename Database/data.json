@@ -1,9 +1,35 @@
 {
-    "users": [],
-    "categories": [],
-    "products": [],
-    "orders": [],
-    "carts": [],
-    "reviews": [],
-    "wishlists": []
+  "users": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "email": "john.doe@example.com",
+      "password": "hashed_password",
+      "role": 0
+    },
+    {
+      "id": "2",
+      "username": "john_doe",
+      "email": "john.doe@example.com",
+      "password": "hashed_password",
+      "role": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "description": "Devices and gadgets"
+    },
+    {
+      "id": 2,
+      "name": "Phones",
+      "description": "Devices and Acssesories"
+    }
+  ],
+  "products": [],
+  "orders": [],
+  "carts": [],
+  "reviews": [],
+  "wishlists": []
 }
