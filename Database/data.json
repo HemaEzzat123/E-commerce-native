@@ -13,6 +13,13 @@
       "email": "john.doe@example.com",
       "password": "hashed_password",
       "role": 0
+    },
+    {
+      "id": "3",
+      "username": "john_doe",
+      "email": "john.doe@example.com",
+      "password": "hashed_password",
+      "role": 0
     }
   ],
   "categories": [
@@ -22,12 +29,43 @@
       "description": "Devices and gadgets"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Phones",
       "description": "Devices and Acssesories"
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "id": "1",
+      "name": "smartTV",
+      "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "brandName": "LG",
+      "description": "the lg tv product",
+      "price": 50000,
+      "categoryId": "1",
+      "stock": 50
+    },
+    {
+      "id": "2",
+      "name": "iPhone 15",
+      "image": "bbbbbbbbbbbbbbbbbbbbbbb",
+      "brandName": "iPhone",
+      "description": "the last edition from iPhone",
+      "price": 50000,
+      "categoryId": "2",
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "iPhone 14",
+      "image": "bbbbbbbbbbbbbbbbbbbbbbb",
+      "brandName": "iPhone",
+      "description": "the 14 edition from iPhone",
+      "price": 40000,
+      "categoryId": "2",
+      "stock": 50
+    }
+  ],
   "orders": [],
   "carts": [],
   "reviews": [],
