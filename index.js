@@ -37,7 +37,7 @@ let pageContent = `
 `;
 
 let page = document.createElement("div");
-page.className = "user-page";
+page.className = "user-page container";
 page.innerHTML = pageContent;
 
 content.appendChild(header);
