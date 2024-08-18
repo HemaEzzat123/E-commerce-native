@@ -1,4 +1,4 @@
-import { headerContent } from "./Components/header.js";
+import { headerContent } from "./Components/userComponent/header.js";
 
 let content = document.getElementById("root");
 
