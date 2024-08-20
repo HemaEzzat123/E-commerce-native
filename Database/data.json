@@ -26,10 +26,12 @@
     {
       "id": "1",
       "name": "Electronics",
+      "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "description": "Devices and gadgets"
     },
     {
       "id": "2",
+      "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "name": "Phones",
       "description": "Devices and Acssesories"
     }

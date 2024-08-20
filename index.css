@@ -141,3 +141,9 @@ body {
         margin-top: 100px;
     }
 }
+
+@media screen and (min-width: 1000px) {
+.first-element{
+    margin-top: 100px;
+}
+}
