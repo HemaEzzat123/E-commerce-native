@@ -11,8 +11,16 @@ export let headerContent = `
             <li class="user-header-links-item contact"> Contact </li>
         </ul>
     </div>
-    <div class="user-header-logout">
-        <button class="user-header-logout-button">Logout</button>
+
+    <div class="user-header-buttons">
+        ${localStorage.getItem("user") ?
+            `<button class="user-header-logout-button">Logout</button>` :
+            `<button class="user-header-login-button">Login</button>
+            <button class="user-header-register-button">Register</button>`
+        }
     </div>
 `;
 
+export let header = document.createElement("div");
+header.className = "user-header";
+header.innerHTML = headerContent;
