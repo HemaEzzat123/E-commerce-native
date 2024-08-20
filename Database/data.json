@@ -38,7 +38,13 @@
     {
       "id": "3",
       "image": "electronics.jpg",
-      "name": "Phones",
+      "name": "Bags",
+      "description": "Devices and Acssesories"
+    },
+    {
+      "id": "4",
+      "image": "electronics.jpg",
+      "name": "Clothes",
       "description": "Devices and Acssesories"
     }
   ],
