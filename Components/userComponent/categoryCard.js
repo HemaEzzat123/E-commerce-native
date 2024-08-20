@@ -1,53 +1,60 @@
-// import { getAllCategories } from "../../APIsConnection/user";
+// const productID = "5";
+// import { getAllCategories } from "./../../APIsConnection/user.js";
+// export const displayAllCategories = async () => {
+//   const categories = await getAllCategories();
+//   console.log(categories);
+//   const categoryList = document.createElement("div");
+//   categoryList.className = "user-category-list";
 
-// let categories = getAllCategories();
+//   if (categories.length > 0) {
+//     categories.forEach((category) => {
+//       const categoryCard = document.createElement("div");
+//       categoryCard.className = "user-category-item";
+//       categoryCard.textContent = category.description;
+//       categoryList.appendChild(categoryCard);
+//     });
+//   } else {
+//     categoryList.textContent = "No categories found";
+//   }
+
+//   console.log(categoryList);
+//   return categoryList;
+// };
+
+// export let categoriesContainer = document.createElement("div");
+// categoriesContainer.className = "user-categories-container";
+// categoriesContainer.innerHTML = displayAllCategories();
 
 
+import { getAllCategories } from "./../../APIsConnection/user.js";
 
-// let categoryCardContent = ()=> {
-//     let content = ``
-
-//     for (let i = 0; i < categories.length; i++) {
-//         content += `
-//             <div class="user-category-card">
-//                 <div class="user-category-card-image">
-//                     <img src="${categories[i].image}" alt="${categories[i].name}">
-//                 </div>
-//                 <div class="user-category-card-title">${categories[i].name}</div>
-//             </div>
-//         `;
-//     }
-
-//     return content;
-// } 
-
-// export let categoryCard = document.createElement("div");
-// categoryCard.className = "user-category-card-container";
-// categoryCard.innerHTML = categoryCardContent();
-
-import { getAllCategories } from "../../APIsConnection/user";
-
-export let categoryCard = document.createElement("div");
-categoryCard.className = "user-category-card-container";
-
-// Function to render the category cards
-const renderCategoryCards = async () => {
+export const displayAllCategories = async () => {
   const categories = await getAllCategories();
-  let content = ``;
+  console.log(categories);
+  const categoryList = document.createElement("div");
+  categoryList.className = "user-category-list";
 
-  for (let i = 0; i < categories.length; i++) {
-    content += `
-      <div class="user-category-card">
-        <div class="user-category-card-image">
-          <img src="${categories[i].image}" alt="${categories[i].name}">
-        </div>
-        <div class="user-category-card-title">${categories[i].name}</div>
-      </div>
-    `;
+  if (categories.length > 0) {
+    categories.forEach((category) => {
+      const categoryCard = document.createElement("div");
+      categoryCard.className = "user-category-item";
+      categoryCard.textContent = category.description;
+      categoryList.appendChild(categoryCard);
+    });
+  } else {
+    categoryList.textContent = "No categories found";
   }
 
-  categoryCard.innerHTML = content;
+  console.log(categoryList);
+  return categoryList;
 };
 
-// Call the function to fetch and render categories when the component is loaded
-renderCategoryCards();
+export let categoriesContainer = document.createElement("div");
+categoriesContainer.className = "user-categories-container";
+
+// Instead of setting innerHTML directly, we'll use this function to append the category list.
+export const loadCategories = async () => {
+  const categoryList = await displayAllCategories();
+  categoriesContainer.appendChild(categoryList);
+};
+

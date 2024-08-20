@@ -24,3 +24,6 @@ export let headerContent = `
 export let header = document.createElement("div");
 header.className = "user-header";
 header.innerHTML = headerContent;
+
+
+
