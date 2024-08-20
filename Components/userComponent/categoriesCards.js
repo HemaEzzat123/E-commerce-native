@@ -14,6 +14,7 @@ const displayCategories = async () => {
               <img src="../../IMAGES/${category.image}" alt="${category.name}">
               <h3>${category.name}</h3>
               <p>${category.description}</p>
+              <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
           </div>
       `
         )
@@ -22,6 +23,11 @@ const displayCategories = async () => {
   } catch (error) {
     console.error("Error fetching categories:", error);
   }
-}
+};
 
-displayCategories(); // Call the async function
+// Define viewProducts function in the global scope
+window.viewProducts = (categoryId) => {
+  window.location.href = `categoryDetails.html?id=${categoryId}`;
+};
+
+displayCategories();

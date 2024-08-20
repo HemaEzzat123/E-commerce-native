@@ -1,24 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 :root {
-    --main-background-color: #f5f5f5;
-    --main-text-color: #000000;
-    --main-card-background-color: #ffffff;
-    --yellow-color: #f5a623;
-    --red-color: #E4003A;
-    --green-color: #97BE5A;
-    --lime-blue-color: #5F9EA0;
+  --main-background-color: #f5f5f5;
+  --main-text-color: #000000;
+  --main-card-background-color: #ffffff;
+  --yellow-color: #f5a623;
+  --red-color: #e4003a;
+  --green-color: #97be5a;
+  --lime-blue-color: #5f9ea0;
 
-    --main-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    --secons-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  --main-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --secons-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
-    --main-font-size: 16px;
-    --main-font-family: "Open Sans", sans-serif;
+  --main-font-size: 16px;
+  --main-font-family: "Open Sans", sans-serif;
 
-    --main-border-radius: 20px;
-    --main-pading: 20px;
+  --main-border-radius: 20px;
+  --main-pading: 20px;
 
-    --main-transition: all 0.3s ease-out;
+  --main-transition: all 0.3s ease-out;
 }
 
 * {
@@ -28,8 +28,8 @@
 }
 
 body {
-    font-family: var(--main-font-family);
-    background-color: var(--main-background-color);
+  font-family: var(--main-font-family);
+  background-color: var(--main-background-color);
 }
 
 .container {
@@ -43,12 +43,33 @@ body {
   }
 }
 
-.user-page-content{
-    min-height: 10000px;
+.user-page-content {
+  min-height: 10000px;
 }
 
 @media screen and (min-width: 1000px) {
-    .user-page-content{
-        margin-top: 100px;
-    }
+  .user-page-content {
+    margin-top: 100px;
+  }
+}
+
+.user-categories-container {
+  display: flex;
+  gap: 20px;
+}
+
+.user-categories-container .category-card {
+  background-color: var(--main-card-background-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--main-box-shadow);
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
