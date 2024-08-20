@@ -47,5 +47,3 @@ export const getProductsByCategory = async (categoryId) => {
     return [];
   }
 };
-
-getProductsByCategory(1);
