@@ -21,8 +21,7 @@ export let headerContent = `
     </div>
 `;
 
-export let header = document.createElement("div");
-header.className = "user-header";
+let header = document.querySelector(".user-header");
 header.innerHTML = headerContent;
 
 
