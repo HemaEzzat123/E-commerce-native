@@ -38,6 +38,62 @@
       "username": "123",
       "email": "12312",
       "password": "123123123"
+    },
+    {
+      "id": "",
+      "username": "fzdx",
+      "email": "1231",
+      "password": "31313131",
+      "role": 1
+    },
+    {
+      "id": "9c89",
+      "username": "3243",
+      "email": "4534345",
+      "password": "345345345",
+      "role": 1
+    },
+    {
+      "id": "",
+      "username": "21312",
+      "email": "3123123",
+      "password": "123123213",
+      "role": 1
+    },
+    {
+      "id": "",
+      "username": "1412412",
+      "email": "412412",
+      "password": "124124124",
+      "role": 1
+    },
+    {
+      "id": "",
+      "username": "980980",
+      "email": "980890",
+      "password": "890980890",
+      "role": 1
+    },
+    {
+      "id": "ymild0d8g",
+      "username": "dasdsa",
+      "email": "dsadas",
+      "password": "dsaddasd",
+      "role": 1
+    },
+    {
+      "id": "cwn66jxar",
+      "username": "124",
+      "email": "124124124",
+      "password": "242124124124",
+      "role": 1
+    },
+    {
+      "id": "i7ktl3og7",
+      "username": "john_doe",
+      "email": "",
+      "password": "hashed_password",
+      "role": 1
     }
   ],
   "categories": [

@@ -21,25 +21,28 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     Continue.addEventListener("click", async () => {
+      // add new user
+      const addUser = async (user) => {
+        try {
+          const response = await axios.post(
+            "http://localhost:4000/users",
+            user
+          );
+          return response.data;
+        } catch (error) {
+          console.error("Error adding user:", error);
+          return null;
+        }
+      };
       let user = {};
       user.username = document.getElementById("username").value;
       user.email = document.getElementById("email").value;
       user.password = document.getElementById("psw").value;
+      user.role = 1;
+      user.id = "" + Math.random().toString(36).substr(2, 9);
       addUser(user);
       localStorage.setItem("user", JSON.stringify(user));
     });
-
-    // add new user
-    const addUser = async (user) => {
-      try {
-        const response = await axios.post("http://localhost:4000/users", user);
-        return response.data;
-      } catch (error) {
-        console.error("Error adding user:", error);
-        return null;
-      }
-    };
-
 
     Continue.disabled = true;
 

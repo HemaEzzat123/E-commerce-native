@@ -1,7 +1,7 @@
 export let headerContent = `
     <div class="user-header-branding">
         <img class="user-logo-image" src="https://cdn-icons-png.flaticon.com/512/2591/2591253.png" alt="logo">
-        <p class="user-logo-text"></p>E-commerce</p>
+        <p class="user-logo-text">E-commerce</p>
     </div>
     <div class="user-header-links">
         <ul class="user-header-links-list">
@@ -11,7 +11,6 @@ export let headerContent = `
             <li class="user-header-links-item contact"> Contact </li>
         </ul>
     </div>
-
     <div class="user-header-buttons">
         ${
           localStorage.getItem("user")
@@ -24,14 +23,19 @@ export let headerContent = `
 let header = document.querySelector(".user-header");
 header.innerHTML = headerContent;
 
+// Add event listeners after setting innerHTML
 const loginButton = document.querySelector(".user-header-login-button");
 const logoutButton = document.querySelector(".user-header-logout-button");
 
-loginButton.addEventListener("click", () => {
-  document.querySelector(".user-sign").style.display = "block";
-});
+if (loginButton) {
+  loginButton.addEventListener("click", () => {
+    document.querySelector(".user-sign").style.display = "block";
+  });
+}
 
-logoutButton.addEventListener("click", () => {
-  localStorage.removeItem("user");
-  window.location.reload();
-});
+if (logoutButton) {
+  logoutButton.addEventListener("click", () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+  });
+}
