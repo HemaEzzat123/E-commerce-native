@@ -9,49 +9,65 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.querySelector("#psw");
     const Continue = document.querySelector("#sign-Continue");
     const allInputs = form.querySelectorAll("input");
-    // get all users
-    const getAllUsers = async () => {
-      try {
-        const response = await axios.get("http://localhost:4000/users");
-        return response.data;
-      } catch (error) {
-        console.error("Error fetching users:", error);
-        return [];
-      }
-    };
-
-    Continue.addEventListener("click", async () => {
-      // add new user
-      const addUser = async (user) => {
-        try {
-          const response = await axios.post(
-            "http://localhost:4000/users",
-            user
-          );
-          return response.data;
-        } catch (error) {
-          console.error("Error adding user:", error);
-          return null;
-        }
-      };
-      let user = {};
-      user.username = document.getElementById("username").value;
-      user.email = document.getElementById("email").value;
-      user.password = document.getElementById("psw").value;
-      user.role = 1;
-      user.id = "" + Math.random().toString(36).substr(2, 9);
-      addUser(user);
-      localStorage.setItem("user", JSON.stringify(user));
-    });
-
     Continue.disabled = true;
-
     document.addEventListener("click", (e) => {
       if (e.target.id === "signUp") {
         toggleMode("signUp");
+        Continue.addEventListener("click", async () => {
+          // add new user
+          const addUser = async (user) => {
+            try {
+              const response = await axios.post(
+                "http://localhost:4000/users",
+                user
+              );
+              return response.data;
+            } catch (error) {
+              console.error("Error adding user:", error);
+              return null;
+            }
+          };
+          response.data.map((user) => {
+            console.log(user.username);
+            if (user.username === username.value) {
+              console.log("This user already exists");
+            } else {
+              console.log("your account has been created");
+            }
+          });
+          let user = {};
+          user.username = document.getElementById("username").value;
+          user.email = document.getElementById("email").value;
+          user.password = document.getElementById("psw").value;
+          user.role = 1;
+          user.id = "" + Math.random().toString(36).substr(2, 9);
+          addUser(user);
+          localStorage.setItem("user", JSON.stringify(user));
+        });
       }
       if (e.target.id === "logIn") {
         toggleMode("logIn");
+        Continue.addEventListener("click", () => {
+          // get all users
+          const getAllUsers = async () => {
+            try {
+              const response = await axios.get("http://localhost:4000/users");
+              response.data.map((user) => {
+                // console.log(user.username);
+                if (user.username === username.value) {
+                  console.log(username.value);
+                } else {
+                  console.log("not found");
+                }
+              });
+              return response.data;
+            } catch (error) {
+              console.error("Error getting users:", error);
+              return null;
+            }
+          };
+          getAllUsers();
+        });
       }
     });
 
