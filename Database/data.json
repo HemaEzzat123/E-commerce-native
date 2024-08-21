@@ -20,185 +20,6 @@
       "email": "john.doe@example.com",
       "password": "hashed_password",
       "role": 0
-    },
-    {
-      "id": "af00",
-      "username": "test from hema",
-      "email": "123",
-      "password": "123456"
-    },
-    {
-      "id": "ff2d",
-      "username": "12321",
-      "email": "123123",
-      "password": "123123123"
-    },
-    {
-      "id": "4be7",
-      "username": "123",
-      "email": "12312",
-      "password": "123123123"
-    },
-    {
-      "id": "",
-      "username": "fzdx",
-      "email": "1231",
-      "password": "31313131",
-      "role": 1
-    },
-    {
-      "id": "9c89",
-      "username": "3243",
-      "email": "4534345",
-      "password": "345345345",
-      "role": 1
-    },
-    {
-      "id": "",
-      "username": "21312",
-      "email": "3123123",
-      "password": "123123213",
-      "role": 1
-    },
-    {
-      "id": "",
-      "username": "1412412",
-      "email": "412412",
-      "password": "124124124",
-      "role": 1
-    },
-    {
-      "id": "",
-      "username": "980980",
-      "email": "980890",
-      "password": "890980890",
-      "role": 1
-    },
-    {
-      "id": "ymild0d8g",
-      "username": "dasdsa",
-      "email": "dsadas",
-      "password": "dsaddasd",
-      "role": 1
-    },
-    {
-      "id": "cwn66jxar",
-      "username": "124",
-      "email": "124124124",
-      "password": "242124124124",
-      "role": 1
-    },
-    {
-      "id": "i7ktl3og7",
-      "username": "john_doe",
-      "email": "",
-      "password": "hashed_password",
-      "role": 1
-    },
-    {
-      "id": "kpxt3vq9o",
-      "username": "123",
-      "email": "123123",
-      "password": "12312312",
-      "role": 1
-    },
-    {
-      "id": "d9ajs3t6v",
-      "username": "hamza",
-      "email": "123123",
-      "password": "12345634",
-      "role": 1
-    },
-    {
-      "id": "bn094wlh9",
-      "username": "124214",
-      "email": "",
-      "password": "21412412",
-      "role": 1
-    },
-    {
-      "id": "7kv78mrfy",
-      "username": "testsignup",
-      "email": "test",
-      "password": "123456",
-      "role": 1
-    },
-    {
-      "id": "6spsjrq0u",
-      "username": "testsignup",
-      "email": "test",
-      "password": "123456",
-      "role": 1
-    },
-    {
-      "id": "ssze6uoho",
-      "username": "test",
-      "email": "",
-      "password": "testet",
-      "role": 1
-    },
-    {
-      "id": "4ehwzvdw4",
-      "username": "asdas",
-      "email": "asdasd",
-      "password": "asdsadasd",
-      "role": 1
-    },
-    {
-      "id": "spqrnpqxw",
-      "username": "fzdx",
-      "email": "12321",
-      "password": "213123123",
-      "role": 1
-    },
-    {
-      "id": "p6js9tn1p",
-      "username": "123",
-      "email": "hezzat.964@gmail.com",
-      "password": "1561561",
-      "role": 1
-    },
-    {
-      "id": "xktxkr1gb",
-      "username": "asdas",
-      "email": "dasdasda",
-      "password": "sdasdasd",
-      "role": 1
-    },
-    {
-      "id": "qj8m9mjwd",
-      "username": "fzdx",
-      "email": "asdasd",
-      "password": "asdsaddasd",
-      "role": 1
-    },
-    {
-      "id": "6cf33vo6x",
-      "username": "2131",
-      "email": "hema.1055@yahoo.com",
-      "password": "3123123",
-      "role": 1
-    },
-    {
-      "id": "kdnaeqr5t",
-      "username": "asdasad",
-      "email": "hema.1055@yahoo.com",
-      "password": "dasdasd",
-      "role": 1
-    },
-    {
-      "id": "epxzgaoql",
-      "username": "asd",
-      "email": "hezzat.964@gmail.com",
-      "password": "1234566",
-      "role": 1
-    },
-    {
-      "id": "jx045714m",
-      "username": "133213",
-      "email": "hezzat.964@gmail.com",
-      "password": "123123123",
-      "role": 1
     }
   ],
   "categories": [
@@ -225,6 +46,12 @@
       "name": "Clothes",
       "image": "",
       "description": "Fashionable and comfortable clothing"
+    },
+    {
+      "id": "fe5c",
+      "name": "4",
+      "description": "23423",
+      "image": "234234"
     }
   ],
   "products": [
@@ -677,6 +504,20 @@
       "categoryId": "4",
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
       "rating": "4"
+    },
+    {
+      "id": "3123",
+      "name": "12312",
+      "description": "3123",
+      "price": "12312",
+      "image": "3213",
+      "discount": "213",
+      "availability": false,
+      "brandname": "12",
+      "categoryId": "2",
+      "stock": "123123",
+      "rating": "123123",
+      "reviews": []
     }
   ],
   "orders": [],

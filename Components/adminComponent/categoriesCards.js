@@ -7,6 +7,7 @@ const displayCategories = async () => {
     let categories = await getAllCategories();
 
     categoriesContainer.innerHTML = `
+
       ${categories
         .map(
           (category) => `
@@ -15,7 +16,9 @@ const displayCategories = async () => {
               <h3>${category.name}</h3>
               <p>${category.description}</p>
               <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
-              <button class="category-card-button" onclick="viewProducts(${category.id})">add Products</button>
+              <button class="category-card-button" onclick="addProducts(${category.id})">add Products</button>
+              <button class="category-card-button" onclick="addCategory(${category.id})">add Category</button>
+
           </div>
       `
         )
@@ -30,5 +33,16 @@ const displayCategories = async () => {
 window.viewProducts = (categoryId) => {
   window.location.href = `categoryDetails.html?id=${categoryId}`;
 };
+
+// add products
+window.addProducts = (categoryId) => {
+  window.location.href = `addProduct.html?id=${categoryId}`;
+};
+
+window.addCategory = (categoryId) => {
+  window.location.href = `addCategory.html?id=${categoryId}`;
+};
+
+// Initialize the displayCategories function when the page load
 
 displayCategories();
