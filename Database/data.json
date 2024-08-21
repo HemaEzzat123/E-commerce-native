@@ -20,6 +20,24 @@
       "email": "john.doe@example.com",
       "password": "hashed_password",
       "role": 0
+    },
+    {
+      "id": "af00",
+      "username": "test from hema",
+      "email": "123",
+      "password": "123456"
+    },
+    {
+      "id": "ff2d",
+      "username": "12321",
+      "email": "123123",
+      "password": "123123123"
+    },
+    {
+      "id": "4be7",
+      "username": "123",
+      "email": "12312",
+      "password": "123123123"
     }
   ],
   "categories": [
@@ -70,7 +88,7 @@
       "stock": 50
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "iPhone 14",
       "image": "bbbbbbbbbbbbbbbbbbbbbbb",
       "brandName": "iPhone",

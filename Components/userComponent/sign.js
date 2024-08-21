@@ -9,6 +9,37 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.querySelector("#psw");
     const Continue = document.querySelector("#sign-Continue");
     const allInputs = form.querySelectorAll("input");
+    // get all users
+    const getAllUsers = async () => {
+      try {
+        const response = await axios.get("http://localhost:4000/users");
+        return response.data;
+      } catch (error) {
+        console.error("Error fetching users:", error);
+        return [];
+      }
+    };
+
+    Continue.addEventListener("click", async () => {
+      let user = {};
+      user.username = document.getElementById("username").value;
+      user.email = document.getElementById("email").value;
+      user.password = document.getElementById("psw").value;
+      addUser(user);
+      localStorage.setItem("user", JSON.stringify(user));
+    });
+
+    // add new user
+    const addUser = async (user) => {
+      try {
+        const response = await axios.post("http://localhost:4000/users", user);
+        return response.data;
+      } catch (error) {
+        console.error("Error adding user:", error);
+        return null;
+      }
+    };
+
 
     Continue.disabled = true;
 
@@ -111,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
- let signContent = `
+let signContent = `
 <form action="javascript:void(0);" id="sign-form">
       <div class="sign-container">
         <div class="sign-image"></div>
@@ -156,13 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
     </form>
 `;
 
-console.log("Starting sign.js");
-console.log(signContent); // Ensure that signContent is defined correctly
-
 let sign = document.querySelector(".user-sign");
 if (sign) {
   sign.innerHTML = signContent;
-  console.log("Sign content injected successfully");
 } else {
   console.log("Sign element not found");
 }

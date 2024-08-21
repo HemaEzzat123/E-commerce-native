@@ -29,5 +29,9 @@ const logoutButton = document.querySelector(".user-header-logout-button");
 
 loginButton.addEventListener("click", () => {
   document.querySelector(".user-sign").style.display = "block";
-  document.querySelector("body").style.opacity = "0.5";
+});
+
+logoutButton.addEventListener("click", () => {
+  localStorage.removeItem("user");
+  window.location.reload();
 });
