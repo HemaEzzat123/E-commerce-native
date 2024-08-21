@@ -105,55 +105,455 @@
     },
     {
       "id": "2",
-      "image": "electronics.jpg",
       "name": "Phones",
+      "image": "electronics.jpg",
       "description": "Devices and Acssesories"
     },
     {
       "id": "3",
-      "image": "electronics.jpg",
       "name": "Bags",
+      "image": "electronics.jpg",
       "description": "Devices and Acssesories"
     },
     {
       "id": "4",
-      "image": "electronics.jpg",
       "name": "Clothes",
+      "image": "electronics.jpg",
       "description": "Devices and Acssesories"
     }
   ],
   "products": [
     {
-      "id": "1",
+        "id": 1,
+        "name": "Smartphone",
+        "description": "High-end smartphone with advanced features.",
+        "price": 599.99,
+        "image": "https://example.com/images/smartphone.jpg",
+        "discount": 10,
+        "availability": true,
+        "brandname": "BrandX",
+        "category": "2",
+        "stock": 50,
+        "rating": 4.5,
+        "reviews": [
+          {
+            "user_id": 1,
+            "rating": 5,
+            "comment": "Great phone with a superb camera!"
+          },
+          {
+            "user_id": 2,
+            "rating": 4,
+            "comment": "Good performance, but the battery life could be better."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Laptop",
+        "description": "Powerful laptop for work and gaming.",
+        "price": 999.99,
+        "image": "https://example.com/images/laptop.jpg",
+        "discount": 5,
+        "availability": true,
+        "brandname": "BrandY",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user_id": 3,
+            "rating": 5,
+            "comment": "Excellent laptop for gaming and work tasks."
+          },
+          {
+            "user_id": 4,
+            "rating": 4,
+            "comment": "Good value for the price."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Wireless Headphones",
+        "description": "Premium wireless headphones with noise-cancellation.",
+        "price": 149.99,
+        "image": "https://example.com/images/headphones.jpg",
+        "discount": 15,
+        "availability": true,
+        "brandname": "SoundMasters",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.8,
+        "reviews": [
+          {
+            "user_id": 5,
+            "rating": 5,
+            "comment": "Top-notch sound quality and comfort."
+          },
+          {
+            "user_id": 6,
+            "rating": 4,
+            "comment": "Impressive noise-cancellation, but a bit pricey."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Smartwatch",
+        "description": "Feature-packed smartwatch with fitness tracking.",
+        "price": 199.99,
+        "image": "https://example.com/images/smartwatch.jpg",
+        "discount": 10,
+        "availability": true,
+        "brandname": "TechWear",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.6,
+        "reviews": [
+          {
+            "user_id": 7,
+            "rating": 4,
+            "comment": "Great value for the features it offers."
+          },
+          {
+            "user_id": 8,
+            "rating": 5,
+            "comment": "Sleek design and accurate fitness tracking."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Professional DSLR Camera",
+        "description": "High-quality DSLR camera for photography enthusiasts.",
+        "price": 499.99,
+        "image": "https://example.com/images/camera.jpg",
+        "discount": 5,
+        "availability": true,
+        "brandname": "PhotoPro",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.9,
+        "reviews": [
+          {
+            "user_id": 9,
+            "rating": 5,
+            "comment": "Exceptional image quality and versatility."
+          },
+          {
+            "user_id": 10,
+            "rating": 4,
+            "comment": "A bit heavy, but the results are worth it."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Smart TV",
+        "description": "High-definition smart TV with built-in streaming apps.",
+        "price": 799.99,
+        "image": "https://example.com/images/tv.jpg",
+        "discount": 8,
+        "availability": true,
+        "brandname": "ViewTech",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user_id": 11,
+            "rating": 5,
+            "comment": "Stunning picture quality and user-friendly interface."
+          },
+          {
+            "user_id": 12,
+            "rating": 4,
+            "comment": "A great addition to our home entertainment setup."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Tablet",
+        "description": "Compact tablet for productivity and entertainment.",
+        "price": 299.99,
+        "image": "https://example.com/images/tablet.jpg",
+        "discount": 12,
+        "availability": true,
+        "brandname": "TabTech",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.4,
+        "reviews": [
+          {
+            "user_id": 13,
+            "rating": 4,
+            "comment": "Good value for the price, but the battery life could be better."
+          },
+          {
+            "user_id": 14,
+            "rating": 5,
+            "comment": "Ideal for both work and entertainment on the go."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Gaming Console",
+        "description": "Next-gen gaming console for immersive gaming experiences.",
+        "price": 399.99,
+        "image": "https://example.com/images/console.jpg",
+        "discount": 10,
+        "availability": true,
+        "brandname": "GameX",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.8,
+        "reviews": [
+          {
+            "user_id": 15,
+            "rating": 5,
+            "comment": "Incredible gaming performance and graphics."
+          },
+          {
+            "user_id": 16,
+            "rating": 4,
+            "comment": "A must-have for gaming enthusiasts."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Energy-Efficient Refrigerator",
+        "description": "Modern refrigerator with energy-saving features.",
+        "price": 599.99,
+        "image": "https://example.com/images/refrigerator.jpg",
+        "discount": 5,
+        "availability": true,
+        "brandname": "CoolTech",
+        "category": "1",
+        "stock": 50,
+        "rating": 4.6
+      } 
+    ,
+    {
+      "id": "10",
       "name": "smartTV",
-      "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "brandName": "LG",
       "description": "the lg tv product",
       "price": 50000,
+      "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "brandName": "LG",
       "categoryId": "1",
-      "stock": 50
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": [
+          {
+            "user_id": 13,
+            "rating": 4,
+            "comment": "Good value for the price, but the battery life could be better."
+          },
+          {
+            "user_id": 14,
+            "rating": 5,
+            "comment": "Ideal for both work and entertainment on the go."
+          }
+        ]
     },
     {
-      "id": "2",
+      "id": "11",
       "name": "iPhone 15",
       "image": "bbbbbbbbbbbbbbbbbbbbbbb",
       "brandName": "iPhone",
       "description": "the last edition from iPhone",
       "price": 50000,
       "categoryId": "2",
-      "stock": 50
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": [
+          {
+            "user_id": 13,
+            "rating": 4,
+            "comment": "Good value for the price, but the battery life could be better."
+          },
+          {
+            "user_id": 14,
+            "rating": 5,
+            "comment": "Ideal for both work and entertainment on the go."
+          }
+        ]
     },
     {
-      "id": "3",
+      "id": "12",
       "name": "iPhone 14",
       "image": "bbbbbbbbbbbbbbbbbbbbbbb",
       "brandName": "iPhone",
       "description": "the 14 edition from iPhone",
       "price": 40000,
       "categoryId": "2",
-      "stock": 50
-    }
-  ],
+      "stock": 50 ,
+      "rating": 4.6,
+      "reviews": [
+          {
+            "user_id": 13,
+            "rating": 4,
+            "comment": "Good value for the price, but the battery life could be better."
+          },
+          {
+            "user_id": 14,
+            "rating": 5,
+            "comment": "Ideal for both work and entertainment on the go."
+          }
+        ]
+    },
+    {
+    "id":"13",
+    "category":"men's clothing",
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday", 
+    "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "price":"109.95",
+    "rating":"4"
+    },
+    
+
+      {"id":"14",
+      "description":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price":"109.95",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "rating":"4"},
+
+      {"id":"15",
+      "description":"Mens Casual Premium Slim Fit T-Shirts ",
+      "price":"22.3",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "rating":"4"},
+
+      {"id":"16",
+      "description":"Mens Cotton Jacket",
+      "price":"55.99",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "rating":"4"},
+
+      {"id":"17",
+      "description":"Mens Casual Slim Fit",
+      "price":"15.99",
+      "image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "rating":"4"},
+
+      {"id":"18",
+      "description":"John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "price":"695",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "rating":"4"},
+
+      {"id":"19",
+      "description":"Solid Gold Petite Micropave ",
+      "price":"168",
+      "category":"3",
+      "image":"https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "rating":"4"},
+
+      {"id":"20",
+      "description":"White Gold Plated Princess",
+      "price":9.99,
+      "category":"3",
+      "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      "rating":"4"},
+
+      {"id":"21",
+      "description":"Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "price":"10.99",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "rating":"4"},
+
+      {"id":"22",
+      "description":"WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "price":"64",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "rating":"4"},
+
+      {"id":"23",
+      "description":"SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "price":"109",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "rating":"4"},
+
+      {"id":"24",
+      "description":"Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price":"109",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "rating":"4"},
+
+      {"id":"25",
+      "description":"WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "price":"114",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+      "rating":"4"},
+
+      {"id":"26",
+      "description":"Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price":"599",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "rating":"4"},
+
+      {"id":"27",
+      "description":"Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "price":"999.99",
+      "category":"1",
+      "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "rating":"4"},
+
+      {"id":"28",
+      "description":"BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "price":"56.99",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "rating":"4"},
+
+      {"id":"29",
+      "description":"Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price":"29.95",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "rating":"4"},
+
+      {"id":"30",
+      "description":"Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "price":"39.99",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      "rating":"4"},
+
+      {"id":"31",
+      "description":"MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "price":"9.85",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+      "rating":"4"},
+
+      {"id":"32",
+      "description":"Opna Women's Short Sleeve Moisture",
+      "price":"7.95",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+      "rating":"4"},
+
+      {"id":"33",
+      "description":"DANVOUY Womens T Shirt Casual Cotton Short",
+      "price":"12.99",
+      "category":"4",
+      "image":"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+      "rating":"4"}],
   "orders": [],
   "carts": [],
   "reviews": [],
