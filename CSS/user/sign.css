@@ -1,0 +1,144 @@
+@import "../../index.css";
+/* starting the sign for user */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-sign {
+  display: none;
+  position: absolute;
+  opacity: 1 !important;
+}
+
+.sign-container {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+
+}
+.sign-h1 {
+  color: #404553;
+}
+
+.sign-image {
+  background-image: url(/e-commerce-native//IMAGES/slideImage.png);
+  background-repeat: repeat;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  animation: slide 15s linear infinite;
+  -webkit-animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+
+.sign-buttons {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #404553;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 3px solid #404553;
+}
+
+button:first-child {
+  background-color: white;
+  color: #404553;
+  width: 50%;
+  border-radius: 46px;
+  -webkit-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border: none;
+  cursor: pointer;
+}
+button:last-child {
+  background-color: transparent;
+  color: white;
+  width: 50%;
+  border-radius: 46px;
+  -webkit-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
+  height: 220px;
+}
+
+.sign-inputs input {
+  width: 100%;
+  height: 40px;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  outline: none;
+  border: 1px solid #404553;
+}
+.sign-inputs input:valid {
+  border-color: green;
+}
+
+.sign-inputs input:invalid {
+  border-color: red;
+}
+
+.sign-error {
+  color: red;
+  font-size: 0.8em;
+}
+
+#sign-Continue {
+  background-color: #f0f1f4;
+  height: 50px;
+  width: 75%;
+  color: #cbcfd7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: default;
+}

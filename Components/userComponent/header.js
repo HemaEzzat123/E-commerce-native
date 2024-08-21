@@ -13,10 +13,10 @@ export let headerContent = `
     </div>
 
     <div class="user-header-buttons">
-        ${localStorage.getItem("user") ?
-            `<button class="user-header-logout-button">Logout</button>` :
-            `<button class="user-header-login-button">Login</button>
-            <button class="user-header-register-button">Register</button>`
+        ${
+          localStorage.getItem("user")
+            ? `<button class="user-header-logout-button">Logout</button>`
+            : `<button class="user-header-login-button">Login</button>`
         }
     </div>
 `;
@@ -24,5 +24,10 @@ export let headerContent = `
 let header = document.querySelector(".user-header");
 header.innerHTML = headerContent;
 
+const loginButton = document.querySelector(".user-header-login-button");
+const logoutButton = document.querySelector(".user-header-logout-button");
 
-
+loginButton.addEventListener("click", () => {
+  document.querySelector(".user-sign").style.display = "block";
+  document.querySelector("body").style.opacity = "0.5";
+});
