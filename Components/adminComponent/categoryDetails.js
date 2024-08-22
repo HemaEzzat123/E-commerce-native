@@ -5,6 +5,55 @@ let addCategory = document.querySelector(".admin-category-form");
 const params = new URLSearchParams(window.location.search);
 const categoryId = params.get("id");
 
+let categoryDetails = document.querySelector(".admin-category-details-page");
+
+const viewProducts = async (categoryId) => {
+  try {
+    let products = await getProductsByCategory(categoryId); // Wait for the products to be fetched
+
+    categoryDetails.innerHTML = `
+      ${products
+        .map(
+          (product) => `
+          <div class="product-card" data-product-id="${product.id}">
+            <button class="delete-product">X</button>
+            <h1>${product.name}</h1>
+            <img src="${product.image}" alt="${product.name}" />
+            <p>${product.description}</p>
+            <p>Price: $${product.price}</p>
+            <p>Stock: ${product.stock} available</p>
+          </div>`
+        )
+        .join("")}
+    `;
+
+    // Attach event listeners to the delete buttons after the products have been rendered
+    document.querySelectorAll(".delete-product").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const productId = button
+          .closest(".product-card")
+          .getAttribute("data-product-id");
+        await deleteProduct(productId);
+        viewProducts(categoryId); // Refresh the product list after deletion
+      });
+    });
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    categoryDetails.innerHTML = `<p>Error loading products. Please try again later.</p>`;
+  }
+};
+
+const deleteProduct = async (productId) => {
+  try {
+    await axios.delete(`http://localhost:4000/products/${productId}`);
+    console.log(`Product with id ${productId} deleted.`);
+  } catch (error) {
+    console.error(`Error deleting product with id ${productId}:`, error);
+  }
+};
+
+viewProducts(categoryId);
+
 const addProducts = async (categoryId) => {
   try {
     let products = await getProductsByCategory(categoryId);

@@ -66,46 +66,21 @@
   ],
   "categories": [
     {
-      "id": "1",
-      "name": "Electronics",
-      "image": "",
-      "description": "Devices and gadgets"
-    },
-    {
-      "id": "2",
-      "name": "Phones",
-      "image": "",
-      "description": "Mobile devices and accessories"
-    },
-    {
-      "id": "3",
-      "name": "Bags",
-      "image": "",
-      "description": "Stylish and functional bags"
-    },
-    {
       "id": "4",
       "name": "Clothes",
       "image": "",
       "description": "Fashionable and comfortable clothing"
     },
     {
-      "id": "5",
-      "name": "mmm",
-      "description": "ssa",
-      "image": "as"
-    },
-    {
-      "id": "124",
-      "name": "5345",
-      "description": "345",
-      "image": "34534"
-    },
-    {
       "id": "123",
       "name": "Hema",
       "description": "123",
       "image": "123"
+    },
+    {
+      "id": 2,
+      "name": "Phones",
+      "description": "Devices and Acssesories"
     }
   ],
   "products": [
@@ -118,7 +93,7 @@
       "discount": 10,
       "availability": true,
       "brandname": "BrandX",
-      "categoryId": "2",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.5,
       "reviews": [
@@ -143,7 +118,7 @@
       "discount": 5,
       "availability": true,
       "brandname": "BrandY",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.7,
       "reviews": [
@@ -168,7 +143,7 @@
       "discount": 15,
       "availability": true,
       "brandname": "SoundMasters",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.8,
       "reviews": [
@@ -193,7 +168,7 @@
       "discount": 10,
       "availability": true,
       "brandname": "TechWear",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -218,7 +193,7 @@
       "discount": 5,
       "availability": true,
       "brandname": "PhotoPro",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.9,
       "reviews": [
@@ -243,7 +218,7 @@
       "discount": 8,
       "availability": true,
       "brandname": "ViewTech",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.7,
       "reviews": [
@@ -267,7 +242,7 @@
       "image": "https://example.com/images/tablet.jpg",
       "discount": 12,
       "availability": true,
-      "categoryId": "1",
+      "categoryId": null,
       "brandname": "TabTech",
       "stock": 50,
       "rating": 4.4,
@@ -293,7 +268,7 @@
       "discount": 10,
       "availability": true,
       "brandname": "GameX",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.8,
       "reviews": [
@@ -318,7 +293,7 @@
       "discount": 5,
       "availability": true,
       "brandname": "CoolTech",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.6
     },
@@ -329,7 +304,7 @@
       "price": 50000,
       "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "brandName": "LG",
-      "categoryId": "1",
+      "categoryId": null,
       "availability": true,
       "stock": 50,
       "rating": 4.6,
@@ -353,7 +328,7 @@
       "brandName": "iPhone",
       "description": "the last edition from iPhone",
       "price": 50000,
-      "categoryId": "2",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -376,7 +351,7 @@
       "brandName": "iPhone",
       "description": "the 14 edition from iPhone",
       "price": 40000,
-      "categoryId": "2",
+      "categoryId": null,
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -398,14 +373,6 @@
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
       "price": "109.95",
-      "rating": "4"
-    },
-    {
-      "id": "14",
-      "description": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": "109.95",
-      "categoryId": "4",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
       "rating": "4"
     },
     {
@@ -443,7 +410,7 @@
       "id": "19",
       "description": "Solid Gold Petite Micropave ",
       "price": "168",
-      "categoryId": "3",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
@@ -451,7 +418,7 @@
       "id": "20",
       "description": "White Gold Plated Princess",
       "price": 9.99,
-      "categoryId": "3",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
@@ -459,7 +426,7 @@
       "id": "21",
       "description": "Pierced Owl Rose Gold Plated Stainless Steel Double",
       "price": "10.99",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
@@ -467,7 +434,7 @@
       "id": "22",
       "description": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
       "price": "64",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
       "rating": "4"
     },
@@ -475,7 +442,7 @@
       "id": "23",
       "description": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
       "price": "109",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -483,7 +450,7 @@
       "id": "24",
       "description": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
       "price": "109",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -491,7 +458,7 @@
       "id": "25",
       "description": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
       "price": "114",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -499,7 +466,7 @@
       "id": "26",
       "description": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
       "price": "599",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -507,7 +474,7 @@
       "id": "27",
       "description": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
       "price": "999.99",
-      "categoryId": "1",
+      "categoryId": null,
       "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -568,7 +535,7 @@
       "discount": "213",
       "availability": false,
       "brandname": "12",
-      "categoryId": "2",
+      "categoryId": null,
       "stock": "123123",
       "rating": "123123",
       "reviews": []
@@ -582,7 +549,7 @@
       "discount": "2323",
       "availability": true,
       "brandname": "32323",
-      "categoryId": "2",
+      "categoryId": null,
       "stock": "32",
       "rating": "232",
       "reviews": []
@@ -598,6 +565,34 @@
       "brandname": "13",
       "categoryId": "123",
       "stock": "123",
+      "rating": "123",
+      "reviews": []
+    },
+    {
+      "id": "123",
+      "name": "1231",
+      "description": "3123",
+      "price": "123",
+      "image": "123",
+      "discount": "213",
+      "availability": false,
+      "brandname": "31312",
+      "categoryId": "2",
+      "stock": "1231",
+      "rating": "1231",
+      "reviews": []
+    },
+    {
+      "id": "3123",
+      "name": "12312",
+      "description": "3123",
+      "price": "123",
+      "image": "13122",
+      "discount": "3123",
+      "availability": false,
+      "brandname": "31231",
+      "categoryId": "4",
+      "stock": "12312",
       "rating": "123",
       "reviews": []
     }
