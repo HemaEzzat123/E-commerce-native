@@ -18,24 +18,36 @@ document.addEventListener("DOMContentLoaded", () => {
     async function getAllAdmins() {
       try {
         const response = await axios.get("http://localhost:4000/admins");
-        console.log(response.data);
         return response.data;
       } catch (error) {
         console.error("Error getting admins:", error);
         return [];
       }
     }
-    getAllAdmins();
-    async function showErrorIfUserIsExist(username, errorSpan) {
-      const users = await getAllUsers();
-      const existingUser = users.find((user) => user.username === username);
-      if (existingUser) {
-        errorSpan.textContent = "User already exists";
-      } else {
-        errorSpan.textContent = "";
+
+    async function getAllUsers() {
+      try {
+        const response = await axios.get("http://localhost:4000/users");
+        return response.data;
+      } catch (error) {
+        console.error("Error getting users:", error);
+        return [];
       }
     }
 
+    async function checkIfUserExists(username, password) {
+      const users = await getAllUsers();
+      return users.find(
+        (user) => user.username === username && user.password === password
+      );
+    }
+
+    async function checkIfAdminExists(username, password) {
+      const admins = await getAllAdmins();
+      return admins.find(
+        (admin) => admin.username === username && admin.password === password
+      );
+    }
     Continue.addEventListener("click", async (e) => {
       e.preventDefault(); // Prevent form submission
 
@@ -51,39 +63,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const users = await getAllUsers();
         const existingUser = users.find((u) => u.username === user.username);
-        const errorSpan = username.nextElementSibling;
         if (existingUser) {
-          console.log("This user already exists");
+          const errorSpan = username.nextElementSibling;
           showErrorIfUserIsExist(user.username, errorSpan);
           setTimeout(() => {
             window.location.href = "../../HTML/sharedPages/sign.html";
           }, 600);
           return;
         } else {
-          console.log("Your account has been created");
-          window.location.href = "../../HTML/userPages/userHome.html";
           await addUser(user);
           localStorage.setItem("user", JSON.stringify(user));
+          window.location.href = "../../HTML/userPages/userHome.html";
         }
       } else if (logIn.style.backgroundColor === "white") {
         // Log In mode
-        const users = await getAllUsers();
-        const validUser = users.find(
-          (user) =>
-            user.username === username.value && user.password === password.value
+        const validUser = await checkIfUserExists(
+          username.value,
+          password.value
+        );
+        const validAdmin = await checkIfAdminExists(
+          username.value,
+          password.value
         );
 
         if (validUser) {
-          console.log("Login successful");
-          window.location.href = "../../HTML/userPages/userHome.html";
+          console.log("User login successful");
           localStorage.setItem("user", JSON.stringify(validUser));
+          window.location.href = "../../HTML/userPages/userHome.html";
+        } else if (validAdmin) {
+          console.log("Admin login successful");
+          localStorage.setItem("admin", JSON.stringify(validAdmin));
+          window.location.href = "../../HTML/adminPages/dashboard.html";
         } else {
-          document.getElementById("psw").nextElementSibling.textContent =
-            "Invalid username or password";
           console.log("Invalid username or password");
+          const errorSpan = password.nextElementSibling;
+          errorSpan.textContent = "Invalid username or password";
           setTimeout(() => {
             window.location.href = "../../HTML/sharedPages/sign.html";
           }, 600);
+          return;
         }
       }
     });
@@ -98,35 +116,41 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    async function getAllUsers() {
-      try {
-        const response = await axios.get("http://localhost:4000/users");
-        console.log(response.data);
-        return response.data;
-      } catch (error) {
-        console.error("Error getting users:", error);
-        return [];
+    async function showErrorIfUserIsExist(username, errorSpan) {
+      const users = await getAllUsers();
+      const existingUser = users.find((user) => user.username === username);
+      if (existingUser) {
+        errorSpan.textContent = "User already exists";
+      } else {
+        errorSpan.textContent = "";
       }
     }
 
     function toggleMode(mode) {
       allInputs.forEach((input) => (input.value = "")); // Clear all inputs
-
+      Continue.style.backgroundColor = "";
+      Continue.style.color = "";
+      Continue.style.cursor = "pointer";
       if (mode === "signUp") {
         signUp.style.backgroundColor = "white";
         signUp.style.color = "#404553";
         logIn.style.backgroundColor = "transparent";
         logIn.style.color = "white";
         email.style.display = "block";
+        username.value = "";
+        password.value = "";
+        email.value = "";
       } else if (mode === "logIn") {
         logIn.style.backgroundColor = "white";
         logIn.style.color = "#404553";
         signUp.style.backgroundColor = "transparent";
         signUp.style.color = "white";
         email.style.display = "none";
+        email.nextElementSibling.textContent = "";
+        username.value = "";
+        password.value = "";
       }
 
-      // Revalidate all inputs after toggling mode
       allInputs.forEach((input) => {
         input.addEventListener("input", function () {
           validateInput(input, mode);
@@ -138,8 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const errorSpan = input.nextElementSibling;
 
       if (input.validity.valid) {
-        errorSpan.textContent = ""; // Clear error message if input is valid
-        checkFormValidity(mode); // Check if the entire form is valid
+        errorSpan.textContent = "";
+        username.nextElementSibling.value = "";
+        password.nextElementSibling.value = "";
+        checkFormValidity(mode);
       } else {
         showError(input, errorSpan);
         Continue.disabled = true;
@@ -149,12 +175,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function showError(input, errorSpan) {
       if (input.validity.valueMissing) {
         errorSpan.textContent = "This field is required.";
-      } else if (input.validity.tooShort) {
-        errorSpan.textContent = `Must be at least ${input.minLength} characters; you entered ${input.value.length}.`;
-      } else if (input.validity.tooLong) {
-        errorSpan.textContent = `Must be no more than ${input.maxLength} characters; you entered ${input.value.length}.`;
-      } else if (input.validity.typeMismatch) {
-        errorSpan.textContent = `Please enter a valid ${input.type}.`;
       } else {
         errorSpan.textContent = "Invalid input.";
       }
@@ -188,51 +208,51 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error('Form with id "sign-form" not found.');
   }
 });
-
 export let signContent = `
-<form action="javascript:void(0);" id="sign-form">
-  <div class="sign-container">
-    <div class="sign-image"></div>
-    <h1 class="sign-h1">Hala! Let's get started</h1>
-    <div class="sign-buttons">
-      <button type="button" id="signUp">Sign Up</button>
-      <button type="button" id="logIn">Log in</button>
-    </div>
-    <div class="sign-inputs">
-      <input
-        type="text"
-        placeholder="Enter Username"
-        name="username"
-        id="username"
-        required
-        minlength="3"
-        maxlength="15"
-      />
-      <span class="sign-error"></span>
+  <form action="javascript:void(0);" id="sign-form">
+    <div class="sign-container">
+      <div class="sign-image"></div>
+      <h1 class="sign-h1">Hala! Let's get started</h1>
+      <div class="sign-buttons">
+        <button type="button" id="signUp">
+          Sign Up
+        </button>
+        <button type="button" id="logIn">
+          Log in
+        </button>
+      </div>
+      <div class="sign-inputs">
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          id="username"
+          required
 
-      <input
-        type="email"
-        placeholder="Enter Email"
-        name="email"
-        id="email"
-        required
-      />
-      <span class="sign-error"></span>
+        />
+        <span class="sign-error"></span>
 
-      <input
-        type="password"
-        placeholder="Enter Password"
-        name="psw"
-        id="psw"
-        required
-        minlength="6"
-      />
-      <span class="sign-error"></span>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+        <span class="sign-error"></span>
+
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          id="psw"
+          required
+        />
+        <span class="sign-error"></span>
+      </div>
+      <button id="sign-Continue">CONTINUE</button>
     </div>
-    <button id="sign-Continue">CONTINUE</button>
-  </div>
-</form>
-`;
+  </form>`;
 
 let sign = document.querySelector(".user-sign");
 if (sign) {

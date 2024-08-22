@@ -16,7 +16,7 @@ export let headerContent = `
         ${
           localStorage.getItem("admin")
             ? `<button class="admin-header-logout-button">Logout</button>`
-            : `<button class="admin-header-login-button">Login</button>`
+            : ``
         }
     </div>
 `;
@@ -30,13 +30,13 @@ const logoutButton = document.querySelector(".admin-header-logout-button");
 
 if (loginButton) {
   loginButton.addEventListener("click", () => {
-    document.querySelector(".admin-sign").style.display = "block";
+    window.location.href = "../../HTML/sharedPages/sign.html";
   });
 }
 
 if (logoutButton) {
   logoutButton.addEventListener("click", () => {
     localStorage.removeItem("admin");
-    window.location.reload();
+    window.location.href = "../../HTML/userPages/userHome.html";
   });
 }
