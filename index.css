@@ -54,27 +54,6 @@ body {
   }
 }
 
-/* .user-categories-container {
-  display: flex;
-  gap: 20px;
-}
-
-.user-categories-container .category-card {
-  background-color: var(--main-card-background-color);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: var(--main-box-shadow);
-} */
-
-/* .category-card img {
-  width: 100%;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-} */
-
 .admin-page-content {
   min-height: 10000px;
 }
@@ -84,15 +63,3 @@ body {
     margin-top: 100px;
   }
 }
-
-/* .admin-categories-container {
-  display: flex;
-  gap: 20px;
-} */
-
-/* .admin-categories-container .category-card {
-  background-color: var(--main-card-background-color);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: var(--main-box-shadow);
-} */

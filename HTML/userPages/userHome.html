@@ -15,13 +15,22 @@
       <div class="user-header"></div>
       <!-- end header -->
       <!-- start content -->
-      <div class="user-page-content container">
-        <div class="user-categories-container"></div>
+      <div class="user-page-content">
+        <!-- start slider -->
+        <div class="user-slider">
+          <div class="slider-wrapper">
+            <img src="../../IMAGES/Slider-1.jpg" alt="slider" />
+          </div>
+        </div>
+        <!-- end slider -->
+        <!-- start categories -->
+        <div class="user-categories-container container"></div>
+        <!-- end categories -->
       </div>
       <!-- end content -->
     </div>
     <!-- start sign -->
-    <div class="user-sign"></div>
+    <!-- <div class="user-sign"></div> -->
     <!-- end sign -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- <script type="module" src="index.js"></script> -->
@@ -34,5 +43,9 @@
       src="../../Components/userComponent/categoriesCards.js"
     ></script>
     <script type="module" src="../../Components/userComponent/sign.js"></script>
+    <script
+      type="module"
+      src="../../Components/userComponent/userSlider.js"
+    ></script>
   </body>
 </html>
