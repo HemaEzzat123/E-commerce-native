@@ -3,6 +3,8 @@ export const getAllCategories = async () => {
   try {
     const response = await axios.get("http://localhost:4000/categories");
     console.log(response.data);
+    const lastElement = response.data. slice(-1)[0] 
+    console.log(`last category ID is : ${lastElement.id}`)
     console.log("test");
     return response.data;
   } catch (error) {

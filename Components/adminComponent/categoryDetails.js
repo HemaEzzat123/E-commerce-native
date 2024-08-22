@@ -52,6 +52,7 @@ const addProducts = async (categoryId) => {
             "http://localhost:4000/products",
             product
           );
+        
           console.log("Product added:", response.data);
 
           window.location.href = `categoryDetails.html?id=${categoryId}`;
@@ -66,6 +67,8 @@ const addProducts = async (categoryId) => {
 };
 
 addProducts(categoryId);
+
+
 
 addCategory.innerHTML = `
 <h1>Add New Category ${categoryId}</h1>
@@ -83,6 +86,9 @@ addCategory.innerHTML = `
         <label for="category-image">Category Image URL:</label>
         <input type="text" id="category-image" name="image" required />
 
+        <label for="category-id">Category ID:</label>
+        <input type="text" id="category-id" name="id" required />
+
         <button type="submit">Add Category</button>
       </form>
     </div>`;
@@ -99,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: document.getElementById("category-name").value,
       description: document.getElementById("category-description").value,
       image: document.getElementById("category-image").value,
+      id: document.getElementById("category-id").value,
     };
 
     try {
@@ -106,11 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "http://localhost:4000/categories",
         category
       );
-      console.log("Category added:", response.data);
-
+      
       window.location.href = "dashboard.html";
     } catch (error) {
       console.error("Error adding category:", error);
     }
   });
+
+
 });

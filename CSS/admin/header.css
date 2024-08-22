@@ -1,6 +1,6 @@
 @import "../../index.css";
 /* starting the header for user */
-.user-header {
+.admin-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .user-header {
+  .admin-header {
     flex-direction: row;
     position: fixed;
     top: 20px;
@@ -25,28 +25,28 @@
   }
 }
 
-.user-header .user-header-branding {
+.admin-header .admin-header-branding {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.user-header .user-header-branding img {
+.admin-header .admin-header-branding img {
   width: 50px;
 }
 
-.user-header .user-header-branding p {
+.admin-header .admin-header-branding p {
   font-size: 20px;
 }
 
-.user-header .user-header-links-list {
+.admin-header .admin-header-links-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 
-.user-header .user-header-links-list li {
+.admin-header .admin-header-links-list li {
   list-style: none;
   font-size: 18px;
   font-weight: 700;
@@ -54,11 +54,12 @@
   transition: var(--main-transition);
 }
 
-.user-header .user-header-links-list li:hover {
+.admin-header .admin-header-links-list li:hover {
   color: var(--lime-blue-color);
 }
 
-.user-header .user-header-buttons button {
+.admin-header .admin-header-buttons button,a {
+  text-decoration: none;
   padding: 10px 20px ;
   border-radius: 5px;
   border: none;
@@ -70,15 +71,17 @@
   width: 100%;
 }
 
-.user-header .user-header-buttons button:hover {
+
+
+.admin-header .admin-header-buttons button:hover {
   opacity: 0.8;
 }
 
-.user-header .user-header-buttons .user-header-logout-button {
+.admin-header .admin-header-buttons .admin-header-logout-button {
   background-color: var(--red-color);
 }
 
-.user-header .user-header-buttons .user-header-login-button {
+.admin-header .admin-header-buttons .admin-header-login-button ,.addcategory  {
   background-color: var(--green-color);
 }
 

@@ -73,3 +73,25 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
+.admin-page-content {
+  min-height: 10000px;
+}
+
+@media screen and (min-width: 1000px) {
+  .admin-page-content {
+    margin-top: 100px;
+  }
+}
+
+.admin-categories-container {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-categories-container .category-card {
+  background-color: var(--main-card-background-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--main-box-shadow);
+}

@@ -1,6 +1,6 @@
 import { getAllCategories } from "./../../APIsConnection/admin.js";
 
-let categoriesContainer = document.querySelector(".user-categories-container");
+let categoriesContainer = document.querySelector(".admin-categories-container");
 
 const displayCategories = async () => {
   try {
@@ -17,7 +17,7 @@ const displayCategories = async () => {
               <p>${category.description}</p>
               <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
               <button class="category-card-button" onclick="addProducts(${category.id})">add Products</button>
-              <button class="category-card-button" onclick="addCategory(${category.id})">add Category</button>
+              
 
           </div>
       `
