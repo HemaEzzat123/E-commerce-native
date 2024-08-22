@@ -140,7 +140,7 @@
       "name": "Wireless Headphones",
       "description": "Premium wireless headphones with noise-cancellation.",
       "price": 149.99,
-      "image": "https://example.com/images/headphones.jpg",
+      "image": "../../IMAGES/men.jpg",
       "discount": 15,
       "availability": true,
       "brandname": "SoundMasters",
@@ -557,7 +557,40 @@
     }
   ],
   "orders": [],
-  "carts": [],
+  "carts": [
+    {
+      "user": {
+        "id": "1"
+      },
+      "products": [
+        {
+          "id": "1",
+          "name": "Smartphone",
+          "description": "High-end smartphone with advanced features.",
+          "price": 599.99,
+          "image": "men.jpg",
+          "discount": 10,
+          "availability": true,
+          "brandname": "BrandX",
+          "categoryId": "2",
+          "stock": 50,
+          "rating": 4.5,
+          "reviews": [
+            {
+              "user_id": 1,
+              "rating": 5,
+              "comment": "Great phone with a superb casmera!"
+            },
+            {
+              "user_id": 2,
+              "rating": 4,
+              "comment": "Good performance, but the battery life could be better."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "reviews": [],
   "wishlists": [],
   "admins": [
