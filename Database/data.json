@@ -78,7 +78,7 @@
       "image": "Electronics.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Phones",
       "image": "Phones.jpg",
       "description": "Devices and Acssesories"
@@ -94,14 +94,14 @@
       "discount": 10,
       "availability": true,
       "brandname": "BrandX",
-      "categoryId": null,
+      "categoryId": "2",
       "stock": 50,
       "rating": 4.5,
       "reviews": [
         {
           "user_id": 1,
           "rating": 5,
-          "comment": "Great phone with a superb camera!"
+          "comment": "Great phone with a superb casmera!"
         },
         {
           "user_id": 2,
@@ -119,7 +119,7 @@
       "discount": 5,
       "availability": true,
       "brandname": "BrandY",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.7,
       "reviews": [
@@ -144,7 +144,7 @@
       "discount": 15,
       "availability": true,
       "brandname": "SoundMasters",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.8,
       "reviews": [
@@ -169,7 +169,7 @@
       "discount": 10,
       "availability": true,
       "brandname": "TechWear",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -194,7 +194,7 @@
       "discount": 5,
       "availability": true,
       "brandname": "PhotoPro",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.9,
       "reviews": [
@@ -219,7 +219,7 @@
       "discount": 8,
       "availability": true,
       "brandname": "ViewTech",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.7,
       "reviews": [
@@ -243,7 +243,7 @@
       "image": "https://example.com/images/tablet.jpg",
       "discount": 12,
       "availability": true,
-      "categoryId": null,
+      "categoryId": "1",
       "brandname": "TabTech",
       "stock": 50,
       "rating": 4.4,
@@ -269,7 +269,7 @@
       "discount": 10,
       "availability": true,
       "brandname": "GameX",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.8,
       "reviews": [
@@ -294,7 +294,7 @@
       "discount": 5,
       "availability": true,
       "brandname": "CoolTech",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.6
     },
@@ -305,7 +305,7 @@
       "price": 50000,
       "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "brandName": "LG",
-      "categoryId": null,
+      "categoryId": "1",
       "availability": true,
       "stock": 50,
       "rating": 4.6,
@@ -329,7 +329,7 @@
       "brandName": "iPhone",
       "description": "the last edition from iPhone",
       "price": 50000,
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -352,7 +352,7 @@
       "brandName": "iPhone",
       "description": "the 14 edition from iPhone",
       "price": 40000,
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -411,7 +411,7 @@
       "id": "19",
       "description": "Solid Gold Petite Micropave ",
       "price": "168",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
@@ -419,7 +419,7 @@
       "id": "20",
       "description": "White Gold Plated Princess",
       "price": 9.99,
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
@@ -427,7 +427,7 @@
       "id": "21",
       "description": "Pierced Owl Rose Gold Plated Stainless Steel Double",
       "price": "10.99",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
@@ -435,7 +435,7 @@
       "id": "22",
       "description": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
       "price": "64",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
       "rating": "4"
     },
@@ -443,7 +443,7 @@
       "id": "23",
       "description": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
       "price": "109",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -451,7 +451,7 @@
       "id": "24",
       "description": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
       "price": "109",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -459,7 +459,7 @@
       "id": "25",
       "description": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
       "price": "114",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -467,7 +467,7 @@
       "id": "26",
       "description": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
       "price": "599",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -475,7 +475,7 @@
       "id": "27",
       "description": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
       "price": "999.99",
-      "categoryId": null,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
       "rating": "4"
     },
@@ -531,62 +531,6 @@
       "id": "3123",
       "name": "12312",
       "description": "3123",
-      "price": "12312",
-      "image": "3213",
-      "discount": "213",
-      "availability": false,
-      "brandname": "12",
-      "categoryId": null,
-      "stock": "123123",
-      "rating": "123123",
-      "reviews": []
-    },
-    {
-      "id": "صيشس",
-      "name": "سشيشس",
-      "description": "يشسيشس",
-      "price": "323",
-      "image": "232",
-      "discount": "2323",
-      "availability": true,
-      "brandname": "32323",
-      "categoryId": null,
-      "stock": "32",
-      "rating": "232",
-      "reviews": []
-    },
-    {
-      "id": "123",
-      "name": "123",
-      "description": "123",
-      "price": "123",
-      "image": "123",
-      "discount": "123",
-      "availability": true,
-      "brandname": "13",
-      "categoryId": "123",
-      "stock": "123",
-      "rating": "123",
-      "reviews": []
-    },
-    {
-      "id": "123",
-      "name": "1231",
-      "description": "3123",
-      "price": "123",
-      "image": "123",
-      "discount": "213",
-      "availability": false,
-      "brandname": "31312",
-      "categoryId": "2",
-      "stock": "1231",
-      "rating": "1231",
-      "reviews": []
-    },
-    {
-      "id": "3123",
-      "name": "12312",
-      "description": "3123",
       "price": "123",
       "image": "13122",
       "discount": "3123",
@@ -595,6 +539,20 @@
       "categoryId": "4",
       "stock": "12312",
       "rating": "123",
+      "reviews": []
+    },
+    {
+      "id": "123",
+      "name": "123",
+      "description": "12312",
+      "price": "312",
+      "image": "312",
+      "discount": "3123123",
+      "availability": true,
+      "brandname": "1312",
+      "categoryId": "2",
+      "stock": "1231",
+      "rating": "213",
       "reviews": []
     }
   ],
@@ -615,7 +573,17 @@
       "password": "123",
       "role": 0
     },
-    { "id": "3", "username": "mohammed", "password": "123", "role": 0 },
-    { "id": "4", "username": "hassan", "password": "123", "role": 0 }
+    {
+      "id": "3",
+      "username": "mohammed",
+      "password": "123",
+      "role": 0
+    },
+    {
+      "id": "4",
+      "username": "hassan",
+      "password": "123",
+      "role": 0
+    }
   ]
 }
