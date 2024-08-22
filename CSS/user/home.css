@@ -1,17 +1,58 @@
 @import "../../index.css";
 
-.user-home-page .user-slider img {
-  width: 100%;
-  height: 300px !important;
+.user-home-page .user-slider {
+  margin-bottom: 50px;
 }
 
-.user-categories-container {
+.user-home-page .user-slider img {
+  width: 100%;
+  height: 500px;
+}
+
+.categories-title {
+  /* text-align: center; */
+  width: fit-content;
+  margin-bottom: 20px;
+  font-family: var(--main-font-family);
+  color: var(--lime-blue-color);
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.categories-title::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 100%;
+  background-color: var(--lime-blue-color);
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* .categories-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--lime-blue-color);
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-.user-categories-container .category-card {
+.categories .category-card {
   background-color: var(--main-card-background-color);
   border-radius: 20px;
   box-shadow: var(--main-box-shadow);
@@ -23,28 +64,28 @@
   overflow: hidden;
 }
 
-.user-categories-container .category-card:hover {
+.categories .category-card:hover {
   box-shadow: var(--secons-box-shadow);
   scale: 1.01;
 }
 
-.user-categories-container .category-card img {
+.categories .category-card img {
   width: 100%;
 }
 
-.user-categories-container .category-card .category-card-content {
+.categories .category-card .category-card-content {
   padding: 10px;
   text-align: center;
 }
 
-.user-categories-container .category-card .category-card-content p {
+.categories .category-card .category-card-content p {
   font-size: 14px;
   margin-bottom: 5px;
   font-family: var(--main-font-family);
   color: rgb(183, 183, 183);
 }
 
-.user-categories-container .category-card .category-card-content button {
+.categories .category-card .category-card-content button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -63,6 +104,6 @@
   cursor: pointer;
 }
 
-.user-categories-container .category-card .category-card-content button:hover {
+.categories .category-card .category-card-content button:hover {
   background-color: var(--lime-blue-color-hover);
 }

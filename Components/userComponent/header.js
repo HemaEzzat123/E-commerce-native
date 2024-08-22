@@ -5,7 +5,7 @@ export let headerContent = `
     <div class="user-header-links">
         <ul class="user-header-links-list">
             <li class="user-header-links-item home"> Home </li>
-            <li class="user-header-links-item categories"> Categories </li>
+            <li class="user-header-links-item categoriesLink"> Categories </li>
             <li class="user-header-links-item about"> About </li>
             <li class="user-header-links-item contact"> Contact </li>
         </ul>

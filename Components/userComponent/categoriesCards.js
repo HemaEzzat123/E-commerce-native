@@ -1,6 +1,6 @@
 import { getAllCategories } from "./../../APIsConnection/user.js";
 
-let categoriesContainer = document.querySelector(".user-categories-container");
+let categoriesContainer = document.querySelector(".user-categories-container .categories");
 
 const displayCategories = async () => {
   try {
