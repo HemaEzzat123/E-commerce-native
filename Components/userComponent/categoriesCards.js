@@ -12,9 +12,11 @@ const displayCategories = async () => {
           (category) => `
           <div class="category-card">
               <img src="../../IMAGES/${category.image}" alt="${category.name}">
-              <h3>${category.name}</h3>
-              <p>${category.description}</p>
-              <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
+              <div class="category-card-content">
+                <h3>${category.name}</h3>
+                <p>${category.description}</p>
+                <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
+              </div>
           </div>
       `
         )

@@ -66,20 +66,21 @@
   ],
   "categories": [
     {
-      "id": "4",
+      "id": "1",
       "name": "Clothes",
-      "image": "",
+      "image": "Clothes.jpg",
       "description": "Fashionable and comfortable clothing"
     },
     {
-      "id": "123",
-      "name": "Hema",
-      "description": "123",
-      "image": "123"
+      "id": "3",
+      "name": "Electronics",
+      "description": "home devices and more",
+      "image": "Electronics.jpg"
     },
     {
       "id": 2,
       "name": "Phones",
+      "image": "Phones.jpg",
       "description": "Devices and Acssesories"
     }
   ],

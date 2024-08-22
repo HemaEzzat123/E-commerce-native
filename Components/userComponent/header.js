@@ -1,7 +1,6 @@
 export let headerContent = `
     <div class="user-header-branding">
-        <img class="user-logo-image" src="https://cdn-icons-png.flaticon.com/512/2591/2591253.png" alt="logo">
-        <p class="user-logo-text">E-commerce</p>
+        <img src="../../IMAGES/Logo.png" alt="logo">
     </div>
     <div class="user-header-links">
         <ul class="user-header-links-list">
