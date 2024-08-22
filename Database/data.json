@@ -1,69 +1,5 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "username": "john_doe",
-      "email": "john.doe@example.com",
-      "password": "hashed_password",
-      "role": 0
-    },
-    {
-      "id": "2",
-      "username": "john_doe",
-      "email": "john.doe@example.com",
-      "password": "hashed_password",
-      "role": 0
-    },
-    {
-      "id": "3",
-      "username": "john_doe",
-      "email": "john.doe@example.com",
-      "password": "hashed_password",
-      "role": 0
-    },
-    {
-      "id": "md078ahtu",
-      "username": "12312",
-      "email": "hezzat.964@gmail.com",
-      "password": "21312312",
-      "role": 1
-    },
-    {
-      "id": "u3pb1r0hn",
-      "username": "testSignUp",
-      "email": "hezzat.964@gmail.com",
-      "password": "123456",
-      "role": 1
-    },
-    {
-      "id": "72kq3pj5k",
-      "username": "1231231",
-      "email": "hezzat.964@gmail.com",
-      "password": "1231231",
-      "role": 1
-    },
-    {
-      "id": "d47v7e5yi",
-      "username": "123",
-      "email": "hezzat.964@gmail.com",
-      "password": "1234124",
-      "role": 1
-    },
-    {
-      "id": "j4mxl3zhi",
-      "username": "testSignU",
-      "email": "hezzat.964@gmail.com",
-      "password": "412412421",
-      "role": 1
-    },
-    {
-      "id": "uotj7acos",
-      "username": "123456",
-      "email": "hezzat.964@gmail.com",
-      "password": "1",
-      "role": 1
-    }
-  ],
+  "users": [],
   "categories": [
     {
       "id": "1",
@@ -616,6 +552,13 @@
       "id": "4",
       "username": "hassan",
       "password": "123",
+      "role": 0
+    },
+    {
+      "id": "100a",
+      "username": "testUser",
+      "email": "hezzat.964@gmail.com",
+      "password": "1324",
       "role": 0
     }
   ]

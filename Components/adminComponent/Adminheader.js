@@ -12,7 +12,6 @@ export let headerContent = `
         </ul>
     </div>
     <div class="admin-header-buttons">
-    <button class="addCategory" onclick="addCategory"><a href="addCategory.html">add Category</a></button>
         ${
           localStorage.getItem("admin")
             ? `<button class="admin-header-logout-button">Logout</button>`
@@ -20,6 +19,9 @@ export let headerContent = `
         }
     </div>
 `;
+    //  <button class="addCategory" onclick="addCategory">
+    //    <a href="addCategory.html">add Category</a>
+    //  </button>;
 
 let header = document.querySelector(".admin-header");
 header.innerHTML = headerContent;
