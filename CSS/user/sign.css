@@ -8,11 +8,6 @@ body {
   height: 100vh;
 }
 
-.user-sign {
-  display: none;
-  position: absolute;
-}
-
 .sign-container {
   width: 500px;
   height: 600px;

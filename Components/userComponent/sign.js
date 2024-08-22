@@ -15,6 +15,27 @@ document.addEventListener("DOMContentLoaded", () => {
     signUp.addEventListener("click", () => toggleMode("signUp"));
     logIn.addEventListener("click", () => toggleMode("logIn"));
 
+    async function getAllAdmins() {
+      try {
+        const response = await axios.get("http://localhost:4000/admins");
+        console.log(response.data);
+        return response.data;
+      } catch (error) {
+        console.error("Error getting admins:", error);
+        return [];
+      }
+    }
+    getAllAdmins();
+    async function showErrorIfUserIsExist(username, errorSpan) {
+      const users = await getAllUsers();
+      const existingUser = users.find((user) => user.username === username);
+      if (existingUser) {
+        errorSpan.textContent = "User already exists";
+      } else {
+        errorSpan.textContent = "";
+      }
+    }
+
     Continue.addEventListener("click", async (e) => {
       e.preventDefault(); // Prevent form submission
 
@@ -30,11 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const users = await getAllUsers();
         const existingUser = users.find((u) => u.username === user.username);
-
+        const errorSpan = username.nextElementSibling;
         if (existingUser) {
           console.log("This user already exists");
+          showErrorIfUserIsExist(user.username, errorSpan);
+          setTimeout(() => {
+            window.location.href = "../../HTML/sharedPages/sign.html";
+          }, 600);
+          return;
         } else {
           console.log("Your account has been created");
+          window.location.href = "../../HTML/userPages/userHome.html";
           await addUser(user);
           localStorage.setItem("user", JSON.stringify(user));
         }
@@ -48,9 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (validUser) {
           console.log("Login successful");
+          window.location.href = "../../HTML/userPages/userHome.html";
           localStorage.setItem("user", JSON.stringify(validUser));
         } else {
+          document.getElementById("psw").nextElementSibling.textContent =
+            "Invalid username or password";
           console.log("Invalid username or password");
+          setTimeout(() => {
+            window.location.href = "../../HTML/sharedPages/sign.html";
+          }, 600);
         }
       }
     });
@@ -68,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     async function getAllUsers() {
       try {
         const response = await axios.get("http://localhost:4000/users");
+        console.log(response.data);
         return response.data;
       } catch (error) {
         console.error("Error getting users:", error);

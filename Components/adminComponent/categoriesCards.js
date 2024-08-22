@@ -39,10 +39,6 @@ window.addProducts = (categoryId) => {
   window.location.href = `addProduct.html?id=${categoryId}`;
 };
 
-window.addCategory = (categoryId) => {
-  window.location.href = `addCategory.html?id=${categoryId}`;
-};
-
 // Initialize the displayCategories function when the page load
 
 displayCategories();

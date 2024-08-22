@@ -52,7 +52,7 @@ const addProducts = async (categoryId) => {
             "http://localhost:4000/products",
             product
           );
-        
+
           console.log("Product added:", response.data);
 
           window.location.href = `categoryDetails.html?id=${categoryId}`;
@@ -68,10 +68,7 @@ const addProducts = async (categoryId) => {
 
 addProducts(categoryId);
 
-
-
 addCategory.innerHTML = `
-<h1>Add New Category ${categoryId}</h1>
       <form id="category-form">
         <label for="category-name">Category Name:</label>
         <input type="text" id="category-name" name="name" required />
@@ -113,12 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "http://localhost:4000/categories",
         category
       );
-      
+
       window.location.href = "dashboard.html";
     } catch (error) {
       console.error("Error adding category:", error);
     }
   });
-
-
 });

@@ -29,7 +29,7 @@ const logoutButton = document.querySelector(".user-header-logout-button");
 
 if (loginButton) {
   loginButton.addEventListener("click", () => {
-    document.querySelector(".user-sign").style.display = "block";
+    window.location.href = "../../HTML/sharedPages/sign.html";
   });
 }
 

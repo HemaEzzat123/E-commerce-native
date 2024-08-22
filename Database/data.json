@@ -20,6 +20,41 @@
       "email": "john.doe@example.com",
       "password": "hashed_password",
       "role": 0
+    },
+    {
+      "id": "md078ahtu",
+      "username": "12312",
+      "email": "hezzat.964@gmail.com",
+      "password": "21312312",
+      "role": 1
+    },
+    {
+      "id": "u3pb1r0hn",
+      "username": "testSignUp",
+      "email": "hezzat.964@gmail.com",
+      "password": "123456",
+      "role": 1
+    },
+    {
+      "id": "72kq3pj5k",
+      "username": "1231231",
+      "email": "hezzat.964@gmail.com",
+      "password": "1231231",
+      "role": 1
+    },
+    {
+      "id": "d47v7e5yi",
+      "username": "123",
+      "email": "hezzat.964@gmail.com",
+      "password": "1234124",
+      "role": 1
+    },
+    {
+      "id": "j4mxl3zhi",
+      "username": "testSignU",
+      "email": "hezzat.964@gmail.com",
+      "password": "412412421",
+      "role": 1
     }
   ],
   "categories": [
@@ -52,6 +87,18 @@
       "name": "mmm",
       "description": "ssa",
       "image": "as"
+    },
+    {
+      "id": "124",
+      "name": "5345",
+      "description": "345",
+      "image": "34534"
+    },
+    {
+      "id": "123",
+      "name": "Hema",
+      "description": "123",
+      "image": "123"
     }
   ],
   "products": [
@@ -518,10 +565,45 @@
       "stock": "123123",
       "rating": "123123",
       "reviews": []
+    },
+    {
+      "id": "صيشس",
+      "name": "سشيشس",
+      "description": "يشسيشس",
+      "price": "323",
+      "image": "232",
+      "discount": "2323",
+      "availability": true,
+      "brandname": "32323",
+      "categoryId": "2",
+      "stock": "32",
+      "rating": "232",
+      "reviews": []
+    },
+    {
+      "id": "123",
+      "name": "123",
+      "description": "123",
+      "price": "123",
+      "image": "123",
+      "discount": "123",
+      "availability": true,
+      "brandname": "13",
+      "categoryId": "123",
+      "stock": "123",
+      "rating": "123",
+      "reviews": []
     }
   ],
   "orders": [],
   "carts": [],
   "reviews": [],
-  "wishlists": []
+  "wishlists": [],
+  "admins": [
+    {
+      "id": "1",
+      "username": "hema",
+      "password": "fzdx"
+    }
+  ]
 }

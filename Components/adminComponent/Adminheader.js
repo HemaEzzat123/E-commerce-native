@@ -12,7 +12,7 @@ export let headerContent = `
         </ul>
     </div>
     <div class="admin-header-buttons">
-    <button class="addcategory" onclick="addCategory"><a href="http://127.0.0.1:5501/HTML/adminPages/addCategory.html">add Category</a></button>
+    <button class="addCategory" onclick="addCategory"><a href="addCategory.html">add Category</a></button>
         ${
           localStorage.getItem("admin")
             ? `<button class="admin-header-logout-button">Logout</button>`

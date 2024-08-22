@@ -81,7 +81,7 @@
   background-color: var(--red-color);
 }
 
-.admin-header .admin-header-buttons .admin-header-login-button ,.addcategory  {
+.admin-header .admin-header-buttons .admin-header-login-button ,.addCategory  {
   background-color: var(--green-color);
 }
 
