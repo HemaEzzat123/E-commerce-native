@@ -8,54 +8,29 @@
       "description": "Fashionable and comfortable clothing"
     },
     {
-      "id": "3",
-      "name": "Electronics",
-      "description": "home devices and more",
-      "image": "Electronics.jpg"
-    },
-    {
       "id": "2",
       "name": "Phones",
       "image": "Phones.jpg",
       "description": "Devices and Acssesories"
+    },
+    {
+      "id": "3",
+      "name": "Electronics",
+      "description": "home devices and more",
+      "image": "Electronics.jpg"
     }
   ],
   "products": [
     {
-      "id": "1",
-      "name": "Smartphone",
-      "description": "High-end smartphone with advanced features.",
-      "price": 599.99,
-      "image": "https://example.com/images/smartphone.jpg",
-      "discount": 10,
-      "availability": true,
-      "brandname": "BrandX",
-      "categoryId": "2",
-      "stock": 50,
-      "rating": 4.5,
-      "reviews": [
-        {
-          "user_id": 1,
-          "rating": 5,
-          "comment": "Great phone with a superb casmera!"
-        },
-        {
-          "user_id": 2,
-          "rating": 4,
-          "comment": "Good performance, but the battery life could be better."
-        }
-      ]
-    },
-    {
       "id": "2",
       "name": "Laptop",
-      "description": "Powerful laptop for work and gaming.",
+      "description": "Powerful laptop for work and gaming. Equipped with the latest technology to handle demanding tasks and games, offering a high-resolution display, fast processor, and ample storage.",
       "price": 999.99,
-      "image": "https://example.com/images/laptop.jpg",
+      "image": "https://f.nooncdn.com/p/pnsku/N70075978V/45/_/1716352350/4dbe7b10-9d79-43fd-b441-9ee7dc2f5843.jpg?format=avif&width=240",
       "discount": 5,
       "availability": true,
       "brandname": "BrandY",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.7,
       "reviews": [
@@ -74,13 +49,13 @@
     {
       "id": "3",
       "name": "Wireless Headphones",
-      "description": "Premium wireless headphones with noise-cancellation.",
+      "description": "Premium wireless headphones with noise-cancellation. Experience superior sound quality and comfort with these sleek headphones, designed to provide an immersive listening experience without the hassle of cables.",
       "price": 149.99,
       "image": "../../IMAGES/men.jpg",
       "discount": 15,
       "availability": true,
       "brandname": "SoundMasters",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.8,
       "reviews": [
@@ -99,13 +74,13 @@
     {
       "id": "4",
       "name": "Smartwatch",
-      "description": "Feature-packed smartwatch with fitness tracking.",
+      "description": "Feature-packed smartwatch with fitness tracking. Keep track of your health and stay connected with notifications and apps on your wrist. Includes various fitness modes and a stylish design.",
       "price": 199.99,
-      "image": "https://example.com/images/smartwatch.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAXMMxtQxQv41T1Y8NPoc-pQ6TGhReSy_08Q&s",
       "discount": 10,
       "availability": true,
       "brandname": "TechWear",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -124,13 +99,13 @@
     {
       "id": "5",
       "name": "Professional DSLR Camera",
-      "description": "High-quality DSLR camera for photography enthusiasts.",
+      "description": "High-quality DSLR camera for photography enthusiasts. Capture professional-grade photos with exceptional detail and clarity, featuring advanced settings and versatile shooting options.",
       "price": 499.99,
-      "image": "https://example.com/images/camera.jpg",
+      "image": "https://f.nooncdn.com/p/v1662029538/N33956023A_1.jpg?format=avif&width=240",
       "discount": 5,
       "availability": true,
       "brandname": "PhotoPro",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.9,
       "reviews": [
@@ -149,13 +124,13 @@
     {
       "id": "6",
       "name": "Smart TV",
-      "description": "High-definition smart TV with built-in streaming apps.",
+      "description": "High-definition smart TV with built-in streaming apps. Enjoy a vast array of entertainment options with crystal-clear picture quality and easy access to your favorite streaming services.",
       "price": 799.99,
-      "image": "https://example.com/images/tv.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToYSF-7lNdK3wpRgSilyP697HpZ9SqQq8BWw&s",
       "discount": 8,
       "availability": true,
       "brandname": "ViewTech",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.7,
       "reviews": [
@@ -174,12 +149,12 @@
     {
       "id": "7",
       "name": "Tablet",
-      "description": "Compact tablet for productivity and entertainment.",
+      "description": "Compact tablet for productivity and entertainment. Perfect for on-the-go use, offering a balance of performance and portability for work tasks, browsing, and media consumption.",
       "price": 299.99,
-      "image": "https://example.com/images/tablet.jpg",
+      "image": "https://f.nooncdn.com/p/pnsku/N70014301V/45/_/1697187776/c4cc3310-a111-4352-8767-34a34212065e.jpg?format=avif&width=240",
       "discount": 12,
       "availability": true,
-      "categoryId": "1",
+      "categoryId": "2",
       "brandname": "TabTech",
       "stock": 50,
       "rating": 4.4,
@@ -199,13 +174,13 @@
     {
       "id": "8",
       "name": "Gaming Console",
-      "description": "Next-gen gaming console for immersive gaming experiences.",
+      "description": "Next-gen gaming console for immersive gaming experiences. Delivers exceptional graphics and performance, supporting the latest games and providing an unparalleled gaming experience.",
       "price": 399.99,
-      "image": "https://example.com/images/console.jpg",
+      "image": "https://f.nooncdn.com/p/pnsku/N70022609V/45/_/1699418409/a609e3fa-897b-4f59-b0e8-d6c8c9bf0794.jpg?format=avif&width=240",
       "discount": 10,
       "availability": true,
       "brandname": "GameX",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.8,
       "reviews": [
@@ -224,25 +199,25 @@
     {
       "id": "9",
       "name": "Energy-Efficient Refrigerator",
-      "description": "Modern refrigerator with energy-saving features.",
+      "description": "Modern refrigerator with energy-saving features. Keep your food fresh with advanced cooling technology while saving on energy costs, thanks to its eco-friendly design.",
       "price": 599.99,
-      "image": "https://example.com/images/refrigerator.jpg",
+      "image": "https://f.nooncdn.com/p/pnsku/N70025219V/45/_/1700456514/776eccf5-e839-4d03-800d-ba06bc2ee039.jpg?format=avif&width=240",
       "discount": 5,
       "availability": true,
       "brandname": "CoolTech",
-      "categoryId": "1",
+      "categoryId": "3",
       "stock": 50,
       "rating": 4.6
     },
     {
       "id": "10",
       "name": "smartTV",
-      "description": "the lg tv product",
       "price": 50000,
-      "image": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "image": "https://f.nooncdn.com/p/v1655123973/N36660156A_1.jpg?format=avif&width=240",
       "brandName": "LG",
-      "categoryId": "1",
+      "categoryId": "3",
       "availability": true,
+      "description": "LG smart TV product. Offers high-definition viewing and smart features for a seamless entertainment experience. Ideal for integrating with other smart home devices and accessing a range of streaming",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
@@ -261,235 +236,348 @@
     {
       "id": "11",
       "name": "iPhone 15",
-      "image": "bbbbbbbbbbbbbbbbbbbbbbb",
+      "image": "https://f.nooncdn.com/p/pnsku/N53433298A/45/_/1694762142/3e3d796f-1083-4fdc-a155-65c36489b69d.jpg?format=avif&width=240",
       "brandName": "iPhone",
-      "description": "the last edition from iPhone",
+      "description": "The latest edition of iPhone with cutting-edge technology, sleek design, and enhanced performance. Ideal for both work and entertainment with superior battery life and a stunning display.",
       "price": 50000,
-      "categoryId": "1",
+      "categoryId": "2",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
         {
           "user_id": 13,
           "rating": 4,
-          "comment": "Good value for the price, but the battery life could be better."
+          "comment": "Great performance but could have better battery life."
         },
         {
           "user_id": 14,
           "rating": 5,
-          "comment": "Ideal for both work and entertainment on the go."
+          "comment": "A perfect device for both personal and professional use."
         }
       ]
     },
     {
       "id": "12",
       "name": "iPhone 14",
-      "image": "bbbbbbbbbbbbbbbbbbbbbbb",
+      "image": "https://f.nooncdn.com/p/pnsku/N53346633A/45/_/1721322959/c6e9f616-7d30-4cd8-a676-658b229c6ad0.jpg?format=avif&width=240",
       "brandName": "iPhone",
-      "description": "the 14 edition from iPhone",
+      "description": "The 14th edition of the iPhone series, offering enhanced features at a competitive price point. Enjoy seamless performance, a brilliant display, and advanced camera technology.",
       "price": 40000,
-      "categoryId": "1",
+      "categoryId": "2",
       "stock": 50,
       "rating": 4.6,
       "reviews": [
         {
           "user_id": 13,
           "rating": 4,
-          "comment": "Good value for the price, but the battery life could be better."
+          "comment": "Great value for the price, but the battery life could be improved."
         },
         {
           "user_id": 14,
           "rating": 5,
-          "comment": "Ideal for both work and entertainment on the go."
+          "comment": "Excellent for both work and entertainment on the go."
         }
       ]
     },
     {
       "id": "13",
-      "categoryId": "men's clothing",
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      "price": "109.95",
-      "rating": "4"
+      "name": "Men's Backpack",
+      "categoryId": "1",
+      "description": "A durable and stylish backpack for everyday use, featuring padded sleeves for your laptop (up to 15 inches) and multiple compartments for easy organization.",
+      "image": "https://f.nooncdn.com/p/pzsku/Z565845F0102040F93FE0Z/45/_/1671556144/7fb397fe-2e00-4bb9-abce-0f899b202417.jpg?format=avif&width=240",
+      "price": 109.95,
+      "stock": 50,
+      "rating": 4
     },
     {
       "id": "15",
-      "description": "Mens Casual Premium Slim Fit T-Shirts ",
-      "price": "22.3",
-      "categoryId": "4",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-      "rating": "4"
+      "name": "Casual Premium Slim Fit T-Shirt",
+      "description": "High-quality cotton t-shirt designed for comfort and style. Ideal for casual wear, featuring a modern slim fit that complements any look.",
+      "price": 22.3,
+      "categoryId": "1",
+      "image": "https://f.nooncdn.com/p/pzsku/ZA2E8AA04CE5580AAAEEEZ/45/_/1710537533/7cdd60d4-0d8e-47b8-82ff-3c3f7f89f426.jpg?format=avif&width=240",
+      "stock": 50,
+      "rating": 4
     },
     {
       "id": "16",
-      "description": "Mens Cotton Jacket",
-      "price": "55.99",
-      "categoryId": "4",
+      "name": "Cotton Jacket",
+      "description": "Stylish and comfortable men's cotton jacket, perfect for a casual day out. Durable and warm, making it ideal for various seasons.",
+      "price": 55.99,
+      "categoryId": "1",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "rating": "4"
+      "stock": 50,
+      "rating": 4
     },
     {
       "id": "17",
-      "description": "Mens Casual Slim Fit",
-      "price": "15.99",
+      "name": "Casual Slim Fit Shirt",
+      "description": "A sleek and casual slim-fit shirt for men, crafted from high-quality fabric for comfort and versatility. Perfect for both formal and casual occasions.",
+      "price": 15.99,
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-      "rating": "4"
+      "rating": 4
     },
     {
       "id": "18",
-      "description": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-      "price": "695",
-      "categoryId": "4",
+      "name": "John Hardy Women's Bracelet",
+      "description": "A luxurious gold and silver dragon chain bracelet from John Hardy's Legends Naga collection. A statement piece that combines elegance with artistry.",
+      "price": 695,
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      "rating": "4"
+      "rating": 4
     },
     {
       "id": "19",
-      "description": "Solid Gold Petite Micropave ",
-      "price": "168",
+      "name": "Solid Gold Petite Ring",
+      "description": "Elegant and minimalist solid gold petite ring with micropave detailing, perfect for a sophisticated and timeless look.",
+      "price": 168,
       "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "rating": "4"
+      "rating": 4
     },
     {
       "id": "20",
-      "description": "White Gold Plated Princess",
+      "name": "White Gold Plated Princess Ring",
+      "description": "Stunning white gold plated princess ring, perfect for any occasion. Features a beautiful princess-cut stone that adds elegance to any outfit.",
       "price": 9.99,
       "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-      "rating": "4"
+      "rating": 4
     },
     {
       "id": "21",
-      "description": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "name": "Rose Ring",
+      "description": "Pierced Owl Rose Gold Plated Stainless Steel Double Ring, perfect for adding elegance and style to any outfit.",
       "price": "10.99",
       "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
     },
     {
       "id": "22",
-      "description": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "name": "External Hard Drive",
+      "description": "WD 2TB Elements Portable External Hard Drive - USB 3.0, ideal for backing up your data and carrying your files on the go.",
       "price": "64",
-      "categoryId": "1",
+      "categoryId": "3",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
       "rating": "4"
     },
     {
       "id": "23",
-      "description": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "name": "Internal SSD",
+      "description": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s, a reliable and fast storage option for upgrading your PC performance.",
       "price": "109",
-      "categoryId": "1",
+      "categoryId": "3",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
       "rating": "4"
     },
     {
       "id": "24",
-      "description": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "name": "SSD",
+      "description": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5, a high-performance and cost-effective storage solution.",
       "price": "109",
-      "categoryId": "1",
+      "categoryId": "3",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
       "rating": "4"
     },
     {
       "id": "25",
-      "description": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "name": "Gaming Drive",
+      "description": "WD 4TB Gaming Drive works with PlayStation 4 Portable External Hard Drive, perfect for gamers who need extra storage for their games.",
       "price": "114",
-      "categoryId": "1",
+      "categoryId": "3",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
       "rating": "4"
     },
     {
       "id": "26",
-      "description": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "name": "Acer Monitor",
+      "description": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin Monitor, offering stunning visuals with a sleek and modern design.",
       "price": "599",
-      "categoryId": "1",
+      "categoryId": "3",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
       "rating": "4"
     },
     {
       "id": "27",
-      "description": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "name": "Samsung Curved Monitor",
+      "description": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor – Super Ultrawide Screen QLED, designed for immersive gaming and entertainment experiences.",
       "price": "999.99",
-      "categoryId": "1",
+      "categoryId": "3",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
       "rating": "4"
     },
     {
       "id": "28",
-      "description": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "name": "Women's Snowboard Jacket",
+      "description": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket, a versatile winter coat designed for outdoor adventures in cold and snowy conditions.",
       "price": "56.99",
-      "categoryId": "4",
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
       "rating": "4"
     },
     {
       "id": "29",
-      "description": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "name": "Women's Moto Biker Jacket",
+      "description": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket, perfect for stylish women looking for a chic and edgy look.",
       "price": "29.95",
-      "categoryId": "4",
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
       "rating": "4"
     },
     {
       "id": "30",
-      "description": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "name": "Women's Rain Jacket",
+      "description": "Rain Jacket Women Windbreaker Striped Climbing Raincoats, a practical and fashionable jacket designed to keep you dry during outdoor activities.",
       "price": "39.99",
-      "categoryId": "4",
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
       "rating": "4"
     },
     {
       "id": "31",
-      "description": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "name": "Women's Boat Neck Top",
+      "description": "MBJ Women's Solid Short Sleeve Boat Neck Top, a casual and comfortable top that adds elegance to your everyday wardrobe.",
       "price": "9.85",
-      "categoryId": "4",
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
       "rating": "4"
     },
     {
       "id": "32",
-      "description": "Opna Women's Short Sleeve Moisture",
+      "name": "Women's Short Sleeve Shirt",
+      "description": "Opna Women's Short Sleeve Moisture-Wicking Shirt, a lightweight and breathable shirt ideal for workouts and casual wear.",
       "price": "7.95",
-      "categoryId": "4",
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
       "rating": "4"
     },
     {
       "id": "33",
-      "description": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "name": "Women's Casual T-Shirt",
+      "description": "DANVOUY Women's Casual Cotton Short Sleeve T-Shirt, a stylish and comfortable tee for casual outings.",
       "price": "12.99",
-      "categoryId": "4",
+      "categoryId": "1",
+      "stock": 50,
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
       "rating": "4"
     },
     {
-      "id": "3123",
-      "name": "12312",
-      "description": "3123",
-      "price": "123",
-      "image": "13122",
-      "discount": "3123",
-      "availability": false,
-      "brandname": "31231",
-      "categoryId": "4",
-      "stock": "12312",
-      "rating": "123",
-      "reviews": []
+      "id": "34",
+      "name": "Smartwatch Pro",
+      "description": "Smartwatch Pro with heart rate monitor and GPS tracking, perfect for fitness enthusiasts and tech lovers.",
+      "price": "199.99",
+      "categoryId": "3",
+      "stock": 100,
+      "image": "https://f.nooncdn.com/p/pzsku/Z7A7961AE6292BDB18310Z/45/_/1703416570/a41faf57-789f-4583-b1a3-38d74e2c9ae6.jpg?format=avif&width=240",
+      "rating": "4.5"
     },
     {
-      "id": "123",
-      "name": "123",
-      "description": "12312",
-      "price": "312",
-      "image": "312",
-      "discount": "3123123",
-      "availability": true,
-      "brandname": "1312",
-      "categoryId": "2",
-      "stock": "1231",
-      "rating": "213",
-      "reviews": []
+      "id": "35",
+      "name": "Gaming Laptop",
+      "description": "Ultra-fast gaming laptop with NVIDIA GeForce RTX 3070, 16GB RAM, and 1TB SSD for the ultimate gaming experience.",
+      "price": "1499.99",
+      "categoryId": "3",
+      "stock": 20,
+      "image": "https://f.nooncdn.com/p/v1657621583/N53329645A_1.jpg?format=avif&width=240",
+      "rating": "4.7"
+    },
+    {
+      "id": "36",
+      "name": "Wireless Earbuds",
+      "description": "Noise-canceling wireless earbuds with superior sound quality and up to 24 hours of battery life.",
+      "price": "89.99",
+      "categoryId": "3",
+      "stock": 300,
+      "image": "https://f.nooncdn.com/p/v1686824034/N53409767A_1.jpg?format=avif&width=240",
+      "rating": "4.2"
+    },
+    {
+      "id": "37",
+      "name": "4K Action Camera",
+      "description": "Waterproof 4K action camera with image stabilization, ideal for capturing all your adventures in stunning quality.",
+      "price": "249.99",
+      "categoryId": "3",
+      "stock": 50,
+      "image": "https://f.nooncdn.com/p/v1658761977/N29186400A_1.jpg?format=avif&width=240",
+      "rating": "4.6"
+    },
+    {
+      "id": "38",
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with deep bass and crystal-clear sound, perfect for outdoor parties and gatherings.",
+      "price": "59.99",
+      "categoryId": "3",
+      "stock": 200,
+      "image": "https://f.nooncdn.com/p/v1657938852/N53336143A_1.jpg?format=avif&width=240",
+      "rating": "4.4"
+    },
+    {
+      "id": "39",
+      "name": "Fitness Tracker",
+      "description": "Sleek and lightweight fitness tracker with step counter, sleep monitor, and smartphone notifications.",
+      "price": "39.99",
+      "categoryId": "3",
+      "stock": 150,
+      "image": "https://f.nooncdn.com/p/pnsku/N70001420V/45/_/1695298015/acbd5e18-842e-446a-bd4d-f2b8281b0c21.jpg?format=avif&width=240",
+      "rating": "4.3"
+    },
+    {
+      "id": "40",
+      "name": "LED Desk Lamp",
+      "description": "Adjustable LED desk lamp with touch control and multiple brightness settings, perfect for reading and working.",
+      "price": "29.99",
+      "categoryId": "3",
+      "stock": 250,
+      "image": "https://f.nooncdn.com/p/v1616517339/N45704962A_1.jpg?format=avif&width=240",
+      "rating": "4.5"
+    },
+    {
+      "id": "41",
+      "name": "Ergonomic Office Chair",
+      "description": "Ergonomic office chair with lumbar support and breathable mesh, designed for comfort during long working hours.",
+      "price": "129.99",
+      "categoryId": "3",
+      "stock": 100,
+      "image": "https://f.nooncdn.com/p/pzsku/ZB54559579AEF890B30C8Z/45/_/1673699928/35e26903-e991-41bb-b1fd-91d708c3f1da.jpg?format=avif&width=240",
+      "rating": "4.8"
+    },
+    {
+      "id": "42",
+      "name": "Noise-Canceling Headphones",
+      "description": "Premium noise-canceling headphones with immersive sound quality and up to 30 hours of battery life.",
+      "price": "299.99",
+      "categoryId": "3",
+      "stock": 75,
+      "image": "https://f.nooncdn.com/p/pnsku/N70001660V/45/_/1695297973/32626dd4-9181-45bc-acdf-cc265a0483c7.jpg?format=avif&width=240",
+      "rating": "4.8"
+    },
+    {
+      "id": "43",
+      "name": "Electric Scooter",
+      "description": "Foldable electric scooter with a top speed of 15 mph and a range of 20 miles, perfect for urban commuting.",
+      "price": "499.99",
+      "categoryId": "3",
+      "stock": 60,
+      "image": "https://f.nooncdn.com/p/v1605899178/N39770138A_1.jpg?format=avif&width=240",
+      "rating": "4.7"
     }
   ],
   "orders": [],
