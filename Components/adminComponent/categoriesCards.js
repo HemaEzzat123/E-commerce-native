@@ -23,11 +23,6 @@ const editCategory = async (categoryId) => {
   const currentName = categoryCard.querySelector("h3").innerText;
   const currentDescription = categoryCard.querySelector("p").innerText;
   const currentImage = categoryCard.querySelector("img").innerText;
-
-
-
-
-
   // Prompt user for new details (replace with a proper form or modal in production)
   const newName = prompt("Enter new category name:", currentName);
   const newDescription = prompt(
@@ -66,7 +61,7 @@ const displayCategories = async () => {
               <p>${category.description}</p>
               <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
               <button class="category-card-button" onclick="addProducts(${category.id})">Add Products</button>
-              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button>
+              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> <!-- New Edit button -->
           </div>
       `
         )
