@@ -1,6 +1,15 @@
 const editProductContainer = document.querySelector(
   ".admin-product-form-container"
 );
+const spinner = document.querySelector(".spinner");
+
+const showSpinner = () => {
+  spinner.style.display = "block";
+};
+
+const hideSpinner = () => {
+  spinner.style.display = "none";
+};
 
 const getProductIdFromURL = () => {
   const params = new URLSearchParams(window.location.search);
@@ -8,6 +17,7 @@ const getProductIdFromURL = () => {
 };
 
 const showEditForm = async (productId) => {
+  showSpinner();
   try {
     const response = await axios.get(
       `http://localhost:4000/products/${productId}`
@@ -52,6 +62,7 @@ const showEditForm = async (productId) => {
       .getElementById("edit-product-form")
       .addEventListener("submit", async function (event) {
         event.preventDefault();
+        showSpinner();
 
         const updatedProduct = {
           id: productId,
@@ -79,10 +90,15 @@ const showEditForm = async (productId) => {
           window.location.href = `categoryDetails.html?id=${product.categoryId}`; // Redirect to category details page
         } catch (error) {
           console.error("Error updating product:", error);
+        } finally {
+          hideSpinner();
         }
       });
   } catch (error) {
     console.error(`Error retrieving product with id ${productId}:`, error);
+    editProductContainer.innerHTML = `<p>Error retrieving product. Please try again later.</p>`;
+  } finally {
+    hideSpinner();
   }
 };
 
