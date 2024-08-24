@@ -24,13 +24,16 @@ const displayCategories = async () => {
         .map(
           (category) => `
           <div class="category-card" data-category-id="${category.id}">
-              <button class="delete-category">X</button>
+              <div class="topBtns">
+              <button class="delete-category"><i class="fa-solid fa-xmark"></i></button>
+              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> 
+              </div>
               <img src="../../IMAGES/${category.image}" alt="${category.name}">
               <h3>${category.name}</h3>
               <p>${category.description}</p>
               <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
               <button class="category-card-button" onclick="addProducts(${category.id})">Add Products</button>
-              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> <!-- New Edit button -->
+             
           </div>
       `
         )
