@@ -1,20 +1,23 @@
+@import "../../index.css";
+
 .menu {
-  background-color: #123;
-  width: 60px;
+  background-color: var(--lime-blue-color-hover);
+  width: 200px;
   height: 100vh;
   padding: 20px;
   overflow: hidden;
   transition: 0.5s;
+  
 }
 
 .menu:hover {
-  width: 260px;
+  width: 200px;
+  background-color: var(--lime-blue-color);
 }
 
-ul {
-  position: relative;
+.menu-list {
   list-style: none;
-  height: 95%;
+  margin-top: 235px;
 }
 
 ul li a {
@@ -25,20 +28,22 @@ ul li a {
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 40px;
   transition: 0.5s;
+  color: var(--main-card-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
 }
 
 ul li a:hover,
 .active,
 .data-info .box:hover,
 td:hover {
-  background-color: #ffffff55;
+  background-color: var(--lime-blue-color-hover);
 }
 
 .log-out {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
@@ -48,4 +53,6 @@ td:hover {
 
 ul li a i {
   font-size: 30px;
+  color: var(--main-card-background-color);
 }
+

@@ -1,7 +1,7 @@
 // Update sidebar content
 let sideBarContent = `
         <div class="menu">
-        <ul>
+        <ul class="menu-list">
 
             <li>
                 <a class="active" href="dashboard.html">
@@ -24,7 +24,7 @@ let sideBarContent = `
             <li>
                 <a href="addCategory.html">
         <i class="fas fa-table"></i>
-        <p>Add Category</p>
+        <p>AddCategory</p>
                 </a>
             </li>
             <li>
@@ -43,7 +43,7 @@ let sideBarContent = `
                 <a href="#">
                     <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>
-                </a>
+                    </a>
             </li>
         </ul>
     </div>

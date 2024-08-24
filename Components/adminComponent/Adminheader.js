@@ -8,6 +8,7 @@ export let headerContent = `
             <li class="admin-header-links-item category"> Categories </li>
             <li class="admin-header-links-item about"> About </li>
             <li class="admin-header-links-item contact"> Contact </li>
+            <button class="dash">...</button>
         </ul>
     </div>
     <div class="admin-header-buttons">
@@ -56,3 +57,20 @@ if (document.querySelector(".category")) {
 if (document.querySelector(".contact")) {
   document.querySelector(".contact").addEventListener("click", () => {});
 }
+
+document.querySelector(".dash").addEventListener("click", () => {
+  const sidebar = document.querySelector(".adminSb");
+
+  // Toggle the active class to slide in/out
+  if (sidebar.style.display === "none" || sidebar.style.left === "-200px") {
+    sidebar.style.display = "block";
+    setTimeout(() => {
+      sidebar.classList.add("active");
+    }, 10); // Slight delay to ensure display property is set before animation
+  } else {
+    sidebar.classList.remove("active");
+    setTimeout(() => {
+      sidebar.style.display = "none";
+    }, 500); // Match this timeout with your CSS transition duration
+  }
+});
