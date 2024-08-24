@@ -15,6 +15,7 @@
 
 .adminSb {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: -200px;
   width: 200px;
@@ -167,6 +168,7 @@
 .addProduct-category:hover {
   background-color: limegreen;
 }
+
 .topBtns {
   display: flex;
   align-items: center;
@@ -177,6 +179,7 @@
   display: flex;
   width: 90%;
   justify-content: end;
+  gap: 5px;
 }
 @keyframes slide-in {
   0% {
@@ -185,4 +188,65 @@
   100% {
     left: 0; /* On-screen */
   }
+}
+.admin-category-details-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  /* width: 500px; */
+  height: 600px;
+  border-radius: 20px;
+  border-style: none;
+  margin-bottom: 20px;
+  padding: 0rem 1rem;
+  background-color: var(--lime-blue-color);
+  color: white;
+}
+.product-card:hover {
+  box-shadow: var(--secons-box-shadow);
+  scale: 1.01;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.delete-product,
+.edit-product {
+  width: 25%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+.edit-product:hover {
+  background-color: limegreen;
+}
+.delete-product:hover {
+  background-color: red;
+}
+.productBtns {
+  display: flex;
+  justify-content: space-between;
 }

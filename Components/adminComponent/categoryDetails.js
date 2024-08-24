@@ -16,13 +16,17 @@ const viewProducts = async (categoryId) => {
         .map(
           (product) => `
           <div class="product-card" data-product-id="${product.id}">
+          <div class="productBtns">
             <button class="delete-product">X</button>
             <button class="edit-product"><i class="fa-solid fa-pencil"></i></button>
+            </div>
+            <img src="${product.image}" alt="${product.name}" /><br/>
+            <div class="productDetails">
             <h1>${product.name}</h1>
-            <img src="${product.image}" alt="${product.name}" />
-            <p>${product.description}</p>
             <p>Price: $${product.price}</p>
             <p>Stock: ${product.stock} available</p>
+            </div>
+            <p>${product.description}</p><br/>
           </div>`
         )
         .join("")}
