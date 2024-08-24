@@ -309,11 +309,14 @@
       "id": "17",
       "name": "Casual Slim Fit Shirt",
       "description": "A sleek and casual slim-fit shirt for men, crafted from high-quality fabric for comfort and versatility. Perfect for both formal and casual occasions.",
-      "price": 15.99,
-      "categoryId": "1",
-      "stock": 50,
+      "price": "15.99",
       "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-      "rating": 4
+      "discount": "",
+      "availability": false,
+      "brandname": "undefined",
+      "categoryId": "1",
+      "stock": "50",
+      "rating": "4"
     },
     {
       "id": "18",

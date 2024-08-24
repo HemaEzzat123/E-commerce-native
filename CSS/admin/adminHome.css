@@ -220,15 +220,9 @@
   margin-bottom: 8px;
   gap: 10px;
 }
-<<<<<<< HEAD
-  
-
-.delete-product ,.edit-product{
-=======
 
 .delete-product,
 .edit-product {
->>>>>>> c4905c02772ee0925de6a89b1a13993c6e2c593e
   width: 25%;
   padding: 8px;
   border: none;
