@@ -579,34 +579,6 @@
       "rating": "4.7"
     },
     {
-      "id": "123",
-      "name": "new edit",
-      "description": "edited",
-      "price": "0",
-      "image": "clothes.jpg",
-      "discount": "0",
-      "availability": true,
-      "brandname": "safsa",
-      "categoryId": "123",
-      "stock": "0",
-      "rating": "0",
-      "reviews": []
-    },
-    {
-      "id": "123",
-      "name": "123",
-      "description": "213",
-      "price": "12312",
-      "image": "4124124",
-      "discount": "124",
-      "availability": true,
-      "brandname": "124124",
-      "categoryId": "123",
-      "stock": "412",
-      "rating": "12412",
-      "reviews": []
-    },
-    {
       "id": "23",
       "name": "12312",
       "description": "312",
