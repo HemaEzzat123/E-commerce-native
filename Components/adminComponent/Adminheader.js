@@ -1,7 +1,6 @@
 export let headerContent = `
     <div class="admin-header-branding">
-        <img class="admin-logo-image" src="https://cdn-icons-png.flaticon.com/512/2591/2591253.png" alt="logo">
-        <p class="admin-logo-text">E-commerce</p>
+              <img src="../../IMAGES/Logo.png" alt="logo">
     </div>
     <div class="admin-header-links">
         <ul class="admin-header-links-list">
@@ -49,14 +48,11 @@ if (document.querySelector(".home")) {
   });
 }
 if (document.querySelector(".about")) {
-  document.querySelector(".about").addEventListener("click", () => {
-  });
+  document.querySelector(".about").addEventListener("click", () => {});
 }
 if (document.querySelector(".category")) {
-  document.querySelector(".category").addEventListener("click", () => {
-  });
+  document.querySelector(".category").addEventListener("click", () => {});
 }
 if (document.querySelector(".contact")) {
-  document.querySelector(".contact").addEventListener("click", () => {
-  });
+  document.querySelector(".contact").addEventListener("click", () => {});
 }
