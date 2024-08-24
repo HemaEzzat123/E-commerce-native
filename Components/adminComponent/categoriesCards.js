@@ -26,15 +26,17 @@ const editCategory = async (categoryId) => {
 
 
 
+
+
   // Prompt user for new details (replace with a proper form or modal in production)
   const newName = prompt("Enter new category name:", currentName);
   const newDescription = prompt(
     "Enter new category description:",
     currentDescription
   );
-  const newImage = prompt("enter new image", currentImage);
+  const newImage = prompt("Enter new category image URL:", currentImage);
 
-  if (newName && newDescription&& newImage) {
+  if (newName && newDescription && newImage) {
     try {
       await axios.put(`http://localhost:4000/categories/${categoryId}`, {
         name: newName,
@@ -64,7 +66,7 @@ const displayCategories = async () => {
               <p>${category.description}</p>
               <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
               <button class="category-card-button" onclick="addProducts(${category.id})">Add Products</button>
-              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> <!-- New Edit button -->
+              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button>
           </div>
       `
         )

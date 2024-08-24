@@ -290,11 +290,14 @@
       "id": "16",
       "name": "Cotton Jacket",
       "description": "Stylish and comfortable men's cotton jacket, perfect for a casual day out. Durable and warm, making it ideal for various seasons.",
-      "price": 55.99,
-      "categoryId": "1",
+      "price": "55.99",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "stock": 50,
-      "rating": 4
+      "discount": "",
+      "availability": false,
+      "brandname": "undefined",
+      "categoryId": "1",
+      "stock": "500",
+      "rating": "4"
     },
     {
       "id": "17",
@@ -568,16 +571,16 @@
     },
     {
       "id": "123",
-      "name": "3123",
-      "description": "123",
-      "price": "3123",
-      "image": "123",
-      "discount": "2312",
+      "name": "new edit",
+      "description": "edited",
+      "price": "0",
+      "image": "clothes.jpg",
+      "discount": "0",
       "availability": true,
-      "brandname": "12312",
+      "brandname": "safsa",
       "categoryId": "123",
-      "stock": "123123",
-      "rating": "1231",
+      "stock": "0",
+      "rating": "0",
       "reviews": []
     }
   ],
