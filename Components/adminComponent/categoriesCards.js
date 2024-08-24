@@ -83,7 +83,8 @@ const displayCategories = async () => {
         const categoryId = button
           .closest(".category-card")
           .getAttribute("data-category-id");
-        editCategory(categoryId);
+        // editCategory(categoryId);
+        window.location.href = `editCategory.html?id=${categoryId}`;
       });
     });
   } catch (error) {
