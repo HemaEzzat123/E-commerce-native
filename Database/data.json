@@ -4,6 +4,7 @@
     {
       "name": "Clothes",
       "description": "Fashionable and comfortable clothing",
+      "image": "clothes.jpg",
       "id": "1"
     },
     {
