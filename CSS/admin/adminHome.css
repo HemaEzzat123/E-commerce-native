@@ -53,7 +53,8 @@
 }
 
 .categories .category-card {
-  background-color: var(--main-card-background-color);
+  position: relative;
+  background-size: cover;
   border-radius: 20px;
   box-shadow: var(--main-box-shadow);
   transition: var(--main-transition);
@@ -62,6 +63,8 @@
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
   overflow: hidden;
+  height: 440px;
+
 }
 
 .categories .category-card:hover {
@@ -71,10 +74,12 @@
 
 .categories .category-card img {
   width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
 .categories .category-card {
-  padding: 10px;
+  
   text-align: center;
 }
 
@@ -86,12 +91,16 @@
 }
 
 .categories .category-card .category-card-button {
-  width: 100%;
+  position: absolute;
+  width: 40%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
-  background-color: var(--lime-blue-color);
+  background-color: var(--lime-blue-color-hover);
   color: white;
   font-size: var(--main-font-size);
   font-family: var(--main-font-family);
@@ -104,20 +113,20 @@
   cursor: pointer;
 }
 
-.categories .category-card.category-card-button:hover {
-  background-color: var(--lime-blue-color-hover);
+.categories .category-card .category-card-button:hover {
+  background-color: var(--lime-blue-color);
 }
 
-.delete-category ,.edit-category{
-  width: 15%;
+.delete-category ,.edit-category ,.addProduct-category{
+  
+  width: 25%;
   padding: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
-  background-color: var(--lime-blue-color);
-
+  background-color: transparent;
   color: white;
-  font-size: var(--main-font-size);
+  font-size: 20px;
   font-family: var(--main-font-family);
   font-weight: bold;
   transition: var(--main-transition);
@@ -131,12 +140,19 @@
   background-color: red;
 }
 
-.edit-category:hover{
+.edit-category:hover,.addProduct-category:hover{
   background-color:limegreen ;
 }
 .topBtns{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap:100px
+
+}
+.topBtns div{
+  display: flex;
+  width:90%;
   justify-content: end;
-  gap: 5px;
+  gap:3px
 }

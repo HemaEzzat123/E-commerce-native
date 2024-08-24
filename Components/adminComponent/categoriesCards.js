@@ -23,16 +23,18 @@ const displayCategories = async () => {
       ${categories
         .map(
           (category) => `
-          <div class="category-card" data-category-id="${category.id}">
-              <div class="topBtns">
-              <button class="delete-category"><i class="fa-solid fa-xmark"></i></button>
-              <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> 
+      <div class="category-card" data-category-id="${category.id}" style="background-image: url('../../IMAGES/${category.image}');">
+              <div class="topBtns"><button class="delete-category"><i class="fa-solid fa-xmark"></i></button>
+               <div> <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> 
+              <button class="addProduct-category" onclick="addProducts(${category.id})"><i class="fa-solid fa-plus"></i></button></div>
               </div>
-              <img src="../../IMAGES/${category.image}" alt="${category.name}">
-              <h3>${category.name}</h3>
-              <p>${category.description}</p>
-              <button class="category-card-button" onclick="viewProducts(${category.id})">View Products</button>
-              <button class="category-card-button" onclick="addProducts(${category.id})">Add Products</button>
+             
+             
+             
+
+              
+              <button class="category-card-button" onclick="viewProducts(${category.id})">${category.name}</button>
+              
              
           </div>
       `
