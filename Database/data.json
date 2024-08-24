@@ -23,6 +23,12 @@
       "name": "test add and edit 2",
       "description": "edited 2",
       "id": "123"
+    },
+    {
+      "id": "567",
+      "name": "test category",
+      "description": "Description",
+      "image": "clothes1.jpg"
     }
   ],
   "products": [
@@ -595,6 +601,20 @@
       "categoryId": "123",
       "stock": "412",
       "rating": "12412",
+      "reviews": []
+    },
+    {
+      "id": "23",
+      "name": "12312",
+      "description": "312",
+      "price": "123",
+      "image": "123123",
+      "discount": "123213",
+      "availability": true,
+      "brandname": "123123",
+      "categoryId": "567",
+      "stock": "3123",
+      "rating": "123",
       "reviews": []
     }
   ],
