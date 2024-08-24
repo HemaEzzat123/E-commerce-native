@@ -50,7 +50,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  background-color: red;
 }
 
 .categories .category-card {
@@ -74,19 +73,19 @@
   width: 100%;
 }
 
-.categories .category-card .category-card-content {
+.categories .category-card {
   padding: 10px;
   text-align: center;
 }
 
-.categories .category-card .category-card-content p {
+.categories .category-card p {
   font-size: 14px;
   margin-bottom: 5px;
   font-family: var(--main-font-family);
   color: rgb(183, 183, 183);
 }
 
-.categories .category-card .category-card-content button {
+.categories .category-card button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -105,6 +104,6 @@
   cursor: pointer;
 }
 
-.categories .category-card .category-card-content button:hover {
+.categories .category-card button:hover {
   background-color: var(--lime-blue-color-hover);
 }

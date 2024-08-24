@@ -1,6 +1,8 @@
 import { getAllCategories } from "./../../APIsConnection/admin.js";
 
-let categoriesContainer = document.querySelector(".admin-categories-container");
+let categoriesContainer = document.querySelector(
+  ".admin-categories-container .categories"
+);
 
 // Function to delete a category
 const deleteCategory = async (categoryId) => {
