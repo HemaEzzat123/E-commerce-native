@@ -8,7 +8,6 @@ export let headerContent = `
             <li class="admin-header-links-item category"> Categories </li>
             <li class="admin-header-links-item about"> About </li>
             <li class="admin-header-links-item contact"> Contact </li>
-            <button class="dash">...</button>
         </ul>
     </div>
     <div class="admin-header-buttons">
@@ -66,11 +65,13 @@ document.querySelector(".dash").addEventListener("click", () => {
     sidebar.style.display = "block";
     setTimeout(() => {
       sidebar.classList.add("active");
+      document.querySelector(".dash").style.left = "180px";
     }, 10); // Slight delay to ensure display property is set before animation
   } else {
     sidebar.classList.remove("active");
     setTimeout(() => {
       sidebar.style.display = "none";
     }, 500); // Match this timeout with your CSS transition duration
+    document.querySelector(".dash").style.left = "0px";
   }
 });

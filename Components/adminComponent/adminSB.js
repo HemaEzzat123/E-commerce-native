@@ -46,8 +46,9 @@ let sideBarContent = `
                     </a>
             </li>
         </ul>
+  
     </div>
-        
+
         `;
 
 let sideBar = document.querySelector(".adminSb");

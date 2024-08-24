@@ -7,7 +7,38 @@
   padding: 20px;
   overflow: hidden;
   transition: 0.5s;
-  
+  position: relative;
+}
+
+.dash {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  transition: left 0.5s linear;
+  -webkit-transition: left 0.5s linear;
+  -moz-transition: left 0.5s linear;
+  -ms-transition: left 0.5s linear;
+  -o-transition: left 0.5s linear;
+}
+
+.dash.active {
+  display: block; /* Display when active */
+  left: 0; /* Slide in */
+}
+
+.dash img {
+  width: 40px;
+  height: 40px;
 }
 
 .menu:hover {
@@ -55,4 +86,3 @@ ul li a i {
   font-size: 30px;
   color: var(--main-card-background-color);
 }
-

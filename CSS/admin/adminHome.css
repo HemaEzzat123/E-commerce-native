@@ -16,13 +16,16 @@
 .adminSb {
   position: fixed;
   top: 0;
-  left: -200px; /* Initially off-screen */
-  width: 200px; /* Adjust width as needed */
+  left: -200px;
+  width: 200px;
   height: 100%;
-  background-color: white; /* Example background color */
-  display: none; /* Hidden initially */
-  transition: left 0.5s ease; /* Smooth transition */
-  /* Other styles as needed */
+  background-color: white;
+  display: none;
+  transition: left 0.5s linear;
+  -webkit-transition: left 0.5s linear;
+  -moz-transition: left 0.5s linear;
+  -ms-transition: left 0.5s linear;
+  -o-transition: left 0.5s linear;
 }
 
 .adminSb.active {
@@ -85,7 +88,6 @@
   -o-transition: var(--main-transition);
   overflow: hidden;
   height: 440px;
-
 }
 
 .categories .category-card:hover {
@@ -100,7 +102,6 @@
 }
 
 .categories .category-card {
-  
   text-align: center;
 }
 
@@ -138,15 +139,10 @@
   background-color: var(--lime-blue-color);
 }
 
-<<<<<<< HEAD
 .delete-category,
-.edit-category {
-  width: 15%;
-=======
-.delete-category ,.edit-category ,.addProduct-category{
-  
+.edit-category,
+.addProduct-category {
   width: 25%;
->>>>>>> 03c2af53731e9417da531260834f87574ac2f5af
   padding: 10px;
   border: none;
   outline: none;
@@ -167,29 +163,21 @@
   background-color: red;
 }
 
-<<<<<<< HEAD
-.edit-category:hover {
+.edit-category:hover,
+.addProduct-category:hover {
   background-color: limegreen;
-=======
-.edit-category:hover,.addProduct-category:hover{
-  background-color:limegreen ;
->>>>>>> 03c2af53731e9417da531260834f87574ac2f5af
 }
 .topBtns {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:100px
-
+  gap: 100px;
 }
-.topBtns div{
+.topBtns div {
   display: flex;
-  width:90%;
+  width: 90%;
   justify-content: end;
-<<<<<<< HEAD
-  gap: 5px;
 }
-
 @keyframes slide-in {
   0% {
     left: -200px; /* Off-screen */
@@ -198,7 +186,3 @@
     left: 0; /* On-screen */
   }
 }
-=======
-  gap:3px
-}
->>>>>>> 03c2af53731e9417da531260834f87574ac2f5af
