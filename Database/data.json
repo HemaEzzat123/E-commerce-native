@@ -1,7 +1,5 @@
 {
-  "users": [
-    
-  ],
+  "users": [],
   "categories": [
     {
       "name": "Clothes",
@@ -320,12 +318,15 @@
     {
       "id": "18",
       "name": "John Hardy Women's Bracelet",
-      "description": "A luxurious gold and silver dragon chain bracelet from John Hardy's Legends Naga collection. A statement piece that combines elegance with artistry.",
-      "price": 695,
-      "categoryId": "1",
-      "stock": 50,
+      "description": "A luxurious gold and silver dragon chain bracelet from John Hardy's Legends Naga collection.",
+      "price": "695",
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      "rating": 4
+      "discount": "",
+      "availability": false,
+      "brandname": "undefined",
+      "categoryId": "1",
+      "stock": "50",
+      "rating": "4"
     },
     {
       "id": "19",
