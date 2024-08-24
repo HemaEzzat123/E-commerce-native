@@ -7,6 +7,9 @@
   padding: 20px;
   overflow: hidden;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
 }
 
@@ -17,7 +20,7 @@
 
 .menu-list {
   list-style: none;
-  margin-top: 235px;
+  
 }
 
 ul li a {
@@ -55,4 +58,3 @@ ul li a i {
   font-size: 30px;
   color: var(--main-card-background-color);
 }
-
