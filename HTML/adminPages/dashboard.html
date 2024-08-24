@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/e-commerce-native/index.css" />
     <link rel="stylesheet" href="../../CSS/admin/header.css" />
     <link rel="stylesheet" href="../../CSS/admin/sideBar.css" />
+    <link rel="stylesheet" href="../../CSS/admin/adminHome.css" />
   </head>
   <body>
     <div class="admin-home-page">
@@ -25,11 +26,18 @@
       <!-- end side bar -->
       <!-- start content -->
       <div class="admin-page-content container">
-        <div class="admin-categories-container"></div>
+        <div class="admin-slider">
+          <div class="admin-wrapper">
+            <img src="../../IMAGES/Slider-2.jpg" alt="slider" />
+          </div>
+        </div>
+        <div class="admin-categories-container">
+          <p class="categories-title">Categories</p>
+          <div class="categories"></div>
+        </div>
+        <!-- end content -->
       </div>
-      <!-- end content -->
     </div>
-
     <script
       type="module"
       src="../../Components/adminComponent/Adminheader.js"
@@ -48,6 +56,15 @@
     <script
       type="module"
       src="../../Components/adminComponent/adminSB.js"
+    ></script>
+    <script
+      type="module"
+      src="../../Components/adminComponent/adminSlider.js"
+    ></script>
+
+    <script
+      type="module"
+      src="/e-commerce-native/Components/adminComponent/editProductForm.js"
     ></script>
   </body>
 </html>

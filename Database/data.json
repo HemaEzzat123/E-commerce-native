@@ -2,10 +2,9 @@
   "users": [],
   "categories": [
     {
-      "id": "1",
       "name": "Clothes",
-      "image": "Clothes.jpg",
-      "description": "Fashionable and comfortable clothing"
+      "description": "Fashionable and comfortable clothing",
+      "id": "1"
     },
     {
       "id": "2",
@@ -18,6 +17,11 @@
       "name": "Electronics",
       "description": "home devices and more",
       "image": "Electronics.jpg"
+    },
+    {
+      "name": "test add and edit 2",
+      "description": "edited 2",
+      "id": "123"
     }
   ],
   "products": [
@@ -278,26 +282,6 @@
           "comment": "Excellent for both work and entertainment on the go."
         }
       ]
-    },
-    {
-      "id": "13",
-      "name": "Men's Backpack",
-      "categoryId": "1",
-      "description": "A durable and stylish backpack for everyday use, featuring padded sleeves for your laptop (up to 15 inches) and multiple compartments for easy organization.",
-      "image": "https://f.nooncdn.com/p/pzsku/Z565845F0102040F93FE0Z/45/_/1671556144/7fb397fe-2e00-4bb9-abce-0f899b202417.jpg?format=avif&width=240",
-      "price": 109.95,
-      "stock": 50,
-      "rating": 4
-    },
-    {
-      "id": "15",
-      "name": "Casual Premium Slim Fit T-Shirt",
-      "description": "High-quality cotton t-shirt designed for comfort and style. Ideal for casual wear, featuring a modern slim fit that complements any look.",
-      "price": 22.3,
-      "categoryId": "1",
-      "image": "https://f.nooncdn.com/p/pzsku/ZA2E8AA04CE5580AAAEEEZ/45/_/1710537533/7cdd60d4-0d8e-47b8-82ff-3c3f7f89f426.jpg?format=avif&width=240",
-      "stock": 50,
-      "rating": 4
     },
     {
       "id": "16",
@@ -578,6 +562,20 @@
       "stock": 60,
       "image": "https://f.nooncdn.com/p/v1605899178/N39770138A_1.jpg?format=avif&width=240",
       "rating": "4.7"
+    },
+    {
+      "id": "123",
+      "name": "3123",
+      "description": "123",
+      "price": "3123",
+      "image": "123",
+      "discount": "2312",
+      "availability": true,
+      "brandname": "12312",
+      "categoryId": "123",
+      "stock": "123123",
+      "rating": "1231",
+      "reviews": []
     }
   ],
   "orders": [],
@@ -612,7 +610,8 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "a00b"
     }
   ],
   "reviews": [],

@@ -17,6 +17,7 @@ const viewProducts = async (categoryId) => {
           (product) => `
           <div class="product-card" data-product-id="${product.id}">
             <button class="delete-product">X</button>
+            <button class="edit-product"><i class="fa-solid fa-pencil"></i></button>
             <h1>${product.name}</h1>
             <img src="${product.image}" alt="${product.name}" />
             <p>${product.description}</p>
@@ -27,20 +28,32 @@ const viewProducts = async (categoryId) => {
         .join("")}
     `;
 
-    // Attach event listeners to the delete buttons after the products have been rendered
-    document.querySelectorAll(".delete-product").forEach((button) => {
-      button.addEventListener("click", async () => {
-        const productId = button
-          .closest(".product-card")
-          .getAttribute("data-product-id");
-        await deleteProduct(productId);
-        viewProducts(categoryId); // Refresh the product list after deletion
-      });
-    });
+    attachEventListenersToProducts(); // Moved to a function for clarity
   } catch (error) {
     console.error("Error fetching products:", error);
     categoryDetails.innerHTML = `<p>Error loading products. Please try again later.</p>`;
   }
+};
+
+const attachEventListenersToProducts = () => {
+  document.querySelectorAll(".delete-product").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const productId = button
+        .closest(".product-card")
+        .getAttribute("data-product-id");
+      await deleteProduct(productId);
+      viewProducts(categoryId); // Refresh the product list after deletion
+    });
+  });
+
+  document.querySelectorAll(".edit-product").forEach((button) => {
+    button.addEventListener("click", () => {
+      const productId = button
+        .closest(".product-card")
+        .getAttribute("data-product-id");
+      window.location.href = `editProduct.html?id=${productId}`;
+    });
+  });
 };
 
 const deleteProduct = async (productId) => {
@@ -138,8 +151,6 @@ addCategory.innerHTML = `
         <button type="submit">Add Category</button>
       </form>
     </div>`;
-
-///////////
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("category-form");

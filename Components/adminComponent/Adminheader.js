@@ -5,8 +5,8 @@ export let headerContent = `
     </div>
     <div class="admin-header-links">
         <ul class="admin-header-links-list">
-            <li class="admin-header-links-item home"> Home </li>
-            <li class="admin-header-links-item categories"> Categories </li>
+            <li class="admin-header-links-item home">Home  </li>
+            <li class="admin-header-links-item category"> Categories </li>
             <li class="admin-header-links-item about"> About </li>
             <li class="admin-header-links-item contact"> Contact </li>
         </ul>
@@ -15,13 +15,13 @@ export let headerContent = `
         ${
           localStorage.getItem("admin")
             ? `<button class="admin-header-logout-button">Logout</button>`
-            : ``
+            : `<button class="admin-header-login-button">logIn</button>`
         }
     </div>
 `;
-    //  <button class="addCategory" onclick="addCategory">
-    //    <a href="addCategory.html">add Category</a>
-    //  </button>;
+//  <button class="addCategory" onclick="addCategory">
+//    <a href="addCategory.html">add Category</a>
+//  </button>;
 
 let header = document.querySelector(".admin-header");
 header.innerHTML = headerContent;
@@ -39,6 +39,24 @@ if (loginButton) {
 if (logoutButton) {
   logoutButton.addEventListener("click", () => {
     localStorage.removeItem("admin");
-    window.location.href = "../../HTML/userPages/userHome.html";
+    window.location.href = "../../HTML/adminPages/dashboard.html";
+  });
+}
+
+if (document.querySelector(".home")) {
+  document.querySelector(".home").addEventListener("click", () => {
+    window.location.href = "dashboard.html";
+  });
+}
+if (document.querySelector(".about")) {
+  document.querySelector(".about").addEventListener("click", () => {
+  });
+}
+if (document.querySelector(".category")) {
+  document.querySelector(".category").addEventListener("click", () => {
+  });
+}
+if (document.querySelector(".contact")) {
+  document.querySelector(".contact").addEventListener("click", () => {
   });
 }
