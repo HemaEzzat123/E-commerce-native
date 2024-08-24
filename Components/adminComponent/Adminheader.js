@@ -66,12 +66,14 @@ document.querySelector(".dash").addEventListener("click", () => {
     setTimeout(() => {
       sidebar.classList.add("active");
       document.querySelector(".dash").style.left = "180px";
+      document.querySelector(".dash").style.transform = "rotate(180deg)";
     }, 10); // Slight delay to ensure display property is set before animation
   } else {
     sidebar.classList.remove("active");
     setTimeout(() => {
       sidebar.style.display = "none";
     }, 500); // Match this timeout with your CSS transition duration
-    document.querySelector(".dash").style.left = "0px";
+    document.querySelector(".dash").style.left = "-4px";
+    document.querySelector(".dash").style.transform = "rotate(0)";
   }
 });
