@@ -76,21 +76,35 @@ const addProducts = async (categoryId) => {
     let products = await getProductsByCategory(categoryId);
 
     addProduct.innerHTML = `
-      <h2>Add Products to Category: ${categoryId}</h2>
-      <form id="product-form">
-        <label for="product-id">Product ID: <input type="text" id="product-id" required></label>
-        <label for="product-name">Product Name: <input type="text" id="product-name" required></label>
-        <label for="product-description">Product Description: <textarea id="product-description" required></textarea></label>
-        <label for="product-price">Product Price: <input type="number" id="product-price" required></label>
-        <label for="product-image">Product Image: <input type="text" id="product-image" required></label>
-        <label for="product-discount">Product Discount: <input type="number" id="product-discount"></label>
-        <label for="product-availability">Product Availability: <input type="checkbox" id="product-availability"></label>
-        <label for="product-brandname">Product Brand Name: <input type="text" id="product-brandname" required></label>
-        <label for="product-categoryId">Product Category Id: <input type="number" id="product-categoryId" value="${categoryId}" readonly></label>
-        <label for="product-stock">Product Stock: <input type="number" id="product-stock" required></label>
-        <label for="product-rating">Product Rating: <input type="number" id="product-rating" required></label>
+    <h2>Add Products to Category: ${categoryId}</h2>
+    <form id="product-form">
+        <label for="product-id">Product ID:</label><br/>
+         <input type="text" id="product-id" required>
+        <label for="product-name">Product Name: </label><br/>
+        <input type="text" id="product-name" required>
+        <label for="product-description">Product Description:</label><br/>
+         <textarea id="product-description" required></textarea>
+        <label for="product-price">Product Price:</label><br/>
+         <input type="number" id="product-price" required>
+        <label for="product-image">Product Image: </label><br/>
+        <input type="text" id="product-image" required>
+        <label for="product-discount">Product Discount: </label><br/>
+        <input type="number" id="product-discount">
+        <label for="product-brandname">Product Brand Name: </label><br/>
+        <input type="text" id="product-brandname" required>
+        <label for="product-categoryId">Product Category Id: </label><br/>
+        <input type="number" id="product-categoryId" value="${categoryId}" readonly>
+        <label for="product-stock">Product Stock: </label><br/>
+        <input type="number" id="product-stock" required>
+        <label for="product-rating">Product Rating: </label><br/>
+        <input type="number" id="product-rating" required>
+        <label for="product-availability">Product Availability:</label>
+         <input type="checkbox" id="product-availability">
+
+
         <button type="submit">Add Product</button>
       </form>
+      
     `;
 
     document

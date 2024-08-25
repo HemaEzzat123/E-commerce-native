@@ -1,5 +1,13 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "b456",
+      "username": "testUser",
+      "email": "hezzat.964@gmail.com",
+      "password": "1324",
+      "role": 1
+    }
+  ],
   "categories": [
     {
       "name": "Clothes",
@@ -18,11 +26,6 @@
       "name": "Electronics",
       "description": "home devices and more",
       "image": "Electronics.jpg"
-    },
-    {
-      "name": "test add and edit 2",
-      "description": "edited 2",
-      "id": "123"
     },
     {
       "id": "567",
@@ -657,13 +660,6 @@
       "id": "4",
       "username": "hassan",
       "password": "123",
-      "role": 0
-    },
-    {
-      "id": "100a",
-      "username": "testUser",
-      "email": "hezzat.964@gmail.com",
-      "password": "1324",
       "role": 0
     }
   ]
