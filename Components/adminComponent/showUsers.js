@@ -156,6 +156,7 @@ const displayUsers = async () => {
 // Content for users and admins table
 export let content = `
  <table>
+ <label class="users">Users</label>
   <thead>
     <tr>
       <th>ID</th>
@@ -167,8 +168,22 @@ export let content = `
     </tr>
   </thead>
   <tbody class="usersInfo"></tbody>
+  </table>
+
+<hr>
+  <table>
+   <label class="admins">Admins</label>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Delete</th>
+      <th>Make Admin</th>
+    </tr>
   <tbody class="adminsInfo"></tbody>
-</table>
+  </table>
 <div class="pagination">
   <!-- Pagination controls fetched dynamically from API -->
 </div>
