@@ -27,6 +27,7 @@
   -moz-transition: left 0.5s linear;
   -ms-transition: left 0.5s linear;
   -o-transition: left 0.5s linear;
+  overflow: hidden;
 }
 
 .adminSb.active {
