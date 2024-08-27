@@ -1,10 +1,18 @@
 @import "../../index.css";
 
-.user-home-page .user-slider {
+.user-home-page .user-slider,
+.user-home-page .user-slider2,
+.sale50 {
   margin-bottom: 50px;
 }
+.user-home-page .user-slider2,
+.sale50 {
+  margin-top: 50px;
+}
 
-.user-home-page .user-slider img {
+.user-home-page .user-slider img,
+.user-home-page .user-slider2 img,
+.sale50 img {
   width: 100%;
   height: 500px;
 }
@@ -46,13 +54,15 @@
   left: 0;
 } */
 
-.categories {
+.categories,
+.categories2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-.categories .category-card {
+.categories .category-card,
+.categories2 .category-card {
   background-color: var(--main-card-background-color);
   border-radius: 20px;
   box-shadow: var(--main-box-shadow);
@@ -64,28 +74,33 @@
   overflow: hidden;
 }
 
-.categories .category-card:hover {
+.categories .category-card:hover,
+.categories2 .category-card:hover {
   box-shadow: var(--secons-box-shadow);
   scale: 1.01;
 }
 
-.categories .category-card img {
+.categories .category-card img,
+.categories2 .category-card img {
   width: 100%;
 }
 
-.categories .category-card .category-card-content {
+.categories .category-card .category-card-content,
+.categories2 .category-card .category-card-content {
   padding: 10px;
   text-align: center;
 }
 
-.categories .category-card .category-card-content p {
+.categories .category-card .category-card-content p,
+.categories2 .category-card .category-card-content p {
   font-size: 14px;
   margin-bottom: 5px;
   font-family: var(--main-font-family);
   color: rgb(183, 183, 183);
 }
 
-.categories .category-card .category-card-content button {
+.categories .category-card .category-card-content button,
+.categories2 .category-card .category-card-content button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -104,6 +119,33 @@
   cursor: pointer;
 }
 
-.categories .category-card .category-card-content button:hover {
+.categories .category-card .category-card-content button:hover,
+.categories2 .category-card .category-card-content button:hover {
   background-color: var(--lime-blue-color-hover);
+}
+.sale50 {
+  display: none; /* العنصر مخفي في البداية */
+  cursor: pointer;
+  position: relative;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+.toDown {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  display: block;
 }

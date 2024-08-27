@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="../../CSS/user/sign.css" /> -->
     <link rel="stylesheet" href="../../CSS/user/header.css" />
     <link rel="stylesheet" href="../../CSS/user/home.css" />
-    <link rel="stylesheet" href="/e-commerce-native/CSS/user/footer.css"/>
+    <link rel="stylesheet" href="/CSS/user/footer.css" />
   </head>
   <body>
     <div class="user-home-page">
@@ -29,9 +29,34 @@
           <p class="categories-title">Categories</p>
           <div class="categories"></div>
         </div>
+        <div class="user-slider2">
+          <div class="slider-wrapper">
+            <img src="../../IMAGES/Slider-1.jpg" alt="slider" />
+          </div>
+        </div>
+        <div class="user-categories-container2">
+          <p class="categories-title">Categories</p>
+          <div class="categories2"></div>
+        </div>
+        <div class="sale50" style="position: relative">
+          <img src="../../IMAGES/Slider-1.jpg" alt="" srcset="" />
+          <button
+            style="
+              position: absolute;
+              top: 5%;
+              left: 0%;
+              color: red;
+              font-size: 25px;
+            "
+          >
+            Click Here
+          </button>
+        </div>
         <!-- end categories -->
       </div>
       <!-- end content -->
+      <button class="toTop">up</button>
+      <button class="toDown">down</button>
       <div class="footer"></div>
     </div>
     <!-- start sign -->
@@ -52,6 +77,9 @@
       type="module"
       src="../../Components/userComponent/userSlider.js"
     ></script>
-    <script type="module" src="../../Components/userComponent/footer.js" ></script>
+    <script
+      type="module"
+      src="../../Components/userComponent/footer.js"
+    ></script>
   </body>
 </html>

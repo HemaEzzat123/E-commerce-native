@@ -32,6 +32,54 @@
       "name": "test category",
       "description": "Description",
       "image": "clothes1.jpg"
+    },
+    {
+      "name": "Clothes",
+      "description": "Fashionable and comfortable clothing",
+      "image": "clothes.jpg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Phones",
+      "image": "Phones.jpg",
+      "description": "Devices and Acssesories"
+    },
+    {
+      "id": "3",
+      "name": "Electronics",
+      "description": "home devices and more",
+      "image": "Electronics.jpg"
+    },
+    {
+      "id": "567",
+      "name": "test category",
+      "description": "Description",
+      "image": "clothes1.jpg"
+    },
+    {
+      "name": "Clothes",
+      "description": "Fashionable and comfortable clothing",
+      "image": "clothes.jpg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Phones",
+      "image": "Phones.jpg",
+      "description": "Devices and Acssesories"
+    },
+    {
+      "id": "3",
+      "name": "Electronics",
+      "description": "home devices and more",
+      "image": "Electronics.jpg"
+    },
+    {
+      "id": "567",
+      "name": "test category",
+      "description": "Description",
+      "image": "clothes1.jpg"
     }
   ],
   "products": [

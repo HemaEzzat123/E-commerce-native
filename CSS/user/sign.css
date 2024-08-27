@@ -28,7 +28,7 @@ body {
 }
 
 .sign-image {
-  background-image: url(/e-commerce-native/IMAGES/slideImage.png);
+  background-image: url(/IMAGES/slideImage.png);
   background-repeat: repeat;
   position: relative;
   width: 100%;
