@@ -14,7 +14,7 @@ export let headerContent = `
         ${
           localStorage.getItem("user")
             ? `<button class="user-header-logout-button">Logout</button>`
-            : `<button class="user-header-login-button">Login</button>`
+            : `<button class="user-header-login-button " onclick="showSignForm()">Login</button>`
         }
     </div>
 `;
@@ -28,7 +28,8 @@ const logoutButton = document.querySelector(".user-header-logout-button");
 
 if (loginButton) {
   loginButton.addEventListener("click", () => {
-    window.location.href = "../../HTML/sharedPages/sign.html";
+    document.querySelector(".user-sign").style.display = "block";
+    document.querySelector(".user-sign").style.opacity = "1";
   });
 }
 

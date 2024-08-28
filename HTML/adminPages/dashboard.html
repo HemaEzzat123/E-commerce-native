@@ -16,10 +16,14 @@
     <link rel="stylesheet" href="/CSS/admin/sideBar.css" />
     <link rel="stylesheet" href="/CSS/admin/adminHome.css" />
     <link rel="stylesheet" href="/CSS/admin/adminfooter.css" />
-    
+    <link rel="stylesheet" href="/CSS/user/sign.css" />
+    <link rel="stylesheet" href="/CSS/admin/addProduct.css" />
   </head>
   <body>
     <div class="admin-home-page">
+      <div class="user-sign"></div>
+      <div class="admin-product-form"></div>
+      <!-- <div class="admin-category-form"></div> -->
       <!-- start header -->
       <div class="admin-header"></div>
       <!-- end header -->
@@ -33,7 +37,7 @@
             <img src="../../IMAGES/Slider-2.jpg" alt="slider" />
           </div>
         </div>
-        <div class="admin-categories-container">
+        <div class="admin-categories-container" id="admin-category">
           <p class="categories-title">Categories</p>
           <div class="categories"></div>
         </div>
@@ -43,12 +47,9 @@
     <button class="dash">
       <img src="../../IMAGES/right.png" alt="" srcset="" />
     </button>
-
-
     <div class="footer"></div>
-
     <button class="toTop">up</button>
-    
+
     <script
       type="module"
       src="../../Components/adminComponent/Adminheader.js"
@@ -60,7 +61,7 @@
       type="module"
       src="../../Components/userComponent/header.js"
     ></script> -->
-    
+
     <script
       type="module"
       src="../../Components/adminComponent/categoriesCards.js"
@@ -82,7 +83,14 @@
       type="module"
       src="/Components/adminComponent/editCategory.js"
     ></script>
-    <script type="module"
-    src="../../Components/adminComponent/adminFooter.js"/>
+    <script
+      type="module"
+      src="../../Components/adminComponent/adminFooter.js"
+    ></script>
+    <script type="module" src="/Components/userComponent/sign.js"></script>
+    <script
+      type="module"
+      src="/Components/adminComponent/categoryDetails.js"
+    ></script>
   </body>
 </html>

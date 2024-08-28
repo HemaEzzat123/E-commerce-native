@@ -1,31 +1,59 @@
-@import "../../index.css" ;
-#product-form{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
-    width:80%
-}
-#product-form label{
-    width: 200px;
-}
-.admin-product-form{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 14%;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);    
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    padding: 2rem;
-    border-radius: 10px;
-    color: white;
-}
-.admin-product-form  h2{
-    margin-bottom: 20px;
+@import "../../index.css";
+
+#product-form label {
+  width: 200px;
 }
 
-body{
-    background-image: linear-gradient(to bottom , rgb(214, 252, 253),var(--lime-blue-color));
-    height: 100vh;
-    
+.admin-product-form h2 {
+  margin-bottom: 20px;
+}
+
+.admin-product-form {
+  display: none; /* Start hidden */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Above other elements */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Popup content */
+#product-form {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* When form is active, reduce opacity of body */
+body.show-popup {
+  opacity: 0.5;
+  pointer-events: none; /* Disable interactions */
+}
+
+/* Except for the popup */
+body.show-popup .admin-product-form {
+  pointer-events: auto; /* Enable interactions */
+}
+
+.add-close-container {
+  position: relative;
+}
+
+.add-close {
+  position: absolute;
+  top: -60px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  font-size: 40px;
+  border: none;
 }

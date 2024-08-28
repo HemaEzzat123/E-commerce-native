@@ -1,15 +1,23 @@
 @import "../../index.css";
 /* starting the sign for user */
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.user-sign {
+  display: none; /* Start hidden */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Above other elements */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+
 }
 
 .sign-container {
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -22,6 +30,15 @@ body {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  background-color: #ffffff;
+}
+
+body.show-popup {
+  opacity: 0.5;
+  pointer-events: none; /* Disable interactions */
+}
+body.show-popup .user-sign {
+  pointer-events: auto; /* Enable interactions */
 }
 .sign-h1 {
   color: #404553;
@@ -62,7 +79,7 @@ body {
   border: 3px solid #404553;
 }
 
-button:first-child {
+#signUp {
   background-color: white;
   color: #404553;
   width: 50%;
@@ -74,7 +91,7 @@ button:first-child {
   border: none;
   cursor: pointer;
 }
-button:last-child {
+#logIn {
   background-color: transparent;
   color: white;
   width: 50%;
@@ -134,4 +151,15 @@ button:last-child {
   font-weight: bold;
   font-size: 20px;
   cursor: default;
+}
+
+.sign-close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  font-size: 40px;
+  border: none;
 }

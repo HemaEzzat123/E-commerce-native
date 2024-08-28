@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
 export let signContent = `
   <form action="javascript:void(0);" id="sign-form">
     <div class="sign-container">
-      <div class="sign-image"></div>
+      <div class="sign-image"><button class="sign-close">X</button></div>
       <h1 class="sign-h1">Hala! Let's get started</h1>
       <div class="sign-buttons">
         <button type="button" id="signUp">
@@ -260,3 +260,10 @@ if (sign) {
 } else {
   console.log("Sign element not found");
 }
+
+// Close the sign form
+document.querySelector(".sign-close").addEventListener("click", function () {
+  document.body.classList.remove("show-popup");
+  document.querySelector(".user-sign").style.display = "none";
+});
+

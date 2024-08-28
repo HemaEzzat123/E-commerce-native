@@ -28,14 +28,7 @@ const displayCategories = async () => {
                <div> <button class="edit-category"><i class="fa-solid fa-pencil"></i></button> 
               <button class="addProduct-category" onclick="addProducts(${category.id})"><i class="fa-solid fa-plus"></i></button></div>
               </div>
-             
-             
-             
-
-              
               <button class="category-card-button" onclick="viewProducts(${category.id})">${category.name}</button>
-              
-             
           </div>
       `
         )
@@ -72,7 +65,10 @@ window.viewProducts = (categoryId) => {
 
 // Define addProducts function in the global scope
 window.addProducts = (categoryId) => {
-  window.location.href = `addProduct.html?id=${categoryId}`;
+  // window.location.href = `addProduct.html?id=${categoryId}`;
+  document.querySelector(".admin-product-form").style.display = "flex";
+  document.querySelector(".admin-product-form").style.opacity = "1";
+  document.querySelector(".add-product-title").innerHTML = `Add Products to Category: ${categoryId}`;
 };
 
 // Initialize the displayCategories function when the page loads

@@ -1,4 +1,4 @@
-let footter=`
+let footter = `
 <div  id="user-category-footer" class="user-category-footer">
 <footer class="footer">
     <div class="footer-content">
@@ -59,19 +59,20 @@ let footter=`
 
 </div>
 
-`
+`;
 document.querySelector(".footer").innerHTML = footter;
+
+
+
 const top = document.querySelector(".toTop");
 window.onscroll = function () {
-    if (window.scrollY > 1000) {
-      top.style.display = "block";
-    } else {
-      top.style.display = "none";
-
-    }
-  };
+  if (window.scrollY > 1000) {
+    top.style.display = "block";
+  } else {
+    top.style.display = "none";
+  }
+};
 
 top.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
