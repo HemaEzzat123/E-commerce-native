@@ -1,17 +1,16 @@
 // Update sidebar content
 let sideBarContent = `
-        <div class="menu">
+    <div class="menu">
         <ul class="menu-list">
-
             <li>
                 <a class="Side-Bar-buttons active" href="dashboard.html">
                     <i class="fas fa-home"></i>
                     <p>dashboard</p>
                 </a>
             </li>
-                     <li>
+            <li>
                 <a class="Side-Bar-buttons" href="#">
-<i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user"></i>
                     <p>profile</p>
                 </a>
             </li>
@@ -22,38 +21,66 @@ let sideBarContent = `
                 </a>
             </li>
             <li>
-                <a  class="Side-Bar-buttons" href="addCategory.html">
-        <i class="fas fa-table"></i>
-        <p>AddCategory</p>
+                <a class="Side-Bar-buttons" href="addCategory.html">
+                    <i class="fas fa-table"></i>
+                    <p>AddCategory</p>
                 </a>
             </li>
             <li>
-                <a  class="Side-Bar-buttons" href="#">
-<i class="fa-solid fa-cube"></i>
-      <p>Orders</p>
+                <a class="Side-Bar-buttons" href="#">
+                    <i class="fa-solid fa-cube"></i>
+                    <p>Orders</p>
                 </a>
             </li>
             <li>
-                <a  class="Side-Bar-buttons" href="#">
+                <a class="Side-Bar-buttons" href="#">
                     <i class="fas fa-cog"></i>
                     <p>settings</p>
                 </a>
             </li>
-            <li class=" Side-Bar-buttons log-out">
-                <a href="#">
-                    <i class="fas fa-sign-out"></i>
-                    <p>Log Out</p>
-                    </a>
-            </li>
+            ${
+              localStorage.getItem("admin")
+                ? `
+                <li class="Side-Bar-buttons log-out">
+                    <button class="log-out">
+                        <i class="fas fa-sign-out-alt"></i> Log out
+                    </button>
+                </li>
+            `
+                : `
+                <li class="Side-Bar-buttons">
+                    <button class="login">login</button>
+                </li>
+            `
+            }
         </ul>
-  
     </div>
+`;
 
-        `;
-
+// Set the sidebar content
 let sideBar = document.querySelector(".adminSb");
 sideBar.innerHTML = sideBarContent;
 
-document.querySelector(".showUsers").addEventListener("click", () => {
-  window.location.href = "allUser.html";
-});
+// Check if elements exist before adding event listeners
+const showUsersBtn = document.querySelector(".showUsers");
+const loginBtn = document.querySelector(".login");
+const logoutBtn = document.querySelector(".log-out");
+
+if (showUsersBtn) {
+  showUsersBtn.addEventListener("click", () => {
+    window.location.href = "allUser.html";
+  });
+}
+
+if (loginBtn) {
+  loginBtn.addEventListener("click", () => {
+    window.location.href = "/HTML/sharedPages/sign.html";
+  });
+}
+
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("admin");
+    window.location.href = "/HTML/adminPages/dashboard.html";
+  });
+}

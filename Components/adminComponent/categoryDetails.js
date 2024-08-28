@@ -69,6 +69,19 @@ const deleteProduct = async (productId) => {
   }
 };
 
+const closeButton = document.querySelector(".add-close");
+
+if (closeButton) {
+  console.log("Button exists, adding event listener.");
+  closeButton.addEventListener("click", function () {
+    console.log("Close button clicked.");
+    document.body.classList.remove("show-popup");
+    document.querySelector(".admin-product-form").style.display = "none";
+  });
+} else {
+  console.error("Close button not found.");
+}
+
 viewProducts(categoryId);
 
 const addProducts = async (categoryId) => {
@@ -76,9 +89,10 @@ const addProducts = async (categoryId) => {
     let products = await getProductsByCategory(categoryId);
 
     addProduct.innerHTML = `
-    <h2>Add Products to Category: ${categoryId}</h2>
     <form id="product-form">
-        <label for="product-id">Product ID:</label><br/>
+    <h2 class="add-product-title"></h2>
+    <div class="add-close-container"><button type="button" class="add-close">X</button></div>
+    <label for="product-id">Product ID:</label><br/>
          <input type="text" id="product-id" required>
         <label for="product-name">Product Name: </label><br/>
         <input type="text" id="product-name" required>
@@ -100,8 +114,6 @@ const addProducts = async (categoryId) => {
         <input type="number" id="product-rating" required>
         <label for="product-availability">Product Availability:</label>
          <input type="checkbox" id="product-availability">
-
-
         <button type="submit">Add Product</button>
       </form>
       

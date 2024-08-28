@@ -4,8 +4,8 @@ export let headerContent = `
     </div>
     <div class="admin-header-links">
         <ul class="admin-header-links-list">
-            <li ><a  class="admin-header-links-item home" href="http://127.0.0.1:5501/HTML/adminPages/dashboard.html" >Home</a></li>
-            <li><a  class="admin-header-links-item category"> Categories </a></li>
+            <li ><a  class="admin-header-links-item home" href="/HTML/adminPages/dashboard.html" >Home</a></li>
+            <li><a  class="admin-header-links-item category"  href="#admin-category"> Categories </a></li>
             <li><a href="#user-category-footer" class="admin-header-links-item about">About</a>  </li>
             <li><a href="#user-category-footer" class="admin-header-links-item contact">Contact </a></li>
         </ul>
@@ -16,11 +16,10 @@ export let headerContent = `
             ? `<button class="admin-header-logout-button">Logout</button>`
             : `<button class="admin-header-login-button">logIn</button>`
         }
-    </div>
+ <button class="addCategory" onclick="addCategory">
+   <a href="addCategory.html">add Category</a>
+ </button>    </div>
 `;
-//  <button class="addCategory" onclick="addCategory">
-//    <a href="addCategory.html">add Category</a>
-//  </button>;
 
 let header = document.querySelector(".admin-header");
 header.innerHTML = headerContent;
@@ -31,7 +30,8 @@ const logoutButton = document.querySelector(".admin-header-logout-button");
 
 if (loginButton) {
   loginButton.addEventListener("click", () => {
-    window.location.href = "../../HTML/sharedPages/sign.html";
+    document.querySelector(".user-sign").style.display = "block";
+    document.querySelector(".user-sign").style.opacity = "1";
   });
 }
 
@@ -42,19 +42,8 @@ if (logoutButton) {
   });
 }
 
-if (document.querySelector(".home")) {
-  document.querySelector(".home").addEventListener("click", () => {
-    window.location.href = "dashboard.html";
-  });
-}
-if (document.querySelector(".about")) {
-  document.querySelector(".about").addEventListener("click", () => {});
-}
 if (document.querySelector(".category")) {
   document.querySelector(".category").addEventListener("click", () => {});
-}
-if (document.querySelector(".contact")) {
-  document.querySelector(".contact").addEventListener("click", () => {});
 }
 
 document.querySelector(".dash").addEventListener("click", () => {
