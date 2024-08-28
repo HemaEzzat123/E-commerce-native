@@ -22,12 +22,11 @@
       "description": "Fashionable and comfortable clothing for men, women, and children.",
       "image": "clothes.jpg"
     },
-
     {
       "name": "Phones",
-      "id": "2",
       "description": "Latest smartphones and essential accessories.",
-      "image": "phones.jpg"
+      "image": "phones.jpg",
+      "id": "2"
     },
     {
       "name": "Electronics",
@@ -39,78 +38,74 @@
       "name": "Accessories",
       "id": "4",
       "description": "A variety of accessories for men and women, including bags, watches, and jewelry.",
-      "image":"accessories.jpg"
+      "image": "accessories.jpg"
     },
-    
-      {
-        "name": "Sports & Fitness",
-        "id": "5",
-        "description": "Essential equipment and gear for all your fitness and sporting needs.",
-        "image": "Sports & Fitness.jpg"
-      },
-      {
-        "name": "Toys & Baby Products",
-        "id": "6",
-        "description": "Fun and safe toys along with essential products for babies and toddlers.",
-        "image": "Toys & Baby Products.jpg"
-      },
-      {
-        "name": "Books",
-        "id": "7",
-        "description": "A wide variety of books spanning different genres for all ages.",
-        "image": "Books.jpg"
-      },
-      {
-        "name": "Games",
-        "id": "8",
-        "description": "Video games, board games, and more to entertain players of all ages.",
-        "image": "Games.jpg"
-      },
-      {
-        "name": "Furniture",
-        "id": "9",
-        "description": "Stylish and comfortable furniture for your home and office.",
-        "image": "Furniture.jpg"
-      },
-      {
-        "id": "10",
-        "name": "Beauty & Personal Care",
-        "description": "Skincare, haircare, and beauty products to keep you looking and feeling your best.",
-        "image": "Beauty & Personal Care.jpg"
-      },
-    
-      {
-        "id": "11",
-        "name": "Tablet",
-        "description": "Latest tablets and accessories for entertainment, work, and creativity.",
-        "image": "Tablet.jpg"
-      },
-      {
-        "id": "12",
-        "name": "Automotive",
-        "description": "Automobile parts, accessories, and tools for maintenance and upgrades.",
-        "image": "Automotive.jpg"
-      },
-      {
-        "id": "13",
-        "name": "Back to School",
-        "description": "School supplies, backpacks, and everything students need for the new school year.",
-        "image": "Back to School.jpg"
-      },
-      {
-        "id": "14",
-        "name": "Office Supplies",
-        "description": "Stationery, office furniture, and organizational products for your workspace.",
-        "image": "Office Supplies.jpg"
-      },
-      {
-        "id": "15",
-        "name": "Best seller",
-        "description": "most products sold .",
-        "image": "Best seller.jpg"
-      }
-      
-    
+    {
+      "name": "Sports & Fitness",
+      "id": "5",
+      "description": "Essential equipment and gear for all your fitness and sporting needs.",
+      "image": "Sports & Fitness.jpg"
+    },
+    {
+      "name": "Toys & Baby Products",
+      "id": "6",
+      "description": "Fun and safe toys along with essential products for babies and toddlers.",
+      "image": "Toys & Baby Products.jpg"
+    },
+    {
+      "name": "Books",
+      "id": "7",
+      "description": "A wide variety of books spanning different genres for all ages.",
+      "image": "Books.jpg"
+    },
+    {
+      "name": "Games",
+      "id": "8",
+      "description": "Video games, board games, and more to entertain players of all ages.",
+      "image": "Games.jpg"
+    },
+    {
+      "name": "Furniture",
+      "id": "9",
+      "description": "Stylish and comfortable furniture for your home and office.",
+      "image": "Furniture.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Beauty & Personal Care",
+      "description": "Skincare, haircare, and beauty products to keep you looking and feeling your best.",
+      "image": "Beauty & Personal Care.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Tablet",
+      "description": "Latest tablets and accessories for entertainment, work, and creativity.",
+      "image": "Tablet.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Automotive",
+      "description": "Automobile parts, accessories, and tools for maintenance and upgrades.",
+      "image": "Automotive.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Back to School",
+      "description": "School supplies, backpacks, and everything students need for the new school year.",
+      "image": "Back to School.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Office Supplies",
+      "description": "Stationery, office furniture, and organizational products for your workspace.",
+      "image": "Office Supplies.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Best seller",
+      "description": "most products sold .",
+      "image": "Best seller.jpg"
+    }
   ],
   "products": [
     {
@@ -351,35 +346,12 @@
       ]
     },
     {
-      "id": "12",
-      "name": "iPhone 14",
-      "image": "https://f.nooncdn.com/p/pnsku/N53346633A/45/_/1721322959/c6e9f616-7d30-4cd8-a676-658b229c6ad0.jpg?format=avif&width=240",
-      "brandName": "iPhone",
-      "description": "The 14th edition of the iPhone series, offering enhanced features at a competitive price point. Enjoy seamless performance, a brilliant display, and advanced camera technology.",
-      "price": 40000,
-      "categoryId": "2",
-      "stock": 50,
-      "rating": 4.6,
-      "reviews": [
-        {
-          "user_id": 13,
-          "rating": 4,
-          "comment": "Great value for the price, but the battery life could be improved."
-        },
-        {
-          "user_id": 14,
-          "rating": 5,
-          "comment": "Excellent for both work and entertainment on the go."
-        }
-      ]
-    },
-    {
       "id": "16",
       "name": "Cotton Jacket",
       "description": "Stylish and comfortable men's cotton jacket, perfect for a casual day out. Durable and warm, making it ideal for various seasons.",
-      "price": "55.99",
+      "price": "55.9900",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "discount": "",
+      "discount": "3",
       "availability": false,
       "brandname": "undefined",
       "categoryId": "1",
@@ -668,7 +640,7 @@
       "description": "Apple iPhone 13 with A15 Bionic chip, 128GB storage, and dual-camera system.",
       "price": "799.99",
       "image": "https://f.nooncdn.com/p/v1686132002/N52943836A_1.jpg?format=avif&width=240",
-      "discount": "5%",
+      "discount": "",
       "availability": true,
       "brandname": "Apple",
       "categoryId": "2",
@@ -726,7 +698,8 @@
       "categoryId": "2",
       "stock": "120",
       "rating": "4.4"
-    }, {
+    },
+    {
       "id": "49",
       "name": "Leather Wallet",
       "description": "Genuine leather wallet with multiple compartments for cards and cash.",
@@ -855,7 +828,8 @@
       "categoryId": "5",
       "stock": "30",
       "rating": "4.8"
-    }, {
+    },
+    {
       "id": "601",
       "name": "Plush Teddy Bear",
       "description": "Soft and cuddly plush teddy bear, perfect for children of all ages.",
@@ -919,7 +893,8 @@
       "categoryId": "6",
       "stock": "150",
       "rating": "4.7"
-    },{
+    },
+    {
       "id": "701",
       "name": "The Great Gatsby",
       "description": "Classic novel by F. Scott Fitzgerald, depicting the Roaring Twenties in America.",
@@ -983,7 +958,8 @@
       "categoryId": "7",
       "stock": "100",
       "rating": "4.5"
-    },{
+    },
+    {
       "id": "801",
       "name": "Chess Set",
       "description": "Classic wooden chess set with fine craftsmanship and smooth pieces.",
@@ -1047,7 +1023,8 @@
       "categoryId": "8",
       "stock": "100",
       "rating": "4.7"
-    }, {
+    },
+    {
       "id": "901",
       "name": "Modern Sofa",
       "description": "Comfortable and stylish modern sofa with plush cushions.",
@@ -1111,7 +1088,8 @@
       "categoryId": "9",
       "stock": "200",
       "rating": "4.5"
-    }, {
+    },
+    {
       "id": "1001",
       "name": "Organic Skincare Set",
       "description": "Complete skincare set made with organic ingredients for a natural glow.",
@@ -1175,7 +1153,8 @@
       "categoryId": "11",
       "stock": "200",
       "rating": "4.8"
-    }, {
+    },
+    {
       "id": "1101",
       "name": "10-Inch Tablet",
       "description": "Versatile 10-inch tablet with a high-resolution display and long battery life.",
@@ -1239,7 +1218,8 @@
       "categoryId": "13",
       "stock": "200",
       "rating": "4.7"
-    },{
+    },
+    {
       "id": "1201",
       "name": "Car Battery",
       "description": "Reliable car battery with high cranking power and long lifespan.",
@@ -1303,7 +1283,8 @@
       "categoryId": "14",
       "stock": "150",
       "rating": "4.7"
-    },{
+    },
+    {
       "id": "1301",
       "name": "Office Chair",
       "description": "Ergonomic office chair with adjustable features for comfort during long work hours.",
@@ -1367,7 +1348,8 @@
       "categoryId": "16",
       "stock": "50",
       "rating": "4.6"
-    },{
+    },
+    {
       "id": "1401",
       "name": "Backpack",
       "description": "Durable and spacious backpack with multiple compartments for school supplies.",
@@ -1432,7 +1414,6 @@
       "stock": "500",
       "rating": "4.7"
     }
-    
   ],
   "orders": [],
   "carts": [
