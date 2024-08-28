@@ -11,76 +11,99 @@
   "categories": [
     {
       "name": "Clothes",
-      "description": "Fashionable and comfortable clothing",
-      "image": "clothes.jpg",
-      "id": "1"
+      "id": "1",
+      "description": "Fashionable and comfortable clothing for men, women, and children.",
+      "image": "clothes.jpg"
     },
+
     {
-      "id": "2",
       "name": "Phones",
-      "image": "Phones.jpg",
-      "description": "Devices and Acssesories"
-    },
-    {
-      "id": "3",
-      "name": "Electronics",
-      "description": "home devices and more",
-      "image": "Electronics.jpg"
-    },
-    {
-      "id": "567",
-      "name": "test category",
-      "description": "Description",
-      "image": "clothes1.jpg"
-    },
-    {
-      "name": "Clothes",
-      "description": "Fashionable and comfortable clothing",
-      "image": "clothes.jpg",
-      "id": "1"
-    },
-    {
       "id": "2",
-      "name": "Phones",
-      "image": "Phones.jpg",
-      "description": "Devices and Acssesories"
+      "description": "Latest smartphones and essential accessories.",
+      "image": "phones.jpg"
     },
     {
-      "id": "3",
       "name": "Electronics",
-      "description": "home devices and more",
-      "image": "Electronics.jpg"
-    },
-    {
-      "id": "567",
-      "name": "test category",
-      "description": "Description",
-      "image": "clothes1.jpg"
-    },
-    {
-      "name": "Clothes",
-      "description": "Fashionable and comfortable clothing",
-      "image": "clothes.jpg",
-      "id": "1"
-    },
-    {
-      "id": "2",
-      "name": "Phones",
-      "image": "Phones.jpg",
-      "description": "Devices and Acssesories"
-    },
-    {
       "id": "3",
-      "name": "Electronics",
-      "description": "home devices and more",
-      "image": "Electronics.jpg"
+      "description": "Wide range of electronic devices including gadgets, home appliances, and more.",
+      "image": "electronics.jpg"
     },
     {
-      "id": "567",
-      "name": "test category",
-      "description": "Description",
-      "image": "clothes1.jpg"
-    }
+      "name": "Accessories",
+      "id": "4",
+      "description": "A variety of accessories for men and women, including bags, watches, and jewelry.",
+      "image":"accessories.jpg"
+    },
+    
+      {
+        "name": "Sports & Fitness",
+        "id": "5",
+        "description": "Essential equipment and gear for all your fitness and sporting needs.",
+        "image": "Sports & Fitness.jpg"
+      },
+      {
+        "name": "Toys & Baby Products",
+        "id": "6",
+        "description": "Fun and safe toys along with essential products for babies and toddlers.",
+        "image": "Toys & Baby Products.jpg"
+      },
+      {
+        "name": "Books",
+        "id": "7",
+        "description": "A wide variety of books spanning different genres for all ages.",
+        "image": "Books.jpg"
+      },
+      {
+        "name": "Games",
+        "id": "8",
+        "description": "Video games, board games, and more to entertain players of all ages.",
+        "image": "Games.jpg"
+      },
+      {
+        "name": "Furniture",
+        "id": "9",
+        "description": "Stylish and comfortable furniture for your home and office.",
+        "image": "Furniture.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Beauty & Personal Care",
+        "description": "Skincare, haircare, and beauty products to keep you looking and feeling your best.",
+        "image": "Beauty & Personal Care.jpg"
+      },
+    
+      {
+        "id": "11",
+        "name": "Tablet",
+        "description": "Latest tablets and accessories for entertainment, work, and creativity.",
+        "image": "Tablet.jpg"
+      },
+      {
+        "id": "12",
+        "name": "Automotive",
+        "description": "Automobile parts, accessories, and tools for maintenance and upgrades.",
+        "image": "Automotive.jpg"
+      },
+      {
+        "id": "13",
+        "name": "Back to School",
+        "description": "School supplies, backpacks, and everything students need for the new school year.",
+        "image": "Back to School.jpg"
+      },
+      {
+        "id": "14",
+        "name": "Office Supplies",
+        "description": "Stationery, office furniture, and organizational products for your workspace.",
+        "image": "Office Supplies.jpg"
+      },
+      {
+        "id": "15",
+        "name": "Best seller",
+        "description": "most products sold .",
+        "image": "Best seller.jpg"
+      }
+      
+    
   ],
   "products": [
     {
