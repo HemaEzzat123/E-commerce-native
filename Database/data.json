@@ -389,7 +389,7 @@
       "name": "Solid Gold Petite Ring",
       "description": "Elegant and minimalist solid gold petite ring with micropave detailing, perfect for a sophisticated and timeless look.",
       "price": 168,
-      "categoryId": "1",
+      "categoryId": "4",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
       "rating": 4
@@ -399,7 +399,7 @@
       "name": "White Gold Plated Princess Ring",
       "description": "Stunning white gold plated princess ring, perfect for any occasion. Features a beautiful princess-cut stone that adds elegance to any outfit.",
       "price": 9.99,
-      "categoryId": "1",
+      "categoryId": "4",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
       "rating": 4
@@ -409,7 +409,7 @@
       "name": "Rose Ring",
       "description": "Pierced Owl Rose Gold Plated Stainless Steel Double Ring, perfect for adding elegance and style to any outfit.",
       "price": "10.99",
-      "categoryId": "1",
+      "categoryId": "4",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
       "rating": "4"
@@ -609,7 +609,7 @@
       "name": "Ergonomic Office Chair",
       "description": "Ergonomic office chair with lumbar support and breathable mesh, designed for comfort during long working hours.",
       "price": "129.99",
-      "categoryId": "3",
+      "categoryId": "14",
       "stock": 100,
       "image": "https://f.nooncdn.com/p/pzsku/ZB54559579AEF890B30C8Z/45/_/1673699928/35e26903-e991-41bb-b1fd-91d708c3f1da.jpg?format=avif&width=240",
       "rating": "4.8"
@@ -1098,7 +1098,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "PureSkin",
-      "categoryId": "11",
+      "categoryId": "10",
       "stock": "100",
       "rating": "4.8"
     },
@@ -1111,7 +1111,7 @@
       "discount": "15%",
       "availability": true,
       "brandname": "YouthGlow",
-      "categoryId": "11",
+      "categoryId": "10",
       "stock": "150",
       "rating": "4.7"
     },
@@ -1124,7 +1124,7 @@
       "discount": "",
       "availability": true,
       "brandname": "HairCarePlus",
-      "categoryId": "11",
+      "categoryId": "10",
       "stock": "200",
       "rating": "4.6"
     },
@@ -1137,7 +1137,7 @@
       "discount": "5%",
       "availability": true,
       "brandname": "GlowSkin",
-      "categoryId": "11",
+      "categoryId": "10",
       "stock": "120",
       "rating": "4.7"
     },
@@ -1150,7 +1150,7 @@
       "discount": "",
       "availability": true,
       "brandname": "BeautyTools",
-      "categoryId": "11",
+      "categoryId": "10",
       "stock": "200",
       "rating": "4.8"
     },
@@ -1163,7 +1163,7 @@
       "discount": "5%",
       "availability": true,
       "brandname": "TabX",
-      "categoryId": "13",
+      "categoryId": "11",
       "stock": "150",
       "rating": "4.6"
     },
@@ -1176,7 +1176,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "TechPad",
-      "categoryId": "13",
+      "categoryId": "11",
       "stock": "100",
       "rating": "4.7"
     },
@@ -1189,7 +1189,7 @@
       "discount": "15%",
       "availability": true,
       "brandname": "EcoTab",
-      "categoryId": "13",
+      "categoryId": "11",
       "stock": "300",
       "rating": "4.5"
     },
@@ -1202,7 +1202,7 @@
       "discount": "",
       "availability": true,
       "brandname": "ProTab",
-      "categoryId": "13",
+      "categoryId": "11",
       "stock": "75",
       "rating": "4.8"
     },
@@ -1215,7 +1215,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "KidTab",
-      "categoryId": "13",
+      "categoryId": "11",
       "stock": "200",
       "rating": "4.7"
     },
@@ -1228,7 +1228,7 @@
       "discount": "5%",
       "availability": true,
       "brandname": "PowerMax",
-      "categoryId": "14",
+      "categoryId": "12",
       "stock": "100",
       "rating": "4.6"
     },
@@ -1241,7 +1241,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "SafeDrive",
-      "categoryId": "14",
+      "categoryId": "12",
       "stock": "150",
       "rating": "4.7"
     },
@@ -1254,7 +1254,7 @@
       "discount": "",
       "availability": true,
       "brandname": "CleanOil",
-      "categoryId": "14",
+      "categoryId": "12",
       "stock": "300",
       "rating": "4.5"
     },
@@ -1267,7 +1267,7 @@
       "discount": "5%",
       "availability": true,
       "brandname": "AirGuard",
-      "categoryId": "14",
+      "categoryId": "12",
       "stock": "200",
       "rating": "4.6"
     },
@@ -1280,7 +1280,7 @@
       "discount": "",
       "availability": true,
       "brandname": "LightBright",
-      "categoryId": "14",
+      "categoryId": "12",
       "stock": "150",
       "rating": "4.7"
     },
@@ -1293,7 +1293,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "ComfortWorks",
-      "categoryId": "16",
+      "categoryId": "14",
       "stock": "75",
       "rating": "4.7"
     },
@@ -1306,7 +1306,7 @@
       "discount": "",
       "availability": true,
       "brandname": "OfficeEssentials",
-      "categoryId": "16",
+      "categoryId": "14",
       "stock": "200",
       "rating": "4.6"
     },
@@ -1319,7 +1319,7 @@
       "discount": "5%",
       "availability": true,
       "brandname": "PrintMaster",
-      "categoryId": "16",
+      "categoryId": "14",
       "stock": "100",
       "rating": "4.8"
     },
@@ -1332,7 +1332,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "LightWorks",
-      "categoryId": "16",
+      "categoryId": "14",
       "stock": "150",
       "rating": "4.7"
     },
@@ -1345,7 +1345,7 @@
       "discount": "",
       "availability": true,
       "brandname": "StoreMaster",
-      "categoryId": "16",
+      "categoryId": "14",
       "stock": "50",
       "rating": "4.6"
     },
@@ -1358,7 +1358,7 @@
       "discount": "10%",
       "availability": true,
       "brandname": "SchoolGear",
-      "categoryId": "15",
+      "categoryId": "13",
       "stock": "200",
       "rating": "4.7"
     },
@@ -1371,7 +1371,7 @@
       "discount": "",
       "availability": true,
       "brandname": "NoteMaster",
-      "categoryId": "15",
+      "categoryId": "13",
       "stock": "300",
       "rating": "4.6"
     },
@@ -1384,7 +1384,7 @@
       "discount": "",
       "availability": true,
       "brandname": "LunchMate",
-      "categoryId": "15",
+      "categoryId": "13",
       "stock": "250",
       "rating": "4.5"
     },
@@ -1397,7 +1397,7 @@
       "discount": "15%",
       "availability": true,
       "brandname": "WriteRight",
-      "categoryId": "15",
+      "categoryId": "13",
       "stock": "400",
       "rating": "4.6"
     },
@@ -1410,7 +1410,7 @@
       "discount": "",
       "availability": true,
       "brandname": "CleanSlate",
-      "categoryId": "15",
+      "categoryId": "13",
       "stock": "500",
       "rating": "4.7"
     }

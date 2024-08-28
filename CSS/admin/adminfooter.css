@@ -1,7 +1,10 @@
+@import "../../index.css";
+
 .footer {
-  background-color: #f5f6f7;
-  padding: 20px 0;
-  direction: rtl;
+  padding: 1gi0px 0;
+  direction: ltr;
+  background-image: linear-gradient(to bottom,white,var(--lime-blue-color));
+  color: black;
 }
 
 .user-footer-container {
@@ -18,7 +21,8 @@
 }
 
 .footer-text {
-  text-align: right;
+  text-align: left;
+  
 }
 
 .footer-text h3 {
@@ -39,7 +43,7 @@
 }
 
 .support-item {
-  text-align: center;
+  text-align: left;
 }
 
 .support-item span {
@@ -65,7 +69,7 @@
 .footer-bottom {
   background-color: #f5f6f7;
   padding: 20px 0;
-  direction: rtl;
+  direction: ltr;
   text-align: center;
 }
 
@@ -107,7 +111,6 @@
 .footer-copyright {
   color: #666;
   font-size: 14px;
-  margin-left: 7rem;
 }
 
 .toTop {
