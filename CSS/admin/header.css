@@ -46,15 +46,19 @@
   gap: 30px;
 }
 
-.admin-header .admin-header-links-list li {
+.admin-header .admin-header-links-list li  {
   list-style: none;
+}
+.admin-header .admin-header-links-list li a {
+  list-style: none;
+  color:black;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   transition: var(--main-transition);
 }
 
-.admin-header .admin-header-links-list li:hover {
+.admin-header .admin-header-links-list  a:hover {
   color: var(--lime-blue-color);
 }
 

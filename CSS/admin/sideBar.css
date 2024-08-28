@@ -51,7 +51,8 @@
   list-style: none;
 }
 
-ul li a {
+.Side-Bar-buttons{
+  width: 100%;
   display: block;
   text-decoration: none;
   padding: 10px;
@@ -67,7 +68,7 @@ ul li a {
   gap: 28px;
 }
 
-ul li a:hover,
+.Side-Bar-buttons:hover,
 .active,
 .data-info .box:hover,
 td:hover {
@@ -75,10 +76,12 @@ td:hover {
 }
 
 .log-out {
+  padding:2px 10px ;
   width: 100%;
 }
 
 .log-out a {
+  padding:4px 10px ;
   background-color: #a00;
 }
 

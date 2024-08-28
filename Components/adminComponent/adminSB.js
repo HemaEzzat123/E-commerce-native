@@ -4,42 +4,42 @@ let sideBarContent = `
         <ul class="menu-list">
 
             <li>
-                <a class="active" href="dashboard.html">
+                <a class="Side-Bar-buttons active" href="dashboard.html">
                     <i class="fas fa-home"></i>
                     <p>dashboard</p>
                 </a>
             </li>
                      <li>
-                <a class="" href="#">
+                <a class="Side-Bar-buttons" href="#">
 <i class="fa-solid fa-user"></i>
                     <p>profile</p>
                 </a>
             </li>
             <li>
-                <a href="allUser.html">
+                <a class="Side-Bar-buttons" href="allUser.html">
                     <i class="fas fa-user-group"></i>
                     <p>Users</p>
                 </a>
             </li>
             <li>
-                <a href="addCategory.html">
+                <a  class="Side-Bar-buttons" href="addCategory.html">
         <i class="fas fa-table"></i>
         <p>AddCategory</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a  class="Side-Bar-buttons" href="#">
 <i class="fa-solid fa-cube"></i>
       <p>Orders</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a  class="Side-Bar-buttons" href="#">
                     <i class="fas fa-cog"></i>
                     <p>settings</p>
                 </a>
             </li>
-            <li class="log-out">
+            <li class=" Side-Bar-buttons log-out">
                 <a href="#">
                     <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>

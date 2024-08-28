@@ -60,4 +60,18 @@ let footter=`
 </div>
 
 `
-document.querySelector(".footer").innerHTML=footter;
+document.querySelector(".footer").innerHTML = footter;
+const top = document.querySelector(".toTop");
+window.onscroll = function () {
+    if (window.scrollY > 1000) {
+      top.style.display = "block";
+    } else {
+      top.style.display = "none";
+
+    }
+  };
+
+top.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+

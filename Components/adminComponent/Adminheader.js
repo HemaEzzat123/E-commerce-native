@@ -4,10 +4,10 @@ export let headerContent = `
     </div>
     <div class="admin-header-links">
         <ul class="admin-header-links-list">
-            <li class="admin-header-links-item home">Home  </li>
-            <li class="admin-header-links-item category"> Categories </li>
-            <li class="admin-header-links-item about"> About </li>
-            <li class="admin-header-links-item contact"> Contact </li>
+            <li ><a  class="admin-header-links-item home" href="http://127.0.0.1:5501/HTML/adminPages/dashboard.html" >Home</a></li>
+            <li><a  class="admin-header-links-item category"> Categories </a></li>
+            <li><a href="#user-category-footer" class="admin-header-links-item about">About</a>  </li>
+            <li><a href="#user-category-footer" class="admin-header-links-item contact">Contact </a></li>
         </ul>
     </div>
     <div class="admin-header-buttons">
