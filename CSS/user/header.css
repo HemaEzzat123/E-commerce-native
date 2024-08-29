@@ -54,6 +54,16 @@
   transition: var(--main-transition);
 }
 
+a {
+  list-style: none;
+  color:black;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--main-transition);
+  text-decoration: none;
+}
+
 .user-header .user-header-links-list li:hover {
   color: var(--lime-blue-color);
 }

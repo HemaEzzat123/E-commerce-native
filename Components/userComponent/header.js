@@ -5,9 +5,9 @@ export let headerContent = `
     <div class="user-header-links">
         <ul class="user-header-links-list">
             <li class="user-header-links-item home"> Home </li>
-            <li class="user-header-links-item categoriesLink"> Categories </li>
-            <li class="user-header-links-item about"> About </li>
-            <li class="user-header-links-item contact"> Contact </li>
+            <li><a class="admin-header-links-item category" href="#categories">Categories</a></li>
+            <li><a href="#user-category-footer" class="admin-header-links-item about">About</a></li>
+            <li><a href="#user-category-footer" class="admin-header-links-item contact">Contact</a></li>
         </ul>
     </div>
     <div class="user-header-buttons">
