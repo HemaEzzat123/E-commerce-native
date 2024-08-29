@@ -32,7 +32,7 @@ let footter = `
         <div class="footer-bottom-container">
 
             <div class="footer-copyright">
-                <p>© 2024 noon. All Rights Reserved</p>
+                <p>© 2024 shopease. All Rights Reserved</p>
             </div>
             <div class="footer-payment">
                 <img src="/IMAGES/cashIcon64.png" alt="Cash">
@@ -62,17 +62,3 @@ let footter = `
 `;
 document.querySelector(".footer").innerHTML = footter;
 
-
-
-const top = document.querySelector(".toTop");
-window.onscroll = function () {
-  if (window.scrollY > 1000) {
-    top.style.display = "block";
-  } else {
-    top.style.display = "none";
-  }
-};
-
-top.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
