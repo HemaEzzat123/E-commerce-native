@@ -13,9 +13,13 @@ export let headerContent = `
     <div class="user-header-buttons">
         ${
           localStorage.getItem("user")
-            ? `<button class="user-header-logout-button">Logout</button>`
+            ? `<button class="user-header-logout-button">Logout</button>
+               <div class="user-header-wishlist-button"><i class="fa-solid fa-heart"></i></div>
+               <div class="user-header-cart-button"><i class="fa-solid fa-cart-shopping"></i></div>
+            `
             : `<button class="user-header-login-button " onclick="showSignForm()">Login</button>`
         }
+        
     </div>
 `;
 

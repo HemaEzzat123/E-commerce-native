@@ -58,6 +58,13 @@
   color: var(--lime-blue-color);
 }
 
+.user-header .user-header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .user-header .user-header-buttons button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -82,8 +89,26 @@
   background-color: var(--lime-blue-color);
 }
 
-/* .user-header .user-header-buttons .user-header-register-button {
-  background-color: var(--yellow-color);
-} */
+.user-header .user-header-buttons .user-header-wishlist-button {
+  color: var(--red-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.user-header .user-header-buttons .user-header-wishlist-button:hover {
+  color: var(--red-color-hover);
+}
+
+.user-header .user-header-buttons .user-header-cart-button {
+  color: var(--yellow-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.user-header .user-header-buttons .user-header-cart-button:hover {
+  color: var(--yellow-color-hover);
+}
 
 /* end header */
