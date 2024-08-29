@@ -33,9 +33,7 @@ const deleteAdmin = async (adminId) => {
 // Remove admin role (convert back to user)
 const removeAdmin = async (adminId) => {
   try {
-    const adminData = await axios.get(
-      `http://localhost:4000/admins/${adminId}`
-    );
+    const adminData = await axios.get(`http://localhost:4000/admins/${adminId}`);
     const { username, email, password } = adminData.data;
 
     await axios.post("http://localhost:4000/users", {
@@ -72,15 +70,114 @@ const makeAdmin = async (userId) => {
   }
 };
 
-// Function to display users and admins in the table
+// Function to display users and admins
+const displayUsers = async (searchTerm = "") => {
+  const users = await getAllUsers();
+  const admins = await getAllAdmins();
 
-// Content for users and admins table---------------------------------------------!!!!!!!!!!!!!!!!-----------
+  let filteredUsers = users.filter((user) =>
+    user.username.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  let filteredAdmins = admins.filter((admin) =>
+    admin.username.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  let userRows = filteredUsers
+    .map(
+      (user) => `
+      <div class="headers">
+      <span class="name">${user.username}</span>
+        <span class="info">${user.id}</span>
+        <span class="info">${user.email}</span>  
+        <span class="info">${user.role}</span>
+        <div class="buttons">
+        <div class="tooltip">
+        <button class="delete-user" data-id="${user.id}"><i class="fa-solid fa-user-xmark"></i></button>
+        <span class="tooltiptext">Remove account</span>
+        </div>
+        <button class="make-admin" data-id="${user.id}"><i class="fa-solid fa-user-tie"></i> Make Admin</button>
+       </div>
+      </div>
+      <br/>
+      <hr/>
+      <br/>
+     `
+    )
+    .join("");
+
+  let adminRows = filteredAdmins
+    .map(
+      (admin) => `
+      <div  class="headers">
+      <span class="name">${admin.username}</span>
+        <span class="info">${admin.id}</span>
+        <span class="info">${admin.email}</span>
+        <span class="info">${admin.role}</span>
+        <div class="buttons">
+        <div class="tooltip">
+        <button class="delete-admin" data-id="${admin.id}"><i class="fa-solid fa-user-xmark"></i></button>
+         <span class="tooltiptext">Remove account</span>
+         </div>
+        <button class="remove-admin" data-id="${admin.id}"><i class="fa-solid fa-user-minus"></i> Remove Admin</button>
+        </div>
+      </div>
+      <br/>
+      <hr/>
+      <br/>
+    `
+    )
+    .join("");
+
+  document.querySelector(".usersInfo").innerHTML = userRows;
+  document.querySelector(".adminsInfo").innerHTML = adminRows;
+
+  attachEventListeners(); // Attach event listeners again after rendering
+};
+
+// Event listeners for buttons (delete/make admin/remove admin)
+const attachEventListeners = () => {
+  document.querySelectorAll(".delete-user").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      const userId = event.target.getAttribute("data-id");
+      await deleteUser(userId);
+    });
+  });
+
+  document.querySelectorAll(".make-admin").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      const userId = event.target.getAttribute("data-id");
+      await makeAdmin(userId);
+    });
+  });
+
+  document.querySelectorAll(".delete-admin").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      const adminId = event.target.getAttribute("data-id");
+      await deleteAdmin(adminId);
+    });
+  });
+
+  document.querySelectorAll(".remove-admin").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      const adminId = event.target.getAttribute("data-id");
+      await removeAdmin(adminId);
+    });
+  });
+};
+
+// Handle the search input
+const searchHandler = (event) => {
+  const searchTerm = event.target.value;
+  displayUsers(searchTerm); // Filter users/admins based on search term
+};
+
+// Content for users and admins table
 export let content = `
 <div class="container">
 <div class="content">
 <h1 class="members">MEMBERS.</h1>
 <div style="display:flex; align-items:center ;height:40px;gap:10px">
-<input class="search" type="search" placeholder="  search ...">
+<input class="search" id="searchInput" type="search" placeholder="search ..." />
 <button class="addmember">add member</button>
 </div>
 </div>
@@ -91,124 +188,16 @@ export let content = `
 <h3><i class="fa-solid fa-users"></i> USERS</h3>
 <div class="usersInfo"></div>
 </div>
-`
+`;
 
-//---------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!---------------------------------------------
 // Load users and table structure on page load
 window.onload = async () => {
-  let usersContainer = document.querySelector(".admin-user-table-container");
+  let usersContainer = document.querySelector(".admin-user-container");
   if (usersContainer) {
     usersContainer.innerHTML = content; // Load table structure
-    await displayUsers(); // Populate the table with user and admin data
+    await displayUsers(); // Populate with all data initially
+    document.getElementById("searchInput").addEventListener("input", searchHandler); // Add search event
   } else {
-    console.error("Element with class 'admin-user-table-container' not found.");
+    console.error("Element with class 'admin-user-container' not found.");
   }
 };
-
-// let value=await getAllUsers();
-// let search = document.querySelector(".search")
-// search.addEventListener("input",(event)=> {
-//   const value = search.target.value
-//   getAllAdmins.filter((obj) => { return obj.name === value })
-//   console.log(value)
-// })
-
-
-  const displayUsers = async () => {
-    const users = await getAllUsers();
-    const admins = await getAllAdmins();
-  
-    let userRows = users
-      .map(
-        (user) => `
-        <div class="headers">
-        <span class="name">${user.username}</span>
-          <span class="info">${user.id}</span>
-          <span class="info">${user.email}</span>  
-          <span class="info">${user.role}</span>
-          <div class="buttons">
-          <div class="tooltip">
-          <button class="delete-user" data-id="${user.id}"><i class="fa-solid fa-user-xmark"></i></button>
-          <span class="tooltiptext">Remove account</span>
-          </div>
-          <button class="make-admin" data-id="${user.id}"><i class="fa-solid fa-user-tie"></i> Make Admin</button>
-  
-         </div>
-        </div>
-        <br/>
-        <hr/>
-        <br/>
-       
-      `
-      )
-      .join("");
-  
-    let adminRows = admins
-      .map(
-        (admin) => `
-        <div  class="headers">
-        <span class="name">${admin.username}</span>
-          <span class="info">${admin.id}</span>
-          <span class="info">${admin.email}</span>
-          <span class="info">${admin.role}</span>
-          <div class="buttons">
-          <div class="tooltip">
-          <button class="delete-admin" data-id="${admin.id}"><i class="fa-solid fa-user-xmark"></i></button>
-           <span class="tooltiptext">Remove account</span>
-           </div>
-          <button class="remove-admin" data-id="${admin.id}"><i class="fa-solid fa-user-minus"></i> Remove Admin</button>
-          
-          </div>
-        </div>
-        <br/>
-        <hr/>
-        <br/>
-      `
-      )
-      .join("");
-  
-    let usersInfoContainer = document.querySelector(".usersInfo");
-    let adminsInfoContainer = document.querySelector(".adminsInfo");
-  
-    if (usersInfoContainer) {
-      usersInfoContainer.innerHTML = userRows;
-    } else {
-      console.error("Element with class 'usersInfo' not found.");
-    }
-  
-    if (adminsInfoContainer) {
-      adminsInfoContainer.innerHTML = adminRows;
-    } else {
-      console.error("Element with class 'adminsInfo' not found.");
-    }
-  
-    // Attach event listeners for user actions
-    document.querySelectorAll(".delete-user").forEach((button) => {
-      button.addEventListener("click", async (event) => {
-        const userId = event.target.getAttribute("data-id");
-        await deleteUser(userId);
-      });
-    });
-  
-    document.querySelectorAll(".make-admin").forEach((button) => {
-      button.addEventListener("click", async (event) => {
-        const userId = event.target.getAttribute("data-id");
-        await makeAdmin(userId);
-      });
-    });
-  
-    // Attach event listeners for admin actions
-    document.querySelectorAll(".delete-admin").forEach((button) => {
-      button.addEventListener("click", async (event) => {
-        const adminId = event.target.getAttribute("data-id");
-        await deleteAdmin(adminId);
-      });
-    });
-  
-    document.querySelectorAll(".remove-admin").forEach((button) => {
-      button.addEventListener("click", async (event) => {
-        const adminId = event.target.getAttribute("data-id");
-        await removeAdmin(adminId);
-      });
-    });
-  };

@@ -1,21 +1,7 @@
 {
   "users": [
     {
-      "id": "b456",
-      "username": "testUser",
-      "email": "hezzat.964@gmail.com",
-      "password": "1324",
-      "role": 1
-    },
-    {
-      "id": "pq9p9e791",
-      "username": "123",
-      "email": "hezzat.964@gmail.com",
-      "password": "1231",
-      "role": 1
-    },
-    {
-      "id": "4trh6q5bj",
+      "id": "53b1",
       "username": "AbdelrahmanHassan",
       "email": "abdo30201080101694@gmail.com",
       "password": "1234",
@@ -1462,13 +1448,6 @@
   "wishlists": [],
   "admins": [
     {
-      "id": "1",
-      "username": "hema",
-      "email": "hezzat.964@gmail.com",
-      "password": "123",
-      "role": 0
-    },
-    {
       "id": "2",
       "username": "hamza",
       "email": "hamza.khaled2091@gmail.com",
@@ -1484,6 +1463,13 @@
     {
       "id": "4",
       "username": "hassan",
+      "password": "123",
+      "role": 0
+    },
+    {
+      "id": "65ee",
+      "username": "hema",
+      "email": "hezzat.964@gmail.com",
       "password": "123",
       "role": 0
     }
