@@ -16,7 +16,7 @@ const displayCategories = async () => {
         .map(
           (category) => `
           <div class="category-card">
-              <img  loading="lazy" src="../../IMAGES/${category.image}" alt="${category.name}">
+              <img   src="../../IMAGES/${category.image}" alt="${category.name}">
               <div class="category-card-content">
                 <h3>${category.name}</h3>
                 <p>${category.description}</p>

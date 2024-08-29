@@ -1476,12 +1476,14 @@
     {
       "id": "1",
       "username": "hema",
+      "email":"hezzat.964@gmail.com",
       "password": "123",
       "role": 0
     },
     {
       "id": "2",
       "username": "hamza",
+      "email": "hamza.khaled2091@gmail.com",*
       "password": "123",
       "role": 0
     },

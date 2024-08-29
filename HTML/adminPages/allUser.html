@@ -3,10 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="/CSS/admin/allUsers.css" />
+    <link rel="stylesheet" href="/CSS/admin/header.css" />
+    <link rel="stylesheet" href="/CSS/admin/sideBar.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="admin-header"></div>
+    <div class="adminSb"></div>
+    <button class="dash">
+      <img src="../../IMAGES/right.png" alt="" srcset="" />
+    </button>
+
+
     <div class="admin-user-table container">
       <div class="admin-user-table-container"></div>
     </div>
@@ -15,5 +31,14 @@
       src="../../Components/adminComponent/showUsers.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+    type="module"
+    src="../../Components/adminComponent/Adminheader.js"
+  ></script>
+  <script
+  type="module"
+  src="../../Components/adminComponent/adminSB.js"
+></script>
+
   </body>
 </html>

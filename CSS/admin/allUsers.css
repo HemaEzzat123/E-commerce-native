@@ -4,12 +4,134 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 140vh;
   width: 100vw;
+
 }
-.admin-user-table {
-  height: 60%;
+
+.container{
+  margin-top: 400px;
+}
+.members{
+  color:var(--lime-blue-color);
+  margin-bottom: 10px;
+}
+h3{
+  margin:10px 0px;
+  text-decoration:underline double;
+  color: darkgoldenrod;
+
+}
+.headers{
   display: flex;
-  justify-content: center;
-  align-items: center; 
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.name{
+  font-weight: 600;
+}
+
+.delete-user,.delete-admin{
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.delete-user:hover,.delete-admin:hover,.remove-admin:hover {
+  color: white;
+  background-color: red;
+}
+
+.make-admin,.remove-admin {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+.make-admin:hover{
+  background-color: green;
+  color: white;
+}
+.addmember{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+padding: 3px;
+}
+
+.addmember:hover{
+  background-color:var(--lime-blue-color);
+  color: white;
+}
+.info{
+  font-size: 17px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #4A5568; /* Dark Gray */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%; /* Position above the element */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search{
+  background-color: #ffffff;
+  height: 25px;
 }
