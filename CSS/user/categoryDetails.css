@@ -59,13 +59,10 @@
   cursor: pointer;
 }
 
-/* .product-card .add-to-wishlist:hover {
-  color: var(--lime-blue-color);
-} */
-
 .product-card img {
   width: 100%;
   height: 350px !important;
+  object-fit: contain;
 }
 
 .product-card .product-card-content {

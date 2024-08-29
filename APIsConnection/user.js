@@ -47,3 +47,26 @@ export const getProductsByCategory = async (categoryId) => {
     return [];
   }
 };
+
+//function get array of ids of products then return them as an array
+export const getProductsByIds = async (ids) => {
+  try {
+    // Make multiple requests to get data for each product ID
+    const productPromises = ids.map((id) =>
+      axios.get(`http://localhost:4000/products/${id}`)
+    );
+
+    // Wait for all requests to complete
+    const responses = await Promise.all(productPromises);
+
+    // Extract the product data from each response
+    const products = responses.map((response) => response.data);
+
+    return products;
+  } catch (error) {
+    console.error("Error in getProductsByIds function", error);
+
+    // Return an empty array in case of an error
+    return [];
+  }
+};

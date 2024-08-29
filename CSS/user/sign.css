@@ -11,11 +11,10 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-
 }
 
 .sign-container {
-  margin-top: 200px !important;
+  margin-top: 70px !important;
   width: 80%;
   max-width: 500px;
   margin: auto;

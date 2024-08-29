@@ -1,33 +1,39 @@
 {
   "users": [
     {
-      "id": "53b1",
+      "id": "b456",
+      "username": "testUser",
+      "email": "hezzat.964@gmail.com",
+      "password": "1324",
+      "role": 1
+    },
+    {
+      "id": "pq9p9e791",
+      "username": "123",
+      "email": "hezzat.964@gmail.com",
+      "password": "1231",
+      "role": 1
+    },
+    {
+      "id": "bz2ya4sdx",
       "username": "AbdelrahmanHassan",
       "email": "abdo30201080101694@gmail.com",
       "password": "1234",
-      "role": 1
-    },
-    {
-      "id": "1snoc4sxi",
-      "username": "asd",
-      "email": "hezzat.964@gmail.com",
-      "password": "123",
-      "role": 1
-    },
-    {
-      "id": "4azerrpxx",
-      "username": "12",
-      "email": "hema.1055@yahoo.com",
-      "password": "123",
       "role": 1
     }
   ],
   "categories": [
     {
+      "name": "Clothes",
+      "id": "1",
+      "description": "Fashionable and comfortable clothing for men, women, and children.",
+      "image": "clothes.jpg"
+    },
+    {
       "name": "Phones",
+      "id": "2",
       "description": "Latest smartphones and essential accessories.",
-      "image": "phones.jpg",
-      "id": "2"
+      "image": "phones.jpg"
     },
     {
       "name": "Electronics",
@@ -347,15 +353,38 @@
       ]
     },
     {
+      "id": "12",
+      "name": "iPhone 14",
+      "image": "https://f.nooncdn.com/p/pnsku/N53346633A/45/_/1721322959/c6e9f616-7d30-4cd8-a676-658b229c6ad0.jpg?format=avif&width=240",
+      "brandName": "iPhone",
+      "description": "The 14th edition of the iPhone series, offering enhanced features at a competitive price point. Enjoy seamless performance, a brilliant display, and advanced camera technology.",
+      "price": 40000,
+      "categoryId": "2",
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": [
+        {
+          "user_id": 13,
+          "rating": 4,
+          "comment": "Great value for the price, but the battery life could be improved."
+        },
+        {
+          "user_id": 14,
+          "rating": 5,
+          "comment": "Excellent for both work and entertainment on the go."
+        }
+      ]
+    },
+    {
       "id": "16",
       "name": "Cotton Jacket",
       "description": "Stylish and comfortable men's cotton jacket, perfect for a casual day out. Durable and warm, making it ideal for various seasons.",
-      "price": "55.9900",
+      "price": "55.99",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "discount": "3",
+      "discount": "",
       "availability": false,
       "brandname": "undefined",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": "500",
       "rating": "4"
     },
@@ -368,7 +397,7 @@
       "discount": "",
       "availability": false,
       "brandname": "undefined",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": "50",
       "rating": "4"
     },
@@ -381,7 +410,7 @@
       "discount": "",
       "availability": false,
       "brandname": "undefined",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": "50",
       "rating": "4"
     },
@@ -480,7 +509,7 @@
       "name": "Women's Snowboard Jacket",
       "description": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket, a versatile winter coat designed for outdoor adventures in cold and snowy conditions.",
       "price": "56.99",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
       "rating": "4"
@@ -490,7 +519,7 @@
       "name": "Women's Moto Biker Jacket",
       "description": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket, perfect for stylish women looking for a chic and edgy look.",
       "price": "29.95",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
       "rating": "4"
@@ -500,7 +529,7 @@
       "name": "Women's Rain Jacket",
       "description": "Rain Jacket Women Windbreaker Striped Climbing Raincoats, a practical and fashionable jacket designed to keep you dry during outdoor activities.",
       "price": "39.99",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
       "rating": "4"
@@ -510,7 +539,7 @@
       "name": "Women's Boat Neck Top",
       "description": "MBJ Women's Solid Short Sleeve Boat Neck Top, a casual and comfortable top that adds elegance to your everyday wardrobe.",
       "price": "9.85",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
       "rating": "4"
@@ -520,7 +549,7 @@
       "name": "Women's Short Sleeve Shirt",
       "description": "Opna Women's Short Sleeve Moisture-Wicking Shirt, a lightweight and breathable shirt ideal for workouts and casual wear.",
       "price": "7.95",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
       "rating": "4"
@@ -530,7 +559,7 @@
       "name": "Women's Casual T-Shirt",
       "description": "DANVOUY Women's Casual Cotton Short Sleeve T-Shirt, a stylish and comfortable tee for casual outings.",
       "price": "12.99",
-      "categoryId": null,
+      "categoryId": "1",
       "stock": 50,
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
       "rating": "4"
@@ -641,7 +670,7 @@
       "description": "Apple iPhone 13 with A15 Bionic chip, 128GB storage, and dual-camera system.",
       "price": "799.99",
       "image": "https://f.nooncdn.com/p/v1686132002/N52943836A_1.jpg?format=avif&width=240",
-      "discount": "",
+      "discount": "5%",
       "availability": true,
       "brandname": "Apple",
       "categoryId": "2",
@@ -1456,9 +1485,14 @@
   "wishlists": [],
   "admins": [
     {
+      "id": "1",
+      "username": "hema",
+      "password": "123",
+      "role": 0
+    },
+    {
       "id": "2",
       "username": "hamza",
-      "email": "hamza.khaled2091@gmail.com",
       "password": "123",
       "role": 0
     },
@@ -1471,13 +1505,6 @@
     {
       "id": "4",
       "username": "hassan",
-      "password": "123",
-      "role": 0
-    },
-    {
-      "id": "65ee",
-      "username": "hema",
-      "email": "hezzat.964@gmail.com",
       "password": "123",
       "role": 0
     }

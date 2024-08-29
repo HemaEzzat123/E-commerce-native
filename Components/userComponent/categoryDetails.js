@@ -19,7 +19,11 @@ const viewProducts = async (categoryId) => {
       ${products
         .map((product) => {
           let iconClass = "fa-regular fa-heart";
-          if (user && wishlist[user.id] && wishlist[user.id].includes(product.id)) {
+          if (
+            user &&
+            wishlist[user.id] &&
+            wishlist[user.id].includes(product.id)
+          ) {
             iconClass = "fa-solid fa-heart";
           }
 
@@ -38,13 +42,21 @@ const viewProducts = async (categoryId) => {
                      </div>`
                   : ""
               }
-              <img class="product-image" src="${product.image}" alt="${product.name}" />
+              <img class="product-image" src="${product.image}" alt="${
+            product.name
+          }" />
               <div class="product-card-content">
                 <p class="product-name">${product.name}</p>
                 <p class="product-description">${product.description}</p>
                 <p class="product-price">$${product.price}</p>
-                <p class="product-stock">${product.stock} <span>item in stock</span></p>
-                ${user ? `<button class="add-to-cart" data-product-id="${product.id}">${cartButtonText}</button>` : ""}
+                <p class="product-stock">${
+                  product.stock
+                } <span>item in stock</span></p>
+                ${
+                  user
+                    ? `<button class="add-to-cart" data-product-id="${product.id}">${cartButtonText}</button>`
+                    : ""
+                }
               </div>
             </div>`;
         })
@@ -66,6 +78,7 @@ const viewProducts = async (categoryId) => {
       button.addEventListener("click", () => {
         const productId = button.getAttribute("data-product-id");
         handleCart(productId, button);
+        updateCartCount();
       });
     });
   } catch (error) {
@@ -106,6 +119,7 @@ const handleWishlist = (productId, button) => {
     userWishlist.push(productId);
     button.innerHTML = `<i class="fa-solid fa-heart"></i>`;
     button.classList.add("active");
+    updateWishlistCount();
   }
 
   // Save the updated wishlist back to localStorage
@@ -154,33 +168,36 @@ const handleCart = (productId, button) => {
   console.log("Cart updated:", cart);
 };
 
-const updateWishlistCount = () => {
+export const updateWishlistCount = () => {
   const user = JSON.parse(localStorage.getItem("user"));
   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || {};
   const userWishlist = user && wishlist[user.id] ? wishlist[user.id] : [];
-  
-  const wishlistButton = document.querySelector('.user-header-wishlist-button');
-  wishlistButton.setAttribute('data-count', userWishlist.length);
-  
+
+  const wishlistButton = document.querySelector(".user-header-wishlist-button");
+  wishlistButton.setAttribute("data-count", userWishlist.length);
+
   if (userWishlist.length > 0) {
-    wishlistButton.style.setProperty('--wishlist-count', `"${userWishlist.length}"`);
+    wishlistButton.style.setProperty(
+      "--wishlist-count",
+      `"${userWishlist.length}"`
+    );
   } else {
-    wishlistButton.style.setProperty('--wishlist-count', `"0"`);
+    wishlistButton.style.setProperty("--wishlist-count", `"0"`);
   }
 };
 
-const updateCartCount = () => {
+export const updateCartCount = () => {
   const user = JSON.parse(localStorage.getItem("user"));
   const cart = JSON.parse(localStorage.getItem("cart")) || {};
   const userCart = user && cart[user.id] ? cart[user.id] : [];
-  
-  const cartButton = document.querySelector('.user-header-cart-button');
-  cartButton.setAttribute('data-count', userCart.length);
+
+  const cartButton = document.querySelector(".user-header-cart-button");
+  cartButton.setAttribute("data-count", userCart.length);
 
   if (userCart.length > 0) {
-    cartButton.style.setProperty('--cart-count', `"${userCart.length}"`);
+    cartButton.style.setProperty("--cart-count", `"${userCart.length}"`);
   } else {
-    cartButton.style.setProperty('--cart-count', `"0"`);
+    cartButton.style.setProperty("--cart-count", `"0"`);
   }
 };
 
@@ -190,5 +207,3 @@ window.onload = () => {
   updateWishlistCount();
   updateCartCount();
 };
-
-
