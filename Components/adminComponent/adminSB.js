@@ -27,12 +27,6 @@ let sideBarContent = `
                     <p>Orders</p>
                 </a>
             </li>
-            <li>
-                <a class="Side-Bar-buttons" href="#">
-                    <i class="fas fa-cog"></i>
-                    <p>settings</p>
-                </a>
-            </li>
             ${
               localStorage.getItem("admin")
                 ? `

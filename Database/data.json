@@ -6,15 +6,23 @@
       "email": "abdo30201080101694@gmail.com",
       "password": "1234",
       "role": 1
+    },
+    {
+      "id": "1snoc4sxi",
+      "username": "asd",
+      "email": "hezzat.964@gmail.com",
+      "password": "123",
+      "role": 1
+    },
+    {
+      "id": "4azerrpxx",
+      "username": "12",
+      "email": "hema.1055@yahoo.com",
+      "password": "123",
+      "role": 1
     }
   ],
   "categories": [
-    {
-      "name": "Clothes",
-      "id": "1",
-      "description": "Fashionable and comfortable clothing for men, women, and children.",
-      "image": "clothes.jpg"
-    },
     {
       "name": "Phones",
       "description": "Latest smartphones and essential accessories.",
@@ -347,7 +355,7 @@
       "discount": "3",
       "availability": false,
       "brandname": "undefined",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": "500",
       "rating": "4"
     },
@@ -360,7 +368,7 @@
       "discount": "",
       "availability": false,
       "brandname": "undefined",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": "50",
       "rating": "4"
     },
@@ -373,7 +381,7 @@
       "discount": "",
       "availability": false,
       "brandname": "undefined",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": "50",
       "rating": "4"
     },
@@ -472,7 +480,7 @@
       "name": "Women's Snowboard Jacket",
       "description": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket, a versatile winter coat designed for outdoor adventures in cold and snowy conditions.",
       "price": "56.99",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
       "rating": "4"
@@ -482,7 +490,7 @@
       "name": "Women's Moto Biker Jacket",
       "description": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket, perfect for stylish women looking for a chic and edgy look.",
       "price": "29.95",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
       "rating": "4"
@@ -492,7 +500,7 @@
       "name": "Women's Rain Jacket",
       "description": "Rain Jacket Women Windbreaker Striped Climbing Raincoats, a practical and fashionable jacket designed to keep you dry during outdoor activities.",
       "price": "39.99",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
       "rating": "4"
@@ -502,7 +510,7 @@
       "name": "Women's Boat Neck Top",
       "description": "MBJ Women's Solid Short Sleeve Boat Neck Top, a casual and comfortable top that adds elegance to your everyday wardrobe.",
       "price": "9.85",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
       "rating": "4"
@@ -512,7 +520,7 @@
       "name": "Women's Short Sleeve Shirt",
       "description": "Opna Women's Short Sleeve Moisture-Wicking Shirt, a lightweight and breathable shirt ideal for workouts and casual wear.",
       "price": "7.95",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
       "rating": "4"
@@ -522,7 +530,7 @@
       "name": "Women's Casual T-Shirt",
       "description": "DANVOUY Women's Casual Cotton Short Sleeve T-Shirt, a stylish and comfortable tee for casual outings.",
       "price": "12.99",
-      "categoryId": "1",
+      "categoryId": null,
       "stock": 50,
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
       "rating": "4"
