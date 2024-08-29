@@ -94,7 +94,26 @@
   font-size: 20px;
   cursor: pointer;
   transition: var(--main-transition);
+  position: relative;
 }
+
+/* .user-header .user-header-buttons .user-header-wishlist-button::before {
+  content: var(--wishlist-count, "0");
+  margin-right: 5px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--red-color-hover);
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: -1;
+} */
 
 .user-header .user-header-buttons .user-header-wishlist-button:hover {
   color: var(--red-color-hover);
@@ -105,7 +124,27 @@
   font-size: 20px;
   cursor: pointer;
   transition: var(--main-transition);
+  position: relative;
+
 }
+
+/* .user-header .user-header-buttons .user-header-cart-button::before {
+  content: var(--cart-count, "0");
+  margin-right: 5px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--yellow-color-hover);
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: -1;
+} */
 
 .user-header .user-header-buttons .user-header-cart-button:hover {
   color: var(--yellow-color-hover);
