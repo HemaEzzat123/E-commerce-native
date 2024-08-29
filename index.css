@@ -44,9 +44,9 @@ body {
   }
 }
 
-.user-page-content {
+/* .user-page-content {
   min-height: 10000px;
-}
+} */
 
 @media screen and (min-width: 1000px) {
   .user-page-content {

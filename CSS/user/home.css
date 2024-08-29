@@ -83,6 +83,7 @@
 .categories .category-card img,
 .categories2 .category-card img {
   width: 100%;
+  height: 350px !important;
 }
 
 .categories .category-card .category-card-content,
@@ -123,20 +124,20 @@
 .categories2 .category-card .category-card-content button:hover {
   background-color: var(--lime-blue-color-hover);
 }
-.sale50 {
-  display: none; /* العنصر مخفي في البداية */
+/* .sale50 {
+  display: none;
   cursor: pointer;
   position: relative;
-}
+} */
 
-@keyframes popUp {
+/* @keyframes popUp {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .toTop {
   position: fixed;
