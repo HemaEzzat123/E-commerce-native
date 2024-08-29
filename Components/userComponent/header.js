@@ -14,8 +14,8 @@ export let headerContent = `
         ${
           localStorage.getItem("user")
             ? `<button class="user-header-logout-button">Logout</button>
-               <div class="user-header-wishlist-button"><i class="fa-solid fa-heart"></i></div>
-               <div class="user-header-cart-button"><i class="fa-solid fa-cart-shopping"></i></div>
+               <a href="/HTML/userPages/wishlist.html" class="user-header-wishlist-button"><i class="fa-solid fa-heart"></i></a>
+               <a href="/HTML/userPages/cart.html" class="user-header-cart-button"><i class="fa-solid fa-cart-shopping"></i></a>
             `
             : `<button class="user-header-login-button " onclick="showSignForm()">Login</button>`
         }
