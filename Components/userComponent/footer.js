@@ -1,29 +1,29 @@
-let footter=`
+let footter = `
 <div  id="user-category-footer" class="user-category-footer">
 <footer class="footer">
     <div class="footer-content">
             <div class="user-footer-container">
             <div class="footer-text">
-                <h3>نحن دائماً جاهزون لمساعدتك</h3>
-                <p>تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+                <h3>Let Us Help You </h3>
+                <p>Reach out to us through any of these support channels</p>
             </div>
             <div class="footer-support">
                 <div class="support-item">
-                    <span>الدعم عبر الهاتف</span>
+                    <span>PHONE SUPPORT</span>
                     <div>
                         <i class="fas fa-phone"></i> 16358
                     </div>
                 </div>
                 <div class="support-item">
-                    <span>الدعم عبر البريد الإلكتروني</span>
+                    <span>EMAIL SUPPORT </span>
                     <div>
-                        <i class="fas fa-envelope"></i> egypt@noon.com
+                        <i class="fas fa-envelope"></i> egypt@shopease.com
                     </div>
                 </div>
                 <div class="support-item">
-                    <span>مركز اسعاد المستهلكين</span>
+                    <span>CUSTOMER HAPPINESS CENTER </span>
                     <div>
-                        <i class="fas fa-info-circle"></i> help.noon.com
+                        <i class="fas fa-info-circle"></i> help.Shopease.com
                     </div>
                 </div>
             </div>
@@ -32,24 +32,24 @@ let footter=`
         <div class="footer-bottom-container">
 
             <div class="footer-copyright">
-                <p> 2024 جميع الحقوق محفوظة </p>
+                <p>© 2024 noon. All Rights Reserved</p>
             </div>
             <div class="footer-payment">
-                <img src="cash-icon.png" alt="Cash">
-                <img src="amex-icon.png" alt="Amex">
-                <img src="valu-icon.png" alt="Valu">
-                <img src="visa-icon.png" alt="Visa">
-                <img src="mastercard-icon.png" alt="Mastercard">
+                <img src="/IMAGES/cashIcon64.png" alt="Cash">
+                <img src="/IMAGES/amexicon.png" alt="AMEX">
+                <img src="/IMAGES/MASERicon.png" alt="MAstercard">
+                <img src="/IMAGES/Visaicon.png" alt="Visa">
+               
             </div>
           
 
             <div class="footer-links">
-                <a href="#">فرص التوظيف</a>
-                <a href="#">سياسة الضمان</a>
-                <a href="#">شروط البيع معنا</a>
-                <a href="#">شروط الاستخدام</a>
-                <a href="#">سياسة البيع</a>
-                <a href="#">سياسة الخصوصية</a>
+                <a href="#">Careers</a>
+                <a href="#">Warranty Policy</a>
+                <a href="#">Sell with us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Terms of Sale</a>
+                <a href="#">Privacy Policy</a>
             </div>
    
         </div>
@@ -59,5 +59,18 @@ let footter=`
 
 </div>
 
-`
-document.querySelector(".footer").innerHTML=footter;
+`;
+document.querySelector(".footer").innerHTML = footter;
+
+const top = document.querySelector(".toTop");
+window.onscroll = function () {
+  if (window.scrollY > 1000) {
+    top.style.display = "block";
+  } else {
+    top.style.display = "none";
+  }
+};
+
+top.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

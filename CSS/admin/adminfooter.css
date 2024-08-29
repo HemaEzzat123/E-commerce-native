@@ -5,6 +5,7 @@
   direction: ltr;
   background-image: linear-gradient(to bottom,white,var(--lime-blue-color));
   color: black;
+  margin-top: 150px;
 }
 
 .user-footer-container {
