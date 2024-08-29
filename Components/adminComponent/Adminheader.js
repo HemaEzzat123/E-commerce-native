@@ -1,13 +1,13 @@
 export let headerContent = `
     <div class="admin-header-branding">
-              <img src="../../IMAGES/Logo.png" alt="logo">
+        <img src="../../IMAGES/Logo.png" alt="logo">
     </div>
     <div class="admin-header-links">
         <ul class="admin-header-links-list">
-            <li ><a  class="admin-header-links-item home" href="/HTML/adminPages/dashboard.html" >Home</a></li>
-            <li><a  class="admin-header-links-item category"  href="#admin-category"> Categories </a></li>
-            <li><a href="#user-category-footer" class="admin-header-links-item about">About</a>  </li>
-            <li><a href="#user-category-footer" class="admin-header-links-item contact">Contact </a></li>
+            <li><a class="admin-header-links-item home" href="/HTML/adminPages/dashboard.html">Home</a></li>
+            <li><a class="admin-header-links-item category" href="#admin-category">Categories</a></li>
+            <li><a href="#user-category-footer" class="admin-header-links-item about">About</a></li>
+            <li><a href="#user-category-footer" class="admin-header-links-item contact">Contact</a></li>
         </ul>
     </div>
     <div class="admin-header-buttons">
@@ -16,15 +16,25 @@ export let headerContent = `
             ? `<button class="admin-header-logout-button">Logout</button>`
             : `<button class="admin-header-login-button">logIn</button>`
         }
- <button class="addCategory" onclick="addCategory">
-   <a href="addCategory.html">add Category</a>
- </button>    </div>
+        <button class="addCategory">Add Category</button>
+    </div>
 `;
 
+window.addCategory = () => {
+  document.querySelector(".admin-category-form").style.display = "flex";
+  document.querySelector(".admin-category-form").style.opacity = "1";
+};
+
+// Setting inner HTML content for the header
 let header = document.querySelector(".admin-header");
 header.innerHTML = headerContent;
 
 // Add event listeners after setting innerHTML
+const addCategoryButton = document.querySelector(".addCategory");
+if (addCategoryButton) {
+  addCategoryButton.addEventListener("click", window.addCategory);
+}
+
 const loginButton = document.querySelector(".admin-header-login-button");
 const logoutButton = document.querySelector(".admin-header-logout-button");
 
@@ -40,10 +50,6 @@ if (logoutButton) {
     localStorage.removeItem("admin");
     window.location.href = "../../HTML/adminPages/dashboard.html";
   });
-}
-
-if (document.querySelector(".category")) {
-  document.querySelector(".category").addEventListener("click", () => {});
 }
 
 document.querySelector(".dash").addEventListener("click", () => {

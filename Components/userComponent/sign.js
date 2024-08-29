@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const errorSpan = username.nextElementSibling;
           showErrorIfUserIsExist(user.username, errorSpan);
           setTimeout(() => {
-            window.location.href = "../../HTML/sharedPages/sign.html";
           }, 600);
           return;
         } else {
@@ -99,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const errorSpan = password.nextElementSibling;
           errorSpan.textContent = "Invalid username or password";
           setTimeout(() => {
-            window.location.href = "../../HTML/sharedPages/sign.html";
           }, 600);
           return;
         }

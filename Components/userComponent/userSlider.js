@@ -82,12 +82,17 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(updateImage2, 3000);
 
 
+  window.onscroll = function () {
+      console.log(window.scrollY);
+      
+    }
+
   const sale = document.querySelector(".sale50");
   function checkSaleVisibility() {
     const salePosition = sale.getBoundingClientRect().top; 
     const windowHeight = window.innerHeight; 
 
-    if (scrollY > 3600) {
+    if (scrollY > 5200) {
       sale.style.display = "block";
       sale.style.animation = "popUp 0.5s ease-in-out";
     } else {

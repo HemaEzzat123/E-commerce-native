@@ -20,12 +20,7 @@ let sideBarContent = `
                     <p>Users</p>
                 </a>
             </li>
-            <li>
-                <a class="Side-Bar-buttons" href="addCategory.html">
-                    <i class="fas fa-table"></i>
-                    <p>AddCategory</p>
-                </a>
-            </li>
+          
             <li>
                 <a class="Side-Bar-buttons" href="#">
                     <i class="fa-solid fa-cube"></i>
@@ -65,6 +60,7 @@ sideBar.innerHTML = sideBarContent;
 const showUsersBtn = document.querySelector(".showUsers");
 const loginBtn = document.querySelector(".login");
 const logoutBtn = document.querySelector(".log-out");
+const addCategoryBtn = document.querySelector(".addCategory");
 
 if (showUsersBtn) {
   showUsersBtn.addEventListener("click", () => {
@@ -74,7 +70,8 @@ if (showUsersBtn) {
 
 if (loginBtn) {
   loginBtn.addEventListener("click", () => {
-    window.location.href = "/HTML/sharedPages/sign.html";
+    document.querySelector(".user-sign").style.display = "block";
+    document.querySelector(".user-sign").style.opacity = "1";
   });
 }
 
@@ -84,3 +81,4 @@ if (logoutBtn) {
     window.location.href = "/HTML/adminPages/dashboard.html";
   });
 }
+

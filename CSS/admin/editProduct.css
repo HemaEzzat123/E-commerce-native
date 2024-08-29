@@ -1,14 +1,6 @@
 @import "../../index.css";
 
-#product-form label {
-  width: 200px;
-}
-
-.admin-product-form h2 {
-  margin-bottom: 20px;
-}
-
-.admin-product-form {
+.admin-product-form-container {
   display: none; /* Start hidden */
   position: fixed; /* Stay in place */
   z-index: 1000; /* Above other elements */
@@ -21,7 +13,7 @@
 }
 
 /* Popup content */
-#product-form {
+#edit-product-form {
   background-color: white;
   margin: auto;
   padding: 20px;
@@ -30,18 +22,19 @@
   max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  height: 800px;
+  height: 500px;
   display: grid;
   background-color: var(--lime-blue-color);
 }
 
-.form-group{
+.form-group {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-#product-form input,
-#product-form textarea {
+#edit-product-form input,
+#edit-product-form textarea {
   padding: 5px;
   border-radius: 10px;
   border: 2px solid var(--lime-blue-color);
@@ -49,7 +42,7 @@
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
 }
-#product-form button {
+#edit-product-form button {
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -62,7 +55,6 @@
   cursor: pointer;
 }
 
-
 /* When form is active, reduce opacity of body */
 body.show-popup {
   opacity: 0.5;
@@ -70,21 +62,6 @@ body.show-popup {
 }
 
 /* Except for the popup */
-body.show-popup .admin-product-form {
+body.show-popup .admin-category-form {
   pointer-events: auto; /* Enable interactions */
-}
-
-.add-close-container {
-  position: relative;
-}
-
-.add-close {
-  position: absolute;
-  top: -60px;
-  right: 10px;
-  cursor: pointer;
-  background-color: transparent;
-  color: black;
-  font-size: 40px;
-  border: none;
 }
