@@ -22,7 +22,6 @@ const response = async () => {
 };
 response();
 
-
 export const renderCartList = () => {
   const products = getProductsByIds(cartIDs);
   products.then((products) => {

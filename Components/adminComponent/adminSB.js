@@ -1,3 +1,4 @@
+import { getAllOrders } from "./orders.js";
 // Update sidebar content
 let sideBarContent = `
     <div class="menu">
@@ -15,9 +16,10 @@ let sideBarContent = `
                 </a>
             </li>
             <li>
-                <a class="Side-Bar-buttons" href="/HTML/adminPages/orders.html" data-page="orders">
+                <a style="position:relative;" class="Side-Bar-buttons" href="/HTML/adminPages/orders.html" data-page="orders">
                     <i class="fa-solid fa-cube"></i>
                     <p>Orders</p>
+                    <p style="position:absolute; top:4px; left:35px; display:none" class="para"><i class="fa-solid fa-circle dot"></i></p>
                 </a>
             </li>
         </ul>
@@ -51,3 +53,15 @@ if (showUsersBtn) {
     window.location.href = "/HTML/adminPages/allUser.html";
   });
 }
+
+const  handleorders = async() => { 
+  const data = await getAllOrders();
+  console.log(data[0].products)
+  if (data.map((item)=>item.productId)) { 
+    
+    const dot = document.querySelector(".para")
+    dot.style.display = "block";
+  }
+
+}
+handleorders();

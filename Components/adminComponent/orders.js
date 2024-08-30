@@ -2,7 +2,7 @@ import { getProductsByIds } from "../../APIsConnection/admin.js";
 
 let ordersContainer = document.querySelector(".admin-cart");
 
-const getAllOrders = async () => {
+export const getAllOrders = async () => {
   try {
     const response = await fetch("http://localhost:4000/orders");
     const orders = await response.json();

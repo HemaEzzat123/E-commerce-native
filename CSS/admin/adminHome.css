@@ -4,6 +4,32 @@
   display: flex;
 }
 
+@media screen and (max-width: 1000px) {
+  .admin-home-page {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .user-header {
+    flex-direction: row;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: var(--main-box-shadow);
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width:400px) {
+  .user-header{
+    width:100%
+  }
+}
+
 .admin-home-page .admin-slider {
   margin-bottom: 50px;
 }
