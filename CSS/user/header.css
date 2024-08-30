@@ -24,6 +24,11 @@
     border-radius: 50px;
   }
 }
+@media screen and (max-width:400px) {
+  .user-header{
+    width:100%
+  }
+}
 
 .user-header .user-header-branding {
   display: flex;
