@@ -33,7 +33,9 @@ const deleteAdmin = async (adminId) => {
 // Remove admin role (convert back to user)
 const removeAdmin = async (adminId) => {
   try {
-    const adminData = await axios.get(`http://localhost:4000/admins/${adminId}`);
+    const adminData = await axios.get(
+      `http://localhost:4000/admins/${adminId}`
+    );
     const { username, email, password } = adminData.data;
 
     await axios.post("http://localhost:4000/users", {
@@ -138,31 +140,54 @@ const displayUsers = async (searchTerm = "") => {
 const attachEventListeners = () => {
   document.querySelectorAll(".delete-user").forEach((button) => {
     button.addEventListener("click", async (event) => {
-      const userId = event.target.getAttribute("data-id");
+      const userId = event.target.closest("button").getAttribute("data-id");
       await deleteUser(userId);
     });
   });
 
   document.querySelectorAll(".make-admin").forEach((button) => {
     button.addEventListener("click", async (event) => {
-      const userId = event.target.getAttribute("data-id");
+      const userId = event.target.closest("button").getAttribute("data-id");
       await makeAdmin(userId);
     });
   });
 
   document.querySelectorAll(".delete-admin").forEach((button) => {
     button.addEventListener("click", async (event) => {
-      const adminId = event.target.getAttribute("data-id");
+      const adminId = event.target.closest("button").getAttribute("data-id");
       await deleteAdmin(adminId);
     });
   });
 
   document.querySelectorAll(".remove-admin").forEach((button) => {
     button.addEventListener("click", async (event) => {
-      const adminId = event.target.getAttribute("data-id");
+      const adminId = event.target.closest("button").getAttribute("data-id");
       await removeAdmin(adminId);
     });
   });
+
+  // Add new member functionality
+  const addMemberButton = document.querySelector(".addmember");
+  addMemberButton.addEventListener("click", () => {
+    const username = prompt("Enter username:");
+    const email = prompt("Enter email:");
+    const password = prompt("Enter password:");
+
+    addUser(username, email, password);
+  });
+};
+
+// Add new user to the database
+const addUser = async (username, email, password) => {
+  try {
+    await axios.post("http://localhost:4000/users", {
+      username,
+      email,
+      password,
+      role: 1, // Assuming role 1 is for regular users
+    });
+    displayUsers();
+  } catch (error) {}
 };
 
 // Handle the search input
@@ -196,7 +221,9 @@ window.onload = async () => {
   if (usersContainer) {
     usersContainer.innerHTML = content; // Load table structure
     await displayUsers(); // Populate with all data initially
-    document.getElementById("searchInput").addEventListener("input", searchHandler); // Add search event
+    document
+      .getElementById("searchInput")
+      .addEventListener("input", searchHandler); // Add search event
   } else {
     console.error("Element with class 'admin-user-container' not found.");
   }

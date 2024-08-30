@@ -8,17 +8,17 @@
       "role": 1
     },
     {
-      "id": "pq9p9e791",
-      "username": "123",
-      "email": "hezzat.964@gmail.com",
-      "password": "1231",
-      "role": 1
-    },
-    {
       "id": "bz2ya4sdx",
       "username": "AbdelrahmanHassan",
       "email": "abdo30201080101694@gmail.com",
       "password": "1234",
+      "role": 1
+    },
+    {
+      "id": "3trzrvzga",
+      "username": "test",
+      "email": "hema.1055@yahoo.com",
+      "password": "123",
       "role": 1
     }
   ],
@@ -1445,44 +1445,42 @@
       "rating": "4.7"
     }
   ],
-  "orders": [],
-  "carts": [
+  "orders": [
     {
-      "user": {
-        "id": "1"
-      },
+      "id": "78b3",
+      "userId": "3trzrvzga",
       "products": [
         {
-          "id": "1",
-          "name": "Smartphone",
-          "description": "High-end smartphone with advanced features.",
-          "price": 599.99,
-          "image": "men.jpg",
-          "discount": 10,
-          "availability": true,
-          "brandname": "BrandX",
-          "categoryId": "2",
-          "stock": 50,
-          "rating": 4.5,
-          "reviews": [
-            {
-              "user_id": 1,
-              "rating": 5,
-              "comment": "Great phone with a superb casmera!"
-            },
-            {
-              "user_id": 2,
-              "rating": 4,
-              "comment": "Good performance, but the battery life could be better."
-            }
-          ]
+          "productId": "7"
+        },
+        {
+          "productId": "11"
+        },
+        {
+          "productId": "12"
+        },
+        {
+          "productId": "44"
         }
       ],
-      "id": "a00b"
+      "status": "accepted"
+    },
+    {
+      "id": "0b8e",
+      "userId": "3trzrvzga",
+      "products": [
+        {
+          "productId": "11"
+        },
+        {
+          "productId": "12"
+        },
+        {
+          "productId": "44"
+        }
+      ]
     }
   ],
-  "reviews": [],
-  "wishlists": [],
   "admins": [
     {
       "id": "1",

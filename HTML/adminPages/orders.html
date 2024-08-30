@@ -6,46 +6,36 @@
     <link rel="shortcut icon" href="/IMAGES/favicon.jpg" type="image/x-icon" />
 
     <title>Shopease | Cart Info</title>
-
-    <link rel="stylesheet" href="../../CSS/admin/adminfooter.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
-    <link rel="stylesheet" href="/CSS/user/header.css" />
-
-    <link rel="stylesheet" href="/CSS/user/cart.css" />
+   <link rel="stylesheet" href="/CSS//admin/sideBar.css">
+    <link rel="stylesheet" href="/CSS/admin/header.css" />
+    <link rel="stylesheet" href="/CSS/admin/orders.css" />
+    <link rel="stylesheet" href="/CSS/admin/adminHome.css">
   </head>
   <body>
-    <div class="user-cart-page">
-      <div class="user-header"></div>
+    <div class="admin-cart-page">
+      <div class="admin-header"></div>
+      <div class="adminSb"></div>
       <div class="user-page-content container">
-        <div class="user-cart"></div>
+        <div class="admin-cart"></div>
       </div>
       <div id="notification" class="notification hidden"></div>
-      <div class="placeOrder">
-        <button class="placeOrderBtn">Place Order</button>
-      </div>
+
       <!-- <div class="footer"></div> -->
     </div>
-
+ <button class="dash">
+      <img src="../../IMAGES/right.png" alt="" srcset="" />
+    </button>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script
       type="module"
-      src="../../Components/userComponent/header.js"
+      src="../../Components/adminComponent/Adminheader.js"
     ></script>
-
-    <script
-      type="module"
-      src="../../Components/userComponent/addToCart.js"
-    ></script>
-
-    <script
-      type="module"
-      src="/Components/adminComponent/adminFooter.js"
-    ></script>
+    <script type="module" src="/Components/adminComponent/adminSB.js"></script>
+    <script type="module" src="/Components/adminComponent/orders.js"></script>
   </body>
 </html>

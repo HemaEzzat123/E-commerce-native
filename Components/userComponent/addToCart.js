@@ -11,14 +11,27 @@ if (user) {
 let cartList = JSON.parse(localStorage.getItem("cart")) || [];
 let cartIDs = cartList[userID] || [];
 
+const response = async () => {
+  try {
+    const response = await axios.get("http://localhost:4000/orders");
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+response();
+
 export const renderCartList = () => {
   const products = getProductsByIds(cartIDs);
+  const status = response()
   products.then((products) => {
     CartContainer.innerHTML = "";
-
     products.forEach((product) => {
       CartContainer.innerHTML += `
         <div class="product-card">
+          <p></p>
           <div class="product-image">
             <img src="${product.image}" alt="${product.name}" />
           </div>
@@ -32,11 +45,11 @@ export const renderCartList = () => {
       `;
     });
 
-
     document.querySelectorAll(".remove-from-cart").forEach((button) => {
       button.addEventListener("click", (e) => {
         const productId = e.target.getAttribute("data-product-id");
         removeFromCartList(productId);
+        showNotification("Removed from cart");
       });
     });
   });
@@ -59,6 +72,50 @@ const removeFromCartList = (productId) => {
     localStorage.setItem("cart", JSON.stringify(cartList));
     renderCartList();
   }
+};
+
+function showNotification(message) {
+  const notification = document.getElementById("notification");
+  notification.innerText = message;
+  notification.classList.add("show");
+
+  // Hide notification after 3 seconds
+  setTimeout(() => {
+    notification.classList.remove("show");
+  }, 3000);
+}
+
+const placeOrder = document.querySelector(".placeOrderBtn");
+
+placeOrder.addEventListener("click", () => {
+  // Create the order object with userId and productIds
+  const order = {
+    userId: userID,
+    products: cartIDs.map((id) => ({ productId: id })), // Format products as array of objects with productId
+  };
+
+  // Send the order to the server, update the cart, and display success message
+  sendOrderToServer(order);
+
+  // Display success notification
+  showNotification("Order placed successfully!");
+});
+
+const sendOrderToServer = (order) => {
+  fetch("http://localhost:4000/orders", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(order),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Order placed successfully:", data);
+    })
+    .catch((error) => {
+      console.error("Error placing order:", error);
+    });
 };
 
 window.onload = () => {

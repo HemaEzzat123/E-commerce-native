@@ -37,6 +37,6 @@ if (loginButton) {
 if (logoutButton) {
   logoutButton.addEventListener("click", () => {
     localStorage.removeItem("user");
-    window.location.reload();
+    window.location.href = "/HTML/userPages/userHome.html";
   });
 }

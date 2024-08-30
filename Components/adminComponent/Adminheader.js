@@ -1,22 +1,14 @@
 export let headerContent = `
     <div class="admin-header-branding">
-        <img src="../../IMAGES/Logo.png" alt="logo">
-    </div>
-    <div class="admin-header-links">
-        <ul class="admin-header-links-list">
-            <li><a class="admin-header-links-item home" href="/HTML/adminPages/dashboard.html">Home</a></li>
-            <li><a class="admin-header-links-item category" href="#admin-category">Categories</a></li>
-            <li><a href="#user-category-footer" class="admin-header-links-item about">About</a></li>
-            <li><a href="#user-category-footer" class="admin-header-links-item contact">Contact</a></li>
-        </ul>
+       <a class="admin-header-links-item home" href="/HTML/adminPages/dashboard.html"><img src="../../IMAGES/Logo.png" alt="logo"></a>
     </div>
     <div class="admin-header-buttons">
+    <button class="addCategory">Add Category</button>
         ${
           localStorage.getItem("admin")
             ? `<button class="admin-header-logout-button">Logout</button>`
             : `<button class="admin-header-login-button">logIn</button>`
         }
-        <button class="addCategory">Add Category</button>
     </div>
 `;
 

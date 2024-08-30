@@ -72,7 +72,12 @@
   font-size: 14px;
   font-weight: 700;
   transition: var(--main-transition);
-  width: 100%;
+}
+.admin-header-buttons{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 

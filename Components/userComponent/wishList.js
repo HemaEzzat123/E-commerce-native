@@ -18,25 +18,26 @@ export const renderWishList = () => {
 
     products.forEach((product) => {
       wishListContainer.innerHTML += `
-        <div class="product-card">
-          <div class="product-image">
-            <img src="${product.image}" alt="${product.name}" />
+          <div class="product-card">
+            <div class="product-image">
+              <img src="${product.image}" alt="${product.name}" />
+            </div>
+            <div class="product-details">
+              <h3>${product.name}</h3>
+              <p class="description">${product.description}</p>
+              <p class="price">$${product.price}</p>
+              <button class="add-to-cart" data-product-id="${product.id}">Add to Cart</button>
+              <button class="remove-from-wishlist" data-product-id="${product.id}">Remove</button>
+            </div>
           </div>
-          <div class="product-details">
-            <h3>${product.name}</h3>
-            <p class="description">${product.description}</p>
-            <p class="price">$${product.price}</p>
-            <button class="add-to-cart" data-product-id="${product.id}">Add to Cart</button>
-            <button class="remove-from-wishlist" data-product-id="${product.id}">Remove</button>
-          </div>
-        </div>
-      `;
+        `;
     });
 
     document.querySelectorAll(".add-to-cart").forEach((button) => {
       button.addEventListener("click", (e) => {
         const productId = e.target.getAttribute("data-product-id");
         addToCart(productId);
+        showNotification("Added to cart");
       });
     });
 
@@ -44,6 +45,7 @@ export const renderWishList = () => {
       button.addEventListener("click", (e) => {
         const productId = e.target.getAttribute("data-product-id");
         removeFromWishlist(productId);
+        showNotification("Removed from wishlist");
       });
     });
   });
@@ -82,6 +84,17 @@ const removeFromWishlist = (productId) => {
     renderWishList();
   }
 };
+
+function showNotification(message) {
+  const notification = document.getElementById("notification");
+  notification.innerText = message;
+  notification.classList.add("show");
+
+  // Hide notification after 3 seconds
+  setTimeout(() => {
+    notification.classList.remove("show");
+  }, 3000);
+}
 
 window.onload = () => {
   renderWishList();
