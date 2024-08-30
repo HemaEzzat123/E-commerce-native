@@ -1085,13 +1085,13 @@
       "id": "902",
       "name": "Wooden Dining Table",
       "description": "Elegant wooden dining table suitable for family meals and gatherings.",
-      "price": "299.99",
+      "price": "500.99",
       "image": "https://m.media-amazon.com/images/I/71NZH7d3INL._AC_UL320_.jpg",
       "discount": "",
       "availability": true,
       "brandname": "FurnitureCo",
       "categoryId": "9",
-      "stock": "75",
+      "stock": "22",
       "rating": "4.7"
     },
     {
@@ -1119,19 +1119,6 @@
       "categoryId": "9",
       "stock": "100",
       "rating": "4.6"
-    },
-    {
-      "id": "905",
-      "name": "Accent Chair",
-      "description": "Trendy accent chair that adds a touch of style to any room.",
-      "price": "149.99",
-      "image": "https://m.media-amazon.com/images/I/71GQxVMLgiL._AC_UL320_.jpg",
-      "discount": "",
-      "availability": true,
-      "brandname": "HomeComfort",
-      "categoryId": "9",
-      "stock": "200",
-      "rating": "4.5"
     },
     {
       "id": "1001",
@@ -1459,6 +1446,7 @@
       "rating": "4.7"
     }
   ],
+<<<<<<< HEAD
   "orders": [
     {
       "id": "e513",
@@ -1506,6 +1494,9 @@
       "status": "accepted"
     }
   ],
+=======
+  "orders": [],
+>>>>>>> 7269d229a4984e8bb577f89c0a3f2f87c78fdb96
   "admins": [
     {
       "id": "1",

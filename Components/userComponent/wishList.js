@@ -1,6 +1,6 @@
 import { getProductsByIds } from "../../APIsConnection/user.js";
 
-let wishListContainer = document.querySelector(".user-wish-list");
+let wishListContainer = document.querySelector(".user-wish-list-cards");
 
 let user = JSON.parse(localStorage.getItem("user"));
 let userID = "";
