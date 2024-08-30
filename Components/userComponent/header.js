@@ -2,6 +2,10 @@ export let headerContent = `
     <div class="user-header-branding">
         <a href="/HTML/userPages/userHome.html" class="user-header-links-item dashboard"><img src="../../IMAGES/Logo.png" alt="logo"></a>
     </div>
+    <div class="user-header-links-list">
+        <a href="/HTML/userPages/userHome.html" class="user-header-links-item home">Home</a>
+        <a href="/HTML/userPages/userHome.html" class="user-header-links-item orders">Orders</a>
+    </div>
     <div class="user-header-buttons">
         ${
           localStorage.getItem("user")

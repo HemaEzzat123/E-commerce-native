@@ -24,9 +24,9 @@
     border-radius: 50px;
   }
 }
-@media screen and (max-width:400px) {
-  .user-header{
-    width:100%
+@media screen and (max-width: 400px) {
+  .user-header {
+    width: 100%;
   }
 }
 
@@ -51,8 +51,8 @@
   gap: 30px;
 }
 
-.user-header .user-header-links-list li {
-  list-style: none;
+.user-header .user-header-links-list a {
+  /* list-style: none; */
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -69,7 +69,7 @@ a {
   text-decoration: none;
 }
 
-.user-header .user-header-links-list li:hover {
+.user-header .user-header-links-list a:hover {
   color: var(--lime-blue-color);
 }
 
