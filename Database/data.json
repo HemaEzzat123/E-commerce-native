@@ -1,41 +1,5 @@
 {
-  "users": [
-    {
-      "id": "b456",
-      "username": "testUser",
-      "email": "hezzat.964@gmail.com",
-      "password": "1324",
-      "role": 1
-    },
-    {
-      "id": "bz2ya4sdx",
-      "username": "AbdelrahmanHassan",
-      "email": "abdo30201080101694@gmail.com",
-      "password": "1234",
-      "role": 1
-    },
-    {
-      "id": "3trzrvzga",
-      "username": "test",
-      "email": "hema.1055@yahoo.com",
-      "password": "123",
-      "role": 1
-    },
-    {
-      "id": "601pr207w",
-      "username": "testSignUp",
-      "email": "hema.1055@yahoo.com",
-      "password": "123",
-      "role": 1
-    },
-    {
-      "id": "2fuy0ia9l",
-      "username": "testSignUp2",
-      "email": "hezzat.964@gmail.com",
-      "password": "123",
-      "role": 1
-    }
-  ],
+  "users": [],
   "categories": [
     {
       "name": "Clothes",
@@ -345,7 +309,7 @@
       "id": "11",
       "name": "iPhone 15",
       "description": "The latest edition of iPhone with cutting-edge technology, sleek design, and enhanced performance. Ideal for both work and entertainment with superior battery life and a stunning display.",
-      "price": "50000",
+      "price": "50.20",
       "image": "https://f.nooncdn.com/p/pnsku/N53433298A/45/_/1694762142/3e3d796f-1083-4fdc-a155-65c36489b69d.jpg?format=avif&width=240",
       "discount": "",
       "availability": false,
@@ -369,13 +333,15 @@
     {
       "id": "12",
       "name": "iPhone 14",
-      "image": "https://f.nooncdn.com/p/pnsku/N53346633A/45/_/1721322959/c6e9f616-7d30-4cd8-a676-658b229c6ad0.jpg?format=avif&width=240",
-      "brandName": "iPhone",
       "description": "The 14th edition of the iPhone series, offering enhanced features at a competitive price point. Enjoy seamless performance, a brilliant display, and advanced camera technology.",
-      "price": 40000,
+      "price": "40.555",
+      "image": "https://f.nooncdn.com/p/pnsku/N53346633A/45/_/1721322959/c6e9f616-7d30-4cd8-a676-658b229c6ad0.jpg?format=avif&width=240",
+      "discount": "",
+      "availability": false,
+      "brandname": "undefined",
       "categoryId": "2",
-      "stock": 50,
-      "rating": 4.6,
+      "stock": "50",
+      "rating": "4.6",
       "reviews": [
         {
           "user_id": 13,

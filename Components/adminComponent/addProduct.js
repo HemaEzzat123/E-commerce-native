@@ -32,7 +32,7 @@ const addProducts = async (categoryId) => {
     
     <div class="form-group">
       <label for="product-price">Product Price:</label><br/>
-      <input type="number" id="product-price" required>
+      <input type="text" id="product-price" required>
     </div>
     
     <div class="form-group">
