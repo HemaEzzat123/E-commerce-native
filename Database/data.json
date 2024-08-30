@@ -1447,26 +1447,7 @@
   ],
   "orders": [
     {
-      "id": "78b3",
-      "userId": "3trzrvzga",
-      "products": [
-        {
-          "productId": "7"
-        },
-        {
-          "productId": "11"
-        },
-        {
-          "productId": "12"
-        },
-        {
-          "productId": "44"
-        }
-      ],
-      "status": "accepted"
-    },
-    {
-      "id": "0b8e",
+      "id": "e513",
       "userId": "3trzrvzga",
       "products": [
         {
@@ -1476,7 +1457,7 @@
           "productId": "12"
         },
         {
-          "productId": "44"
+          "productId": "46"
         }
       ]
     }

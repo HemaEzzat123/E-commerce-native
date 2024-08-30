@@ -6,14 +6,12 @@ const getAllOrders = async () => {
   try {
     const response = await fetch("http://localhost:4000/orders");
     const orders = await response.json();
-    console.log(orders);
     return orders;
   } catch (error) {
     console.error("Error fetching orders:", error);
     return [];
   }
 };
-
 const updateOrderStatus = async (orderId, status) => {
   try {
     const response = await fetch(`http://localhost:4000/orders/${orderId}`, {
@@ -100,7 +98,6 @@ export const renderOrdersList = async () => {
     button.addEventListener("click", () => {
       const orderId = button.getAttribute("data-order-id");
       updateOrderStatus(orderId, "accepted");
-      
     });
   });
 
@@ -108,8 +105,18 @@ export const renderOrdersList = async () => {
     button.addEventListener("click", () => {
       const orderId = button.getAttribute("data-order-id");
       updateOrderStatus(orderId, "rejected");
+      rejectOrder(orderId);
     });
   });
+};
+
+const rejectOrder = async (orderId) => {
+  try {
+    await axios.delete(`http://localhost:4000/orders/${orderId}`);
+    renderOrdersList();
+  } catch (error) {
+    console.error("Error rejecting order:", error);
+  }
 };
 
 window.onload = () => {

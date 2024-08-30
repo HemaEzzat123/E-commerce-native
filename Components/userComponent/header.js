@@ -1,11 +1,6 @@
 export let headerContent = `
     <div class="user-header-branding">
-        <img src="../../IMAGES/Logo.png" alt="logo">
-    </div>
-    <div class="user-header-links">
-        <ul class="user-header-links-list">
-            <a href="/HTML/userPages/userHome.html" class="user-header-links-item dashboard">Home</a>
-        </ul>
+        <a href="/HTML/userPages/userHome.html" class="user-header-links-item dashboard"><img src="../../IMAGES/Logo.png" alt="logo"></a>
     </div>
     <div class="user-header-buttons">
         ${

@@ -20,18 +20,17 @@ const response = async () => {
     console.error(error);
   }
 };
-
 response();
+
 
 export const renderCartList = () => {
   const products = getProductsByIds(cartIDs);
-  const status = response()
   products.then((products) => {
     CartContainer.innerHTML = "";
     products.forEach((product) => {
       CartContainer.innerHTML += `
         <div class="product-card">
-          <p></p>
+          <p>jjjj</p>
           <div class="product-image">
             <img src="${product.image}" alt="${product.name}" />
           </div>
