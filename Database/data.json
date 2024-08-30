@@ -20,6 +20,20 @@
       "email": "hema.1055@yahoo.com",
       "password": "123",
       "role": 1
+    },
+    {
+      "id": "601pr207w",
+      "username": "testSignUp",
+      "email": "hema.1055@yahoo.com",
+      "password": "123",
+      "role": 1
+    },
+    {
+      "id": "2fuy0ia9l",
+      "username": "testSignUp2",
+      "email": "hezzat.964@gmail.com",
+      "password": "123",
+      "role": 1
     }
   ],
   "categories": [
@@ -1471,6 +1485,25 @@
         }
       ],
       "status": "rejected"
+    },
+    {
+      "id": "bc26",
+      "userId": "2fuy0ia9l",
+      "products": [
+        {
+          "productId": "601"
+        },
+        {
+          "productId": "602"
+        },
+        {
+          "productId": "603"
+        },
+        {
+          "productId": "604"
+        }
+      ],
+      "status": "accepted"
     }
   ],
   "admins": [
