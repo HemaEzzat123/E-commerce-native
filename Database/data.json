@@ -1446,57 +1446,7 @@
       "rating": "4.7"
     }
   ],
-<<<<<<< HEAD
-  "orders": [
-    {
-      "id": "e513",
-      "userId": "3trzrvzga",
-      "products": [
-        {
-          "productId": "11"
-        },
-        {
-          "productId": "12"
-        },
-        {
-          "productId": "46"
-        }
-      ],
-      "status": "rejected"
-    },
-    {
-      "id": "32ea",
-      "userId": "3trzrvzga",
-      "products": [
-        {
-          "productId": "801"
-        }
-      ],
-      "status": "rejected"
-    },
-    {
-      "id": "bc26",
-      "userId": "2fuy0ia9l",
-      "products": [
-        {
-          "productId": "601"
-        },
-        {
-          "productId": "602"
-        },
-        {
-          "productId": "603"
-        },
-        {
-          "productId": "604"
-        }
-      ],
-      "status": "accepted"
-    }
-  ],
-=======
   "orders": [],
->>>>>>> 7269d229a4984e8bb577f89c0a3f2f87c78fdb96
   "admins": [
     {
       "id": "1",

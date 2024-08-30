@@ -4,7 +4,7 @@ export let headerContent = `
     </div>
     <div class="user-header-links-list">
         <a href="/HTML/userPages/userHome.html" class="user-header-links-item home">Home</a>
-        <a href="/HTML/userPages/userHome.html" class="user-header-links-item orders">Orders</a>
+        <a href="/HTML/userPages/pastOrders.html" class="user-header-links-item orders">Orders</a>
     </div>
     <div class="user-header-buttons">
         ${

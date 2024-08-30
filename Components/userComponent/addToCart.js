@@ -29,7 +29,6 @@ export const renderCartList = () => {
     products.forEach((product) => {
       CartContainer.innerHTML += `
         <div class="product-card">
-          <p>jjjj</p>
           <div class="product-image">
             <img src="${product.image}" alt="${product.name}" />
           </div>
@@ -69,6 +68,7 @@ const removeFromCartList = (productId) => {
 
     localStorage.setItem("cart", JSON.stringify(cartList));
     renderCartList();
+    window.location.reload();
   }
 };
 
@@ -85,6 +85,10 @@ function showNotification(message) {
 
 const placeOrder = document.querySelector(".placeOrderBtn");
 
+if(!cartIDs || cartIDs.length === 0) {
+  placeOrder.style.display = "none";
+}
+
 placeOrder.addEventListener("click", () => {
   // Create the order object with userId and productIds
   const order = {
@@ -94,6 +98,12 @@ placeOrder.addEventListener("click", () => {
 
   // Send the order to the server, update the cart, and display success message
   sendOrderToServer(order);
+
+  cartList = JSON.parse(localStorage.getItem("cart")) || {};
+  if (cartList[userID]) {
+    delete cartList[userID];
+    localStorage.setItem("cart", JSON.stringify(cartList));
+  }
 
   // Display success notification
   showNotification("Order placed successfully!");

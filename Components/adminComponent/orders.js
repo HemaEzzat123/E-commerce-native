@@ -76,13 +76,14 @@ export const renderOrdersList = async () => {
               <h3>${product.name}</h3>
               <p class="description">${product.description}</p>
               <p class="price">Price: $${product.price}</p>
-              <button class="accept-order" data-order-id="${order.id}">Accept</button>
-              <button class="reject-order" data-order-id="${order.id}">Reject</button>
+              
             </div>
-            <hr>
           `
         )
         .join("");
+      orderHTML += `<button class="accept-order" data-order-id="${order.id}">Accept</button>
+              <button class="reject-order" data-order-id="${order.id}">Reject</button>
+              <hr>`;
     }
 
     orderHTML += `
@@ -105,7 +106,6 @@ export const renderOrdersList = async () => {
     button.addEventListener("click", () => {
       const orderId = button.getAttribute("data-order-id");
       updateOrderStatus(orderId, "rejected");
-      rejectOrder(orderId);
     });
   });
 };

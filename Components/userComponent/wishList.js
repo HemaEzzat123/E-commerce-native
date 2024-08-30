@@ -37,6 +37,11 @@ export const renderWishList = () => {
       button.addEventListener("click", (e) => {
         const productId = e.target.getAttribute("data-product-id");
         addToCart(productId);
+
+        // تغيير نص الزر للنص المطلوب
+        e.target.innerHTML = "Added to Cart";
+        e.target.disabled = true; // تعطيل الزر بعد الإضافة لمنع النقر المتكرر
+
         showNotification("Added to cart");
       });
     });
@@ -62,8 +67,9 @@ const addToCart = (productId) => {
   if (!cart[userID].includes(productId)) {
     cart[userID].push(productId);
   }
-
   localStorage.setItem("cart", JSON.stringify(cart));
+
+  // window.location.reload();
 };
 
 // Function to remove product from the wishlist
@@ -82,6 +88,7 @@ const removeFromWishlist = (productId) => {
 
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
     renderWishList();
+    window.location.reload();
   }
 };
 
