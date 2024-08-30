@@ -77,6 +77,9 @@ const displayUsers = async (searchTerm = "") => {
   const users = await getAllUsers();
   const admins = await getAllAdmins();
 
+  console.log("Users:", users); // تحقق من البيانات
+  console.log("Admins:", admins); // تحقق من البيانات
+
   let filteredUsers = users.filter((user) =>
     user.username.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -215,8 +218,6 @@ export let content = `
 </div>
 `;
 
-// Load users and table structure on page load
-window.onload = async () => {
   let usersContainer = document.querySelector(".admin-user-container");
   if (usersContainer) {
     usersContainer.innerHTML = content; // Load table structure
@@ -227,4 +228,4 @@ window.onload = async () => {
   } else {
     console.error("Element with class 'admin-user-container' not found.");
   }
-};
+// Load users and table structure on page load

@@ -13,9 +13,9 @@ if (user) {
 export const getAllOrders = async () => {
   try {
     const response = await fetch("http://localhost:4000/orders");
-   const orders = await response.json();
-   console.log(orders);
-   
+    const orders = await response.json();
+    console.log(orders);
+
     return orders;
   } catch (error) {
     console.error("Error fetching orders:", error);
@@ -58,7 +58,9 @@ export const renderOrdersList = async () => {
       .map(
         (product) => `
         <div class="product-details">
-        <h3 class=${order.status }>${orders[userOrders.indexOf(order)].status || "Pending"}</h3>
+        <h3 class=${order.status}>${
+          orders[userOrders.indexOf(order)].status || "Pending"
+        }</h3>
             <img src="${product.image}" alt="${product.name}" />
             <h3>${product.name}</h3>
             <p class="description">${product.description}</p>
