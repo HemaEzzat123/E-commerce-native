@@ -19,7 +19,7 @@ addCategory.innerHTML = `
         <label for="category-id">Category ID:</label>
         <input type="text" id="category-id" name="id" required />
 
-        <button type="submit">Add Categor</button>
+        <button type="submit">Add Category</button>
       </form>
     </div>`;
 
